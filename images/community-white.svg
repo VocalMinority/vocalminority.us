@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+    <title>community-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-(alt-#1)" transform="translate(-795.000000, -1434.000000)">
+            <g id="info" transform="translate(720.000000, 1082.000000)">
+                <g id="community-white" transform="translate(75.000000, 352.000000)">
+                    <path d="M9.22607422,2.02636719 L16.1359863,8.06005859" id="Line" stroke="#FFFFFF" stroke-linecap="square"></path>
+                    <path d="M14.1166992,16.1018066 L16.0776367,8.03564453" id="Line" stroke="#FFFFFF" stroke-linecap="square"></path>
+                    <path d="M4.015625,16.0673828 L2.03076172,8.06176758" id="Line" stroke="#FFFFFF" stroke-linecap="square"></path>
+                    <path d="M3.71484375,16.4115952 L14.0769043,16.4116211" id="Line" stroke="#FFFFFF" stroke-linecap="square"></path>
+                    <path d="M3.9621582,15.9909668 L9.07885742,2.07592773" id="Line" stroke="#FFFFFF" stroke-linecap="square"></path>
+                    <path d="M9.09033203,1.95263672 L14.0224609,16.0822754" id="Line" stroke="#FFFFFF" stroke-linecap="square"></path>
+                    <path d="M1.97143555,8.31347656 L16.0510254,8.67724609" id="Line" stroke="#FFFFFF" stroke-linecap="square"></path>
+                    <path d="M4.02148438,16.0358887 L16.0004883,8.09057617" id="Line" stroke="#FFFFFF" stroke-linecap="square"></path>
+                    <path d="M1.98730469,8.04370117 L14.0759277,16.0344238" id="Line" stroke="#FFFFFF" stroke-linecap="square"></path>
+                    <path d="M2.07788086,8.15673828 L9.05078125,2.01269531" id="Line" stroke="#FFFFFF" stroke-linecap="square"></path>
+                    <circle id="Oval" fill="#FFFFFF" cx="14" cy="16" r="2"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="4" cy="16" r="2"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="16" cy="8" r="2"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="2" cy="8" r="2"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="9" cy="2" r="2"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
