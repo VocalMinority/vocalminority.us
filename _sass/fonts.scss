@@ -50,24 +50,24 @@ $folder: "../fonts/";
 
 @font-face {
     font-family: 'Questa';
-    src: url('#{$folder}2-Questa_Medium-webfont.eot');
-    src: url('#{$folder}2-Questa_Medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('#{$folder}2-Questa_Medium-webfont.woff2') format('woff2'),
-         url('#{$folder}2-Questa_Medium-webfont.woff') format('woff'),
-         url('#{$folder}2-Questa_Medium-webfont.ttf') format('truetype'),
-         url('#{$folder}2-Questa_Medium-webfont.svg#questamedium') format('svg');
+    src: url('#{$folder}3-Questa_Medium-webfont.eot');
+    src: url('#{$folder}3-Questa_Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$folder}3-Questa_Medium-webfont.woff2') format('woff2'),
+         url('#{$folder}3-Questa_Medium-webfont.woff') format('woff'),
+         url('#{$folder}3-Questa_Medium-webfont.ttf') format('truetype'),
+         url('#{$folder}3-Questa_Medium-webfont.svg#questamedium') format('svg');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Questa';
-    src: url('#{$folder}2-Questa_Bold-webfont.eot');
-    src: url('#{$folder}2-Questa_Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('#{$folder}2-Questa_Bold-webfont.woff2') format('woff2'),
-         url('#{$folder}2-Questa_Bold-webfont.woff') format('woff'),
-         url('#{$folder}2-Questa_Bold-webfont.ttf') format('truetype'),
-         url('#{$folder}2-Questa_Bold-webfont.svg#questabold') format('svg');
+    src: url('#{$folder}4-Questa_Bold-webfont.eot');
+    src: url('#{$folder}4-Questa_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$folder}4-Questa_Bold-webfont.woff2') format('woff2'),
+         url('#{$folder}4-Questa_Bold-webfont.woff') format('woff'),
+         url('#{$folder}4-Questa_Bold-webfont.ttf') format('truetype'),
+         url('#{$folder}4-Questa_Bold-webfont.svg#questabold') format('svg');
     font-weight: 700;
     font-style: normal;
 }
