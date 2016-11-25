@@ -23,6 +23,13 @@
   float: left;
 }
 
+.ctas-list {
+  margin-left: rem-calc(30);
+  @include breakpoint(medium) {
+    margin-left: rem-calc(35);
+  }
+}
+
 .ctas-list-pledge, .ctas-list-voice, .ctas-list-join {
   position: relative;
   &:before {
