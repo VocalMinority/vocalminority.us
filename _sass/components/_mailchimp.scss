@@ -1,0 +1,17 @@
+.mc-field-group {
+  position: relative;
+}
+
+.mc-email {
+  border-radius: $global-radius;
+  padding: 30px 30px 30px 20px;
+}
+
+.mc-embedded-subscribe {
+  border-radius: $global-radius;
+  background-color: $dark-gray;
+  color: $white;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
