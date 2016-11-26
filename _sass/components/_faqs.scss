@@ -1,8 +1,12 @@
 .faq {
-  margin-top: rem-calc(80);
-  margin-bottom: rem-calc(80);
+  background: $faq-background;
+  max-width: 100%;
+  padding-top: rem-calc(80);
+  padding-bottom: rem-calc(80);
 }
 
 .faq-header {
+  font-size: 1.75rem;
+  font-weight: $global-weight-medium;
   margin-bottom: rem-calc(80);
 }

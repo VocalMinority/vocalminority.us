@@ -215,7 +215,7 @@ $menu-icon-spacing: 0.25rem !default;
 }
 
 @mixin menu-text {
-  font-weight: bold;
+  font-weight: $global-weight-bold;
   color: inherit;
   line-height: 1;
   padding-top: 0;

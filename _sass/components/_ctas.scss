@@ -12,7 +12,14 @@
   @include breakpoint(large) {
     max-width: rem-calc(570);
   }
-  margin: rem-calc(40);
+  font-size: 1.125rem;
+  margin: rem-calc(50);
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: $global-weight-medium;
+    margin-bottom: rem-calc(40);
+  }
 }
 
 .ctas-about {
@@ -24,10 +31,15 @@
 }
 
 .ctas-list {
+  margin-bottom: rem-calc(50);
   margin-left: rem-calc(30);
   @include breakpoint(medium) {
     margin-left: rem-calc(35);
   }
+}
+
+.pledge-description {
+  color: rgba($white,.6);
 }
 
 .ctas-list-pledge, .ctas-list-voice, .ctas-list-join {

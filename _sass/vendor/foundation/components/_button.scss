@@ -24,7 +24,7 @@ $button-background: $primary-color !default;
 
 /// Background color on hover for buttons.
 /// @type Color
-$button-background-hover: scale-color($button-background, $lightness: -15%) !default;
+$button-background-hover: darken($button-background,10%) !default;
 
 /// Font color for buttons.
 /// @type List
@@ -213,6 +213,7 @@ $button-hollow-hover-lightness: -50% !default;
     @each $size, $value in map-remove($button-sizes, default) {
       &.#{$size} {
         font-size: $value;
+        font-weight: $global-weight-medium;
       }
     }
 

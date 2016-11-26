@@ -67,7 +67,7 @@ $switch-paddle-transition: all 0.25s ease-out !default;
 
   // These properties cascade down to the switch text
   color: $white;
-  font-weight: bold;
+  font-weight: $global-weight-bold;
   font-size: rem-calc(14);
 }
 
@@ -170,7 +170,7 @@ $switch-paddle-transition: all 0.25s ease-out !default;
   $paddle-left-active: $width - $paddle-width - $paddle-offset;
 
   height: $height;
-  
+
   .switch-paddle {
     width: $width;
     height: $height;

@@ -20,7 +20,7 @@ $titlebar-padding: 0.5rem !default;
 
 /// Font weight of text inside a title bar.
 /// @type Weight
-$titlebar-text-font-weight: bold !default;
+$titlebar-text-font-weight: $global-weight-bold !default;
 
 /// Color of menu icons inside a title bar.
 /// @type Color
