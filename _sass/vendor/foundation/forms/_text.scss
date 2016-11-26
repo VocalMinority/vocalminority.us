@@ -44,11 +44,11 @@ $input-border-focus: 1px solid $dark-gray !default;
 
 /// Box shadow inside text inputs when not focused.
 /// @type Shadow
-$input-shadow: inset 0 1px 2px rgba($black, 0.1) !default;
+$input-shadow: none !default;
 
 /// Box shadow outside text inputs when focused.
 /// @type Shadow
-$input-shadow-focus: 0 0 5px $medium-gray !default;
+$input-shadow-focus: none !default;
 
 /// Cursor to use when hovering over a disabled text input.
 /// @type Cursor
@@ -87,6 +87,7 @@ $button-radius: $global-radius !default;
   background-color: $input-background;
   box-shadow: $input-shadow;
   border-radius: $input-radius;
+  outline: none;
 
   @if has-value($input-transition) {
     transition: $input-transition;
@@ -96,7 +97,6 @@ $button-radius: $global-radius !default;
   &:focus {
     border: $input-border-focus;
     background-color: $input-background-focus;
-    outline: none;
     box-shadow: $input-shadow-focus;
 
     @if has-value($input-transition) {

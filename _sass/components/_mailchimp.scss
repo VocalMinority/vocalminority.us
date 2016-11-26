@@ -3,8 +3,21 @@
 }
 
 .mc-email {
+  border: 0;
   border-radius: $global-radius;
-  padding: 30px 30px 30px 20px;
+  font-size: 1.125rem;
+  margin-bottom: .625rem;
+  padding: 34px 34px 34px 20px;
+
+  &:focus {
+    border: 0;
+  }
+
+  &.mce_inline_error {
+    color: map-get($foundation-palette, secondary);
+    font-size: inherit;
+    font-style: normal;
+  }
 }
 
 .mc-embedded-subscribe {
@@ -14,4 +27,25 @@
   position: absolute;
   right: 10px;
   top: 10px;
+
+  &:hover,
+  &:focus {
+    background: darken($dark-gray,10%);
+    outline: none;
+  }
+}
+
+.mce_inline_error,
+.mce-error-response {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.mce-success-response {
+  background: rgba($white,.15);
+  border: 2px solid $white;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  padding: 1rem;
+  text-align: center;
 }
