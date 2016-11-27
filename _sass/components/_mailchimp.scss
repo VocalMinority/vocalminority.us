@@ -3,14 +3,14 @@
 }
 
 .mc-email {
-  border: 0;
+  //border: 0;
   border-radius: $global-radius;
   font-size: 1.125rem;
   margin-bottom: .625rem;
-  padding: 34px 34px 34px 20px;
+  //padding: 34px 34px 34px 20px;
 
   &:focus {
-    border: 0;
+    //border: 0;
   }
 
   &.mce_inline_error {
@@ -22,11 +22,11 @@
 
 .mc-embedded-subscribe {
   border-radius: $global-radius;
-  background-color: $dark-gray;
-  color: $white;
-  position: absolute;
-  right: 10px;
-  top: 10px;
+  //background-color: $dark-gray;
+  //color: $white;
+  //position: absolute;
+  //right: 10px;
+  //top: 10px;
 
   &:hover,
   &:focus {
@@ -42,10 +42,25 @@
 }
 
 .mce-success-response {
-  background: rgba($white,.15);
-  border: 2px solid $white;
+  //background: rgba($white,.15);
+  border: 2px solid $dark-gray;
   border-radius: 8px;
   font-size: 1.125rem;
   padding: 1rem;
   text-align: center;
 }
+
+.mc-field-group {
+  .radio {
+    input {
+      float: left;
+      margin: 5px;
+    }
+    span {
+      display: inline-block;
+      width: 90%;
+    }
+  }
+}
+
+
