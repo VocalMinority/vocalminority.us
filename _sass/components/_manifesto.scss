@@ -1,10 +1,16 @@
 
 .manifesto-logo {
-  margin-bottom: rem-calc(80);
+  margin-bottom: rem-calc(60);
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(80);
+  }
 }
 .manifesto {
-  margin-top: rem-calc(80);
+  margin-top: rem-calc(60);
   margin-bottom: rem-calc(80);
+  @include breakpoint(medium) {
+    margin-top: rem-calc(120);
+  }
 }
 
 .intro-message {
