@@ -45,6 +45,9 @@
   @include breakpoint(medium) {
     margin-left: rem-calc(35);
   }
+  li {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .join-us {
