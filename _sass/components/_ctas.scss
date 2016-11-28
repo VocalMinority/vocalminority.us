@@ -8,17 +8,26 @@
   color: $white;
 }
 
-.ctas-about, .ctas-voice {
+.ctas-about,
+.ctas-voice {
+  font-size: 1.125rem;
+  margin: rem-calc(50);
+
   @include breakpoint(large) {
     max-width: rem-calc(570);
   }
-  font-size: 1.125rem;
-  margin: rem-calc(50);
 
   h2 {
     font-size: 1.75rem;
     font-weight: $global-weight-medium;
     margin-bottom: rem-calc(40);
+  }
+
+  @include breakpoint(small) {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -35,6 +44,17 @@
   margin-left: rem-calc(30);
   @include breakpoint(medium) {
     margin-left: rem-calc(35);
+  }
+}
+
+.join-us {
+  color: map-get($foundation-palette, primary);
+  background: $white;
+  display: block;
+
+  &:hover {
+    color: map-get($foundation-palette, primary);
+    background: rgba($white,.8);
   }
 }
 

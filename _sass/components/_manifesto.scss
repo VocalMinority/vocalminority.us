@@ -6,3 +6,12 @@
   margin-top: rem-calc(80);
   margin-bottom: rem-calc(80);
 }
+
+.intro-message {
+
+  @include breakpoint(small) {
+    font-size: 1.125rem;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
