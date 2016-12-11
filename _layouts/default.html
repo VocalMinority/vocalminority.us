@@ -22,7 +22,12 @@
         <link rel="stylesheet" href="css/main.css?{{site.time | date_to_xmlschema}}">
     </head>
     <body>
+      {% if page.banner %}
+        {% include banner.html %}
+      {% endif %}
+      {% include header.html %}
       {{content}}
+      {% include footer.html %}
 
 
       <!-- TODO: Decide if its worth stripping down to the pieces of foundation we're using -->
