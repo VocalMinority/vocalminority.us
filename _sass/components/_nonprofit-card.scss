@@ -1,0 +1,17 @@
+.nonprofit-card {
+  border: 1px solid $medium-gray;
+}
+
+.nonprofit-card-header {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: $medium-gray;
+  font-size: rem-calc(30);
+}
+
+.nonprofit-card-body {
+  background-color: $light-gray;
+  padding: 10px;
+  min-height: 200px;
+}

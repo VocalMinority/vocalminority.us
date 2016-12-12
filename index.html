@@ -64,7 +64,7 @@ flag: true
   </div>
 </section>
 
-<div class="section row">
+<section class="row">
   <div class="columns medium-6 text-center">
     <h3 class="current-donation">$4,221</h3>
     <p>
@@ -74,7 +74,7 @@ flag: true
     <a href="/join.html" class="button large expanded secondary">Join us</a>
     <p class="learn-more">Learn more <a href="/mission.html">about us</a> or read our <a href="/faq.html">FAQ</a></p>
   </div>
-  <div class="columns medium-6">
+  <div class="columns medium-4 medium-offset-1 end">
     <h3>This month's nonprofit:</h3>
     {% if site.current_nonprofit %}
       {% include current-nonprofit.html %}
@@ -82,4 +82,4 @@ flag: true
       {% include choosing-nonprofit.html %}
     {% endif %}
   </div>
-</div>
+</section>
