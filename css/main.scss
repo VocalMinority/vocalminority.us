@@ -99,13 +99,17 @@
 //
 
 
-// App specific styles
-@import 'components/ctas';
-@import 'components/manifesto';
-@import 'components/faqs';
-@import 'components/mailchimp';
-@import 'components/button';
-@import 'components/signup_form';
+// Global/reusable component styles
 @import 'components/banner';
+@import 'components/button';
 @import 'components/cause-card';
+@import 'components/ctas';
+@import 'components/every-month';
+@import 'components/faqs';
 @import 'components/header';
+@import 'components/manifesto';
+@import 'components/mailchimp';
+@import 'components/signup_form';
+
+// Page specific styles
+@import 'pages/index';

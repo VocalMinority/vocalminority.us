@@ -1,0 +1,14 @@
+.every-month {
+  padding: 20px;
+  border: 2px solid $primary-color;
+  position: relative;
+  .every-month-header {
+    color: $primary-color;
+    background-color: #fff;
+    display: inline-block;
+    position: absolute;
+    padding: 0 10px;
+    top: -14px;
+    left: 10px;
+  }
+}
