@@ -74,9 +74,11 @@
 }
 
 .half-width-field {
-  width: 45%;
-  display: inline-block;
-  &:first-child {
-    margin-right: 9%;
+  @include breakpoint(medium) {
+    width: 45%;
+    display: inline-block;
+    &:first-child {
+      margin-right: 9%;
+    }
   }
 }
