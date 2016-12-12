@@ -10,3 +10,8 @@ section {
   color: $dark-gray;
   text-decoration: underline;
 }
+.flag {
+  background-image: url('/images/flag-bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+}

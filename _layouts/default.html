@@ -26,10 +26,16 @@
       {% include banner.html %}
     {% else %}
     <body>
-    {% endif %}
-      {% include header.html %}
-      {{content}}
-      {% include footer.html %}
+      {% endif %}
+      {% if page.flag %}
+      <div class="flag">
+      {% endif %}
+        {% include header.html %}
+        {{content}}
+        {% include footer.html %}
+      {% if page.flag %}
+      </div>
+      {% endif %}
 
 
       <!-- TODO: Decide if its worth stripping down to the pieces of foundation we're using -->

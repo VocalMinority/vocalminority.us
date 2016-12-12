@@ -6,15 +6,16 @@
       margin: rem-calc(20);
     }
   }
+  padding-top: rem-calc(60);
+  padding-bottom: rem-calc(60);
 }
 .top-nav-menu {
-  margin-bottom: rem-calc(60);
   a {
     color: $black;
   }
   .active a {
     color: $secondary-color;
-    background-color: #fff;
+    background: none;
     border-bottom: 2px solid $secondary-color;
   }
   @include breakpoint(small only) {
