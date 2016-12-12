@@ -21,10 +21,12 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css?{{site.time | date_to_xmlschema}}">
     </head>
+    {% if page.banner %}
+    <body class="has-banner">
+      {% include banner.html %}
+    {% else %}
     <body>
-      {% if page.banner %}
-        {% include banner.html %}
-      {% endif %}
+    {% endif %}
       {% include header.html %}
       {{content}}
       {% include footer.html %}

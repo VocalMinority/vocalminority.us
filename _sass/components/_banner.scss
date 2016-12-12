@@ -46,3 +46,8 @@
     }
   }
 }
+body.has-banner {
+  @include breakpoint(medium) {
+    padding-top: rem-calc(140);
+  }
+}

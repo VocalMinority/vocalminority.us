@@ -1,0 +1,23 @@
+.global-header {
+  @include breakpoint(small only) {
+    text-align: center;
+    img {
+      width: 50px;
+      margin: rem-calc(20);
+    }
+  }
+}
+.top-nav-menu {
+  margin-bottom: rem-calc(60);
+  a {
+    color: $black;
+  }
+  .active a {
+    color: $secondary-color;
+    background-color: #fff;
+    border-bottom: 2px solid $secondary-color;
+  }
+  @include breakpoint(small only) {
+    display: inline-block;
+  }
+}

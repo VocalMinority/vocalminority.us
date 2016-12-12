@@ -27,7 +27,7 @@ github_username:  jekyll
 top_nav:
   -
     title: 'Home'
-    url: '/index.html'
+    url: '/'
   -
     title: 'Mission'
     url: '/mission.html'
