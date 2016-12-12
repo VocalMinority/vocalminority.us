@@ -1,10 +1,14 @@
 .mc-field-group {
   position: relative;
+  input {
+    border-radius: 0;
+    padding: 25px;
+    margin-top: 30px;
+  }
 }
 
 .mc-email {
   //border: 0;
-  border-radius: $global-radius;
   font-size: 1.125rem;
   margin-bottom: .625rem;
   //padding: 34px 34px 34px 20px;
@@ -21,7 +25,6 @@
 }
 
 .mc-embedded-subscribe {
-  border-radius: $global-radius;
   //background-color: $dark-gray;
   //color: $white;
   //position: absolute;
@@ -55,9 +58,10 @@
 
 .mc-field-group {
   .radio {
+    margin: 20px 0;
     input {
       float: left;
-      margin: 5px;
+      margin: 12px 20px 12px 0;
     }
     span {
       display: inline-block;
@@ -65,4 +69,14 @@
     }
   }
 }
+.field-explainer {
+  color: $medium-gray;
+}
 
+.half-width-field {
+  width: 45%;
+  display: inline-block;
+  &:first-child {
+    margin-right: 9%;
+  }
+}

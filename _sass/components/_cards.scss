@@ -22,3 +22,14 @@
     margin: 25px auto 10px auto;
   }
 }
+
+
+.donation-info-card {
+  background-color: $light-gray;
+  padding: 20px;
+  margin: 20px 0;
+  a {
+    color: $primary-color;
+    text-decoration: underline;
+  }
+}
