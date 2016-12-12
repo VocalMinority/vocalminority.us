@@ -1,0 +1,10 @@
+.global-footer {
+  .menu {
+    display: inline-block;
+  }
+  color: $medium-gray;
+  a {
+    color: $medium-gray;
+    text-decoration: underline;
+  }
+}

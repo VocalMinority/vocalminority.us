@@ -11,4 +11,13 @@
     top: -14px;
     left: 10px;
   }
+  ul {
+    li {
+      margin: 20px 10px;
+      padding-left: 40px;
+      background-image: url('/images/icons/star.png');
+      background-repeat: no-repeat;
+      background-position-y: 20%;
+    }
+  }
 }
