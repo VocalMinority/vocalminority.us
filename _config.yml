@@ -33,7 +33,7 @@ top_nav:
     url: '/mission.html'
   -
     title: 'Updates'
-    url: '/updates.html'
+    url: 'http://blog.vocalminority.us/'
   -
     title: 'Join'
     url: '/join.html'
