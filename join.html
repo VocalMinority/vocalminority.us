@@ -1,6 +1,7 @@
 ---
   layout: default
   title: Vocal Minority | Join
+  donate_link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MJWWTPT76CQ5J
 ---
 <section class="row join-header">
   <div class="columns medium-8 medium-centered text-center">
@@ -48,6 +49,10 @@
         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fef66ca0dae42cef5892510c9_8ef5e4c5a7" tabindex="-1" value=""></div>
         <input type="submit" value="Subscribe using PayPal" name="subscribe" id="mc-embedded-subscribe" class="button expanded mc-embedded-subscribe">
+        <hr class="already-a-member-separator"/>
+        <p class="text-center">
+        <a class="already-a-member" href="{{page.donate_link}}">I am already a Vocal Minority Member</a>
+        </p>
         </div>
         <div id="mce-responses" class="clear">
           <div id="mce-error-response" class="response mce-error-response" style="display:none"></div>
@@ -58,7 +63,7 @@
       <h4>Thank you!</h4>
       <p>The next step is to pay with Paypal or credit card.</p>
       <p>Your commitment amount: <strong id="amount-to-donate">$27</strong></p>
-      <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MJWWTPT76CQ5J" class="button primary">Continue to Paypal</a>
+      <a href="{{page.donate_link}}" class="button primary">Continue to Paypal</a>
     </div>
   </div>
   <div class="columns medium-5 medium-pull-7">
