@@ -46,19 +46,21 @@
 // ---------
 
 $global-font-size: rem-calc(16);
-$global-width: rem-calc(1200);
+$global-width: rem-calc(960);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #316DC1,
-  secondary: #B33B3B,
+  primary: #4291FF,
+  secondary: #FF5555,
   success: #3adb76,
   warning: #ffae00,
   alert: #ec5840,
 );
+$lighter-gray: #f6f6f6;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
+$gray-text: #979797;
 $dark-gray: #444444;
-$black: #0a0a0a;
+$black: #444;
 $white: #fff;
 $faq-background: #fafafa;
 $body-background: $white;
@@ -70,7 +72,7 @@ $global-padding: 1rem;
 $global-weight-normal: normal;
 $global-weight-medium: 500;
 $global-weight-bold: 700;
-$global-radius: 4px;
+$global-radius: 0px;
 $global-text-direction: ltr;
 $global-flexbox: false;
 $print-transparent-backgrounds: true;
@@ -96,7 +98,7 @@ $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
   small: 20px,
-  medium: 30px,
+  medium: 60px,
 );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
@@ -105,7 +107,7 @@ $block-grid-max: 8;
 // ------------------
 
 $header-font-family: $body-font-family;
-$header-font-weight: $global-weight-normal;
+$header-font-weight: $global-weight-bold;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-sizes: (
@@ -241,7 +243,7 @@ $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: darken($primary-color,10%);
 $button-color: $white;
-$button-color-alt: $black;
+$button-color-alt: $white;
 $button-radius: $global-radius;
 $button-sizes: (
   tiny: 0.6rem,

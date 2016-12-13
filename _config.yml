@@ -24,11 +24,27 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+current_nonprofit: NIOT
+top_nav:
+  -
+    title: 'Home'
+    url: '/'
+  -
+    title: 'Mission'
+    url: '/mission.html'
+  -
+    title: 'Updates'
+    url: 'https://medium.com/vocal-minority-blog'
+  -
+    title: 'Join'
+    url: '/join.html'
+
 # Build settings
 markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - octopress-autoprefixer
 exclude:
   - Gemfile
   - Gemfile.lock

@@ -1,69 +1,98 @@
 ---
   layout: default
   title: Vocal Minority | Join
+  donate_link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MJWWTPT76CQ5J
 ---
-<section class="vm-signup-form row">
-  <div class="manifesto manifesto-logo text-center">
-    <a href="/"><img alt="Vocal Minority" src="./images/logo.svg"/></a>
+<section class="row join-header">
+  <div class="columns medium-8 medium-centered text-center">
+    <h2>Join the Vocal Minority</h2>
+    <p class="instructions">Thank you for your support in the fight for equity and justice in America. To join, enter your personal details, review the contribution options, and complete your donation through PayPal.</p>
   </div>
-  <div class="columns medium-8 medium-centered">
-    <h1>Join the Vocal Minority</h1>
-    <p class="instructions" data-hide-on-success>Thank you for your support in the fight for equity and justice in America.  To join, enter your email, name and pledge amount.</p>
+</section>
+<section class="vm-signup-form row">
+  <div class="columns medium-7 medium-push-5">
     <form action="//vocalminority.us14.list-manage.com/subscribe/post?u=fef66ca0dae42cef5892510c9&amp;id=8ef5e4c5a7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <h4>Personal Details</h4>
       <div id="mc_embed_signup_scroll" data-hide-on-success >
         <div class="mc-field-group">
-          <label for="email"><strong>Email Address<span class="req asterisk">*</span></strong></label>
+          <input type="email" value="" name="EMAIL" placeholder="Email Address" class="required email mc-email" id="mce-EMAIL">
           <p class="field-explainer">
             Your email will only be used by Vocal Minority to coordinate donations, and not be sold or shared with any third party organization. Expect only a few emails a month: once to announce the month’s selected nonprofit, a couple reminders to donate, and an email to recap the month’s impact.
           </p>
-          <input type="email" value="" name="EMAIL" class="required email mc-email" id="mce-EMAIL">
         </div>
         <div class="mc-field-group" id="mce-FNAME">
-          <label for="MERGE1"><strong>First Name</strong></label>
+          <div class="field-group">
+            <input class="half-width-field" type="text" name="MERGE1" id="MERGE1" placeholder="First Name" size="25" value="">
+            <input class="half-width-field" type="text" name="MERGE2" id="MERGE2" placeholder="Last Name" size="25" value="">
+          </div>
           <p class="field-explainer">
             Your name will not be published on our website, and when you donate to the organization, you can choose to make it anonymous.
           </p>
-          <div class="field-group">
-              <input type="text" name="MERGE1" id="MERGE1" size="25" value="">
-          </div>
-        </div>
-        <div class="mc-field-group" id="mce-LNAME">
-            <label for="MERGE2"><strong>Last Name</strong></label>
-            <div class="field-group">
-                <input type="text" name="MERGE2" id="MERGE2" size="25" value="">
-            </div>
         </div>
         <div class="mc-field-group" id="mce-AMOUNT">
-          <label for="AMOUNT"><strong>Monthly Pledge Amount <span class="req asterisk">*</span></strong></label>
-          <p class="field-explainer">
-            You won’t need to provide payment information now; this will happen on Donation Day (the next one is scheduled for December 15). We’d just like to get a sense of how much people will be able to donate so that we know the collective impact our group can make on each organization. You can always change your commitment amount later.
-          </p>
+          <label for="AMOUNT"><strong>Monthly Contribution Amount</strong></label>
           <div class="field-group">
             <div class="interestgroup_field radio-group" id="AMOUNT">
               <label class="radio" for="AMOUNT-0">
                 <input type="radio" name="AMOUNT" id="AMOUNT-0" value="27" class="av-radio required">
-                <span>$27 a month: Small enough to be accessible, big enough for impact; Vocal Minority is a campaign by the people, for the people</span>
+                <span><span class="lead">$27 a month</span><br/>Small enough to be accessible, big enough for impact; Vocal Minority is a campaign by the people, for the people</span>
               </label>
               <label class="radio" for="AMOUNT-1"><input type="radio" name="AMOUNT" id="AMOUNT-1" value="99"  class="av-radio required">
-                <span>$99 a month: For the 99%, and those who are able to contribute $99 in the name of equity and justice.</span>
+                <span><span class="lead">$99 a month</span><br/>For the 99%, and those who are able to contribute $99 in the name of equity and justice.</span>
               </label>
               <label class="radio" for="AMOUNT-2"><input type="radio" name="AMOUNT" id="AMOUNT-2" value="538"  class="av-radio required">
-                <span>$538 a month: Where the electoral college has failed to represent us, we are taking a stand for the underrepresented.</span>
+                <span><span class="lead">$538 a month</span></br>Where the electoral college has failed to represent us, we are taking a stand for the underrepresented.</span>
               </label>
             </div>
           </div>
         </div>
         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fef66ca0dae42cef5892510c9_8ef5e4c5a7" tabindex="-1" value=""></div>
-        <input type="submit" value="Join us" name="subscribe" id="mc-embedded-subscribe" class="button mc-embedded-subscribe" data-hide-on-success>
+        <input type="submit" value="Sign Up and Continue" name="subscribe" id="mc-embedded-subscribe" class="button expanded mc-embedded-subscribe">
+        <hr class="already-a-member-separator"/>
+        <p class="text-center">
+        <a class="already-a-member" href="{{page.donate_link}}">I am already a Vocal Minority Member</a>
+        </p>
         </div>
         <div id="mce-responses" class="clear">
           <div id="mce-error-response" class="response mce-error-response" style="display:none"></div>
           <div id="mce-success-response" class="response mce-success-response" style="display:none"></div>
         </div>
-      </div>
     </form>
+    <div id="confirmation" class="confirmation text-center hide">
+      <h4>Thank you!</h4>
+      <p>The next step is to pay with Paypal or credit card.</p>
+      <p>Your commitment amount: <strong id="amount-to-donate">$27</strong></p>
+      <a href="{{page.donate_link}}" class="button primary">Continue to Paypal</a>
+    </div>
+  </div>
+  <div class="columns medium-5 medium-pull-7">
+    <h4>This month's nonprofit:</h4>
+    <div class="donation-info-card">
+      Not In Our Town (NIOT)
+      <a href="#">Read More</a>
+    </div>
+    <h4>100% Contribution:</h4>
+    <div class="donation-info-card">
+      The Vocal Minority does not collect any fees for
+      administering its fund. Your monthly contribution is fully invested less the fees collected by PayPal. <a href="/faq#structure">Learn more about our structure</a>
+    </div>
+    <h3>FAQ</h3>
+    <h5>How exactly does it work?</h5>
+    <p>Once you become a member, you are granted access to our community chat platform (we use Slack). Each month, our members discuss the different organizations we're interested in and choose one to support. All of the money we've pooled together in our fund is then donated to the organization.
+    </p>
+    <h5>Can I cancel at any time?</h5>
+    <p>Yes. Membership is month-to-month. You can leave at any time.</p>
+    <h5>Are my donations tax-deductible?</h5>
+    <p>Yes. We're working with the Silicon Valley Community Foundation as a donor advised fund, which allows us to simplify the donation process while keeping everything tax-deductible.</p>
   </div>
   <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='AMOUNT';ftypes[3]='radio';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
+</section>
+<section>
+  <div class="columns large-8 large-centered">
+    <p class="fine-print text-center">
+      Vocal Minority is a committee advised fund of Silicon Valley Community Foundation (SVCF). All donations will be processed via SVCF, a 501 (c)(3) public charity registered in the United States (ID 20-5205488). SVCF will provide a formal acknowledgement letter containing tax-deduction language for your records. Contributions will be tax-deductible to the fullest extent of the law.
+    </p>
+  </div>
 </section>

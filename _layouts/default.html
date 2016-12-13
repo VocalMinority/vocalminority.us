@@ -26,8 +26,21 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css?{{site.time | date_to_xmlschema}}">
     </head>
+    {% if page.banner %}
+    <body class="has-banner">
+      {% include banner.html %}
+    {% else %}
     <body>
-      {{content}}
+      {% endif %}
+      {% if page.flag %}
+      <div class="flag">
+      {% endif %}
+        {% include header.html %}
+        {{content}}
+        {% include footer.html %}
+      {% if page.flag %}
+      </div>
+      {% endif %}
 
 
       <!-- TODO: Decide if its worth stripping down to the pieces of foundation we're using -->

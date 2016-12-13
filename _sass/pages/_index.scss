@@ -1,0 +1,36 @@
+section {
+  margin: 30px 0;
+  @include breakpoint(medium) {
+    margin: 100px 0;
+  }
+}
+.main-intro {
+  font-weight: normal;
+}
+.current-donation {
+  color: $secondary-color;
+  font-size: rem-calc(120);
+  font-weight: normal;
+}
+.current-total {
+  font-size: rem-calc(18);
+}
+.light {
+  font-size: rem-calc(14);
+  color: $gray-text;
+}
+.button.button-join {
+  font-size: rem-calc(28);
+}
+.learn-more {
+  font-size: rem-calc(14);
+  a {
+    color: $dark-gray;
+    text-decoration: underline;
+  }
+}
+.flag {
+  background-image: url('/images/flag-bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+}
