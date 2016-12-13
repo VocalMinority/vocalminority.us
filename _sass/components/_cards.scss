@@ -33,3 +33,34 @@
     text-decoration: underline;
   }
 }
+
+.nonprofit-card {
+  border: 1px solid $medium-gray;
+}
+
+.nonprofit-card-header {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: $medium-gray;
+  font-size: rem-calc(30);
+  img {
+    height: 80px;
+  }
+  &.dark {
+    background-color: #000;
+  }
+}
+
+.nonprofit-card-body {
+  background-color: $lighter-gray;
+  font-size: rem-calc(14);
+  padding: 20px;
+  min-height: 200px;
+
+  h4 {
+    font-size: rem-calc(16);
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+}
