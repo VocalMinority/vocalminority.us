@@ -1,3 +1,8 @@
+.join-header {
+  margin-bottom: 0;
+  margin-top: rem-calc(40);
+}
+
 .mc-field-group {
   position: relative;
   input {
@@ -70,7 +75,9 @@
   }
 }
 .field-explainer {
-  color: $medium-gray;
+  color: $gray-text;
+  font-style: italic;
+  font-size: rem-calc(12);
 }
 
 .half-width-field {

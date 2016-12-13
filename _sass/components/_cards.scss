@@ -12,6 +12,7 @@
 .cause-card {
   height: 85px;
   flex: 1 1 130px;
+  font-size: rem-calc(14);
   max-width: 150px;
   margin: 0 5px 10px 5px;
   text-align: center;
@@ -19,10 +20,9 @@
   background-color: $dark-gray;
   img {
     display: block;
-    margin: 25px auto 10px auto;
+    margin: 22px auto 5px auto;
   }
 }
-
 
 .donation-info-card {
   background-color: $light-gray;

@@ -11,7 +11,14 @@
 }
 
 .nonprofit-card-body {
-  background-color: $light-gray;
-  padding: 10px;
+  background-color: $lighter-gray;
+  font-size: rem-calc(14);
+  padding: 20px;
   min-height: 200px;
+
+  h4 {
+    font-size: rem-calc(16);
+    font-weight: 500;
+    margin-bottom: 0;
+  }
 }
