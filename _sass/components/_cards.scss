@@ -5,22 +5,32 @@
   flex-wrap: wrap;
   min-height: 200px;
   max-height: 380px;
+
   @include breakpoint(medium) {
-  justify-content: space-between;
+    justify-content: space-between;
   }
 }
+
 .cause-card {
   height: 85px;
-  flex: 1 1 130px;
+  flex: 1 1 120px;
   font-size: rem-calc(14);
-  max-width: 150px;
+  max-width: 120px;
   margin: 0 5px 10px 5px;
   text-align: center;
   color: $white;
   background-color: $dark-gray;
-  img {
+
+  .cause-card-image-wrapper {
+    display: flex;
+    height: 30px;
+    margin: 15px auto 5px;
+    width: 30px;
+  }
+
+  .cause-card-image {
     display: block;
-    margin: 22px auto 5px auto;
+    margin: auto;
   }
 }
 
@@ -28,6 +38,7 @@
   background-color: $light-gray;
   padding: 20px;
   margin: 20px 0;
+
   a {
     color: $primary-color;
     text-decoration: underline;
@@ -44,9 +55,11 @@
   text-align: center;
   color: $medium-gray;
   font-size: rem-calc(30);
+
   img {
     height: 80px;
   }
+
   &.dark {
     background-color: #000;
   }
