@@ -7,8 +7,15 @@
   position: relative;
   input {
     border-radius: 0;
-    padding: 25px 12px;
+    padding: 0px 12px;
+    height: 50px;
+    line-height: 50px;
     margin-top: 30px;
+  }
+  input[type="radio"] {
+    padding: 25px 12px;
+    height: auto;
+    line-height: auto;
   }
 }
 
