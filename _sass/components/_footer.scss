@@ -1,8 +1,11 @@
 .global-footer {
+  color: $medium-gray;
+  font-size: rem-calc(14);
+
   .menu {
     display: inline-block;
   }
-  color: $medium-gray;
+
   a {
     color: $medium-gray;
     text-decoration: underline;
