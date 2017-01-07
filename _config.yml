@@ -33,7 +33,7 @@ top_nav:
     title: 'About'
     url: '/about.html'
   -
-    title: 'Updates'
+    title: 'Blog'
     url: 'https://blog.vocalminority.us'
   -
     title: 'Join'
