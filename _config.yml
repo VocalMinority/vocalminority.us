@@ -30,8 +30,8 @@ top_nav:
     title: 'Home'
     url: '/'
   -
-    title: 'Mission'
-    url: '/mission.html'
+    title: 'About'
+    url: '/about.html'
   -
     title: 'Updates'
     url: 'https://blog.vocalminority.us'
