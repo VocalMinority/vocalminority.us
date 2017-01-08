@@ -5,11 +5,41 @@
 }
 
 .faq-list > li {
-  margin-bottom: 1.5rem;
+  position: relative;
+  margin: 1rem;
+  padding-left: 3rem;
+  border-bottom: 1px solid $medium-gray;
+
+  &::before {
+    position: absolute;
+    color: $medium-gray;
+    left: 1rem;
+    top: -0.2rem;
+    content: '>';
+    transform: rotate(90deg) scaleY(1.9) scaleX(0.8);
+    transition: transform 0.2s;
+  }
+
+  &.closed::before {
+    transform: rotate(0deg) scaleY(1.5) scaleX(0.8);
+  }
+
+  &.closed > * {
+    display: none;
+  };
+
+  &.closed > h3 {
+    display: inherit;
+  };
+
 }
 
 .faq-list h3 {
   font-size: 1rem;
   font-weight: bold;
-  margin-bottom: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.faq-list ol {
+  margin-bottom: 1rem;
 }

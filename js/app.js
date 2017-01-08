@@ -26,3 +26,10 @@ if(window.mc) {
   };
 }
 
+// Setup FAQ item toggling
+var toggles = document.querySelectorAll('.toggle');
+for(var i = 0; i < toggles.length; i++){
+  toggles[i].addEventListener('click', function(event) {
+    this.classList.toggle('closed');
+  });
+}
