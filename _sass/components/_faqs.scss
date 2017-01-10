@@ -4,42 +4,55 @@
   margin-bottom: rem-calc(80);
 }
 
-.faq-list > li {
-  position: relative;
-  margin: 1rem;
-  padding-left: 3rem;
-  border-bottom: 1px solid $medium-gray;
+.faq-list {
+  list-style-type: none;
 
-  &::before {
-    position: absolute;
-    color: $medium-gray;
-    left: 1rem;
-    top: -0.2rem;
-    content: '>';
-    transform: rotate(90deg) scaleY(1.9) scaleX(0.8);
-    transition: transform 0.2s;
+  > li {
+    cursor: pointer;
+    position: relative;
+    margin: 1rem;
+    padding-left: 3rem;
+    border-bottom: 1px solid $medium-gray;
+
+    &::before {
+      background: transparent url('/images/icons/arrow.svg') 0 0 no-repeat;
+      background-size: 14px 8px;
+      content: '';
+      display: block;
+      height: 8px;
+      position: absolute;
+      left: 1rem;
+      top: .5rem;
+      transform: rotate(0deg);
+      transition: transform 0.2s;
+      width: 14px;
+    }
+
+    &.closed::before {
+      transform: rotate(-90deg);
+    }
+
+    &.closed > * {
+      display: none;
+    }
+
+    &.closed > h3 {
+      display: inherit;
+    }
+
+    &.closed .title {
+      margin-bottom: 1rem;
+    }
   }
-
-  &.closed::before {
-    transform: rotate(0deg) scaleY(1.5) scaleX(0.8);
-  }
-
-  &.closed > * {
-    display: none;
-  };
-
-  &.closed > h3 {
-    display: inherit;
-  };
-
 }
 
-.faq-list h3 {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+.faq-list .title {
+  font-size: rem-calc(18px);
+  font-weight: $global-weight-medium;
+  margin-bottom: .5rem;
 }
 
 .faq-list ol {
+  list-style-type: none;
   margin-bottom: 1rem;
 }

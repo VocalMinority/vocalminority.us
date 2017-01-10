@@ -1,0 +1,12 @@
+.about-us-team {
+  clear: both;
+  content: '';
+  display: table;
+  list-style-type: none;
+  margin: 0 auto;
+
+  li {
+    float: left;
+    margin-right: 20px;
+  }
+}

@@ -35,12 +35,14 @@
 }
 
 .donation-info-card {
-  background-color: $light-gray;
+  background-color: $lighter-gray;
+  font-size: rem-calc(14);
   padding: 20px;
-  margin: 20px 0;
+  margin: 0 0 rem-calc(40);
 
   a {
     color: $primary-color;
+    display: block;
     text-decoration: underline;
   }
 }

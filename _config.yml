@@ -33,11 +33,15 @@ top_nav:
     title: 'About'
     url: '/about.html'
   -
+    title: 'Join'
+    url: '/join.html'
+  -
     title: 'Blog'
     url: 'https://blog.vocalminority.us'
   -
-    title: 'Join'
-    url: '/join.html'
+    title: 'FAQ'
+    url: '/faq.html'
+  -
 
 # Build settings
 markdown: kramdown
