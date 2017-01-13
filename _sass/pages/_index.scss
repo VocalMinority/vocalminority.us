@@ -1,15 +1,24 @@
 section {
-  margin: rem-calc(100px) 0;
+  margin: rem-calc(100) 0;
 
-  @include breakpoint(small) {
-    margin: rem-calc(40px) 0;
+  @include breakpoint(small only) {
+    margin: rem-calc(40) 0;
+  }
+}
+
+.row-main-intro {
+  margin-top: 0;
+
+  @include breakpoint(small only) {
+    margin-top: rem-calc(40);
   }
 }
 
 .main-intro {
   font-weight: normal;
+  // font-size: 3rem;
 
-  @include breakpoint(small) {
+  @include breakpoint(small only) {
     font-size: rem-calc(34);
   }
 }
