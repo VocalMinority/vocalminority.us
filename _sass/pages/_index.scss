@@ -1,9 +1,17 @@
 section {
   margin: rem-calc(100px) 0;
+
+  @include breakpoint(small) {
+    margin: rem-calc(40px) 0;
+  }
 }
 
 .main-intro {
   font-weight: normal;
+
+  @include breakpoint(small) {
+    font-size: rem-calc(34);
+  }
 }
 
 .current-donation {
@@ -38,4 +46,5 @@ section {
   background-image: url('/images/flag-bg.png');
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: 100%;
 }

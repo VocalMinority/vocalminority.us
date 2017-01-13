@@ -7,6 +7,13 @@
 
   li {
     float: left;
+    margin-bottom: 20px;
     margin-right: 20px;
+  }
+
+  @include breakpoint(small) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

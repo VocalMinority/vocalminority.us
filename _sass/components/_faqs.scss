@@ -44,6 +44,15 @@
       margin-bottom: 1rem;
     }
   }
+
+  @include breakpoint(small) {
+    margin-left: 0;
+
+    li {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
 }
 
 .faq-list .title {
