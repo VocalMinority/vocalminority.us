@@ -98,3 +98,6 @@ $("#mc-embedded-subscribe-form").ajaxForm({
     window.scrollTo(0, $('#confirmation').offset().top - 30);
   }
 });
+
+// Setup FAQ item toggling
+$('.toggle').on('click', function() { $(this).toggleClass('closed'); });

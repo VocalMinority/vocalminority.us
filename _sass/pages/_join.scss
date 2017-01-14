@@ -1,5 +1,18 @@
 .fine-print {
-  font-size: 1rem;
+  font-size: rem-calc(12);
   font-style: italic;
   color: #999;
+}
+
+.join-faq {
+  font-size: rem-calc(14);
+}
+
+.join-faq-heading {
+  font-weight: $global-weight-medium;
+  margin-bottom: 0;
+}
+
+.join-faq-answer {
+  color: $gray-text;
 }

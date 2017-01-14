@@ -6,20 +6,24 @@
   font-size: 1rem;
 }
 
-.vm-signup-form .mc-field-group {
-  margin-bottom: 1.5rem;
-}
-
 .vm-signup-form h1 {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.vm-signup-form p.lead {
-  font-size: 1.25rem;
+.vm-signup-form .lead {
+  font-size: rem-calc(18);
 }
 
-.vm-signup-form p.field-explainer {
-  font-size: 0.9rem;
+.vm-signup-form .radio-group {
+  margin-bottom: rem-calc(60);
+}
+
+.vm-signup-form .donation-option {
+  font-size: rem-calc(14);
   line-height: 1.4;
+}
+
+.field-group-last {
+  margin-bottom: rem-calc(60);
 }

@@ -1,12 +1,14 @@
-.join-header {
-  margin-bottom: 0;
-  margin-top: rem-calc(40);
+.field-group-heading {
+  margin-bottom: rem-calc(20);
 }
 
 .mc-field-group {
   position: relative;
+  margin-bottom: rem-calc(40);
+
   input {
     border-radius: 0;
+    box-shadow: none;
     padding: 0px 12px;
     height: 50px;
     line-height: 50px;
@@ -20,14 +22,8 @@
 }
 
 .mc-email {
-  //border: 0;
-  font-size: 1.125rem;
+  font-size: rem-calc(16);
   margin-bottom: .625rem;
-  //padding: 34px 34px 34px 20px;
-
-  &:focus {
-    //border: 0;
-  }
 
   &.mce_inline_error {
     color: map-get($foundation-palette, secondary);
@@ -37,11 +33,6 @@
 }
 
 .mc-embedded-subscribe {
-  //background-color: $dark-gray;
-  //color: $white;
-  //position: absolute;
-  //right: 10px;
-  //top: 10px;
 
   &:hover,
   &:focus {
@@ -57,7 +48,6 @@
 }
 
 .mce-success-response {
-  //background: rgba($white,.15);
   border: 2px solid #2F73FB;
   border-radius: 8px;
   color: #2F73FB;
@@ -69,38 +59,47 @@
 }
 
 .mc-field-group {
+
   .radio {
     margin: 20px 0;
+
     input {
       float: left;
       margin: 12px 20px 12px 0;
     }
+
     span {
       display: inline-block;
       width: 90%;
     }
   }
 }
+
 .field-explainer {
   color: $gray-text;
   font-style: italic;
-  font-size: rem-calc(12);
+  font-size: rem-calc(13);
+  margin-bottom: rem-calc(5);
 }
 
 .half-width-field {
+
   @include breakpoint(medium) {
     width: 45%;
     display: inline-block;
+
     &:first-child {
       margin-right: 9%;
     }
   }
 }
+
 .already-a-member-separator {
   width: 40%;
   margin: 30px auto 20px auto;
 }
+
 a.already-a-member {
-  color: $black;
+  color: $primary-color;
   text-decoration: underline;
 }
