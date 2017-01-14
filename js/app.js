@@ -8,6 +8,8 @@ ga('send', 'pageview');
 
 $(document).foundation();
 
+// Setup FAQ item toggling
+$('.toggle').on('click', function() { $(this).toggleClass('closed'); });
 
 if(window.mc) {
   // Wrap mailchimp callback
@@ -25,6 +27,3 @@ if(window.mc) {
     }
   };
 }
-
-// Setup FAQ item toggling
-$('.toggle').on('click', function() { $(this).toggleClass('closed'); });
