@@ -1,0 +1,14 @@
+h2,
+h3,
+h4 {
+  font-weight: $global-weight-medium;
+}
+
+.row-header {
+  margin-bottom: 0;
+  margin-top: rem-calc(40);
+}
+
+.row-begin-content {
+  margin-top: rem-calc(30);
+}

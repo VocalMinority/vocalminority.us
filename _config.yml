@@ -30,14 +30,18 @@ top_nav:
     title: 'Home'
     url: '/'
   -
-    title: 'Mission'
-    url: '/mission.html'
-  -
-    title: 'Updates'
-    url: 'https://blog.vocalminority.us'
+    title: 'About'
+    url: '/about.html'
   -
     title: 'Join'
     url: '/join.html'
+  -
+    title: 'Blog'
+    url: 'https://blog.vocalminority.us'
+  -
+    title: 'FAQ'
+    url: '/faq.html'
+  -
 
 # Build settings
 markdown: kramdown

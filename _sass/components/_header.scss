@@ -1,15 +1,21 @@
 .global-header {
+  padding-top: rem-calc(60);
+  padding-bottom: rem-calc(60);
+
   @include breakpoint(small only) {
+    padding-top: rem-calc(20);
+    padding-bottom: rem-calc(20);
     text-align: center;
+
     img {
       width: 50px;
       margin: rem-calc(20);
     }
   }
-  padding-top: rem-calc(60);
-  padding-bottom: rem-calc(60);
 }
+
 .top-nav-menu {
+
   li {
     padding-right: rem-calc(20);
     text-align: center;
@@ -23,17 +29,31 @@
       padding-right: 0;
     }
   }
+
   a {
     color: $black;
     width: rem-calc(80);
   }
+
   .active a {
     color: $secondary-color;
     background: none;
     border-bottom: 2px solid $secondary-color;
     font-weight: 500;
   }
+
   @include breakpoint(small only) {
-    display: inline-block;
+    display: table;
+    width: 100%;
+
+    li {
+      display: table-cell;
+      padding-right: 0;
+      width: 20%;
+    }
+
+    a {
+      width: auto;
+    }
   }
 }

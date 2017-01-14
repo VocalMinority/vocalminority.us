@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="8px" viewBox="0 0 14 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="FAQ" transform="translate(-324.000000, -377.000000)" fill="#444444">
+            <g id="Main" transform="translate(324.000000, 286.000000)">
+                <g id="Group" transform="translate(0.000000, 81.000000)">
+                    <g id="Question" transform="translate(0.000000, 2.000000)">
+                        <path d="M7,15.5 C7.06835938,15.5 7.12988281,15.4726562 7.17089844,15.4316406 L13.9248047,8.93066406 C13.9726562,8.8828125 14,8.82128906 14,8.74609375 C14,8.609375 13.890625,8.5 13.7470703,8.5 C13.6855469,8.5 13.6240234,8.52734375 13.5761719,8.56835938 L7,14.9052734 L0.423828125,8.56835938 C0.375976562,8.52734375 0.314453125,8.5 0.252929688,8.5 C0.109375,8.5 0,8.609375 0,8.74609375 C0,8.82128906 0.02734375,8.8828125 0.0751953125,8.93066406 L6.82910156,15.4316406 C6.87011719,15.4726562 6.93164062,15.5 7,15.5 Z" id="arrow"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

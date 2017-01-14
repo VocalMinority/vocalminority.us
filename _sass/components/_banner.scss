@@ -1,42 +1,47 @@
 .banner {
   width: 100%;
-  height: rem-calc(140);
+  height: auto;
   top: 0;
+  padding: 20px;
   position: relative;
   background-color: $dark-gray;
   color: $light-gray;
   font-style: italic;
+
   .banner-copy {
-    margin-left: 20px;
-    margin-right: 20px;
+    line-height: normal;
     text-align: center;
   }
+
   .banner-emphasis {
     color: $white;
     font-weight: $global-weight-bold;
+
     @include breakpoint(small only) {
       display: block;
-      padding-top: 10px;
     }
   }
+
   .banner-button {
     color: $white;
     background-color: #ff3b40;
     font-weight: $global-weight-bold;
     font-style: normal;
+    margin-bottom: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 80%;
-    margin: 0 10%;
+    width: 100%;
   }
+
   @include breakpoint(medium) {
     height: rem-calc(60);
     position: fixed;
     z-index: 1;
+
     .banner-copy {
-      line-height: rem-calc(60);
       text-align: left;
     }
+
     .banner-button {
       position: absolute;
       top: 10px;
@@ -46,7 +51,9 @@
     }
   }
 }
+
 body.has-banner {
+
   @include breakpoint(medium) {
     padding-top: rem-calc(60);
   }

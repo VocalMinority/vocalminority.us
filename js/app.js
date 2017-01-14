@@ -26,3 +26,5 @@ if(window.mc) {
   };
 }
 
+// Setup FAQ item toggling
+$('.toggle').on('click', function() { $(this).toggleClass('closed'); });
