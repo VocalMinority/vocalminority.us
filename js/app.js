@@ -8,6 +8,8 @@ ga('send', 'pageview');
 
 $(document).foundation();
 
+// Setup FAQ item toggling
+$('.toggle').on('click', function() { $(this).toggleClass('closed'); });
 
 function validateEmail(email) {
   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -98,6 +100,3 @@ $("#mc-embedded-subscribe-form").ajaxForm({
     window.scrollTo(0, $('#confirmation').offset().top - 30);
   }
 });
-
-// Setup FAQ item toggling
-$('.toggle').on('click', function() { $(this).toggleClass('closed'); });
