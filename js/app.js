@@ -65,8 +65,10 @@ function validateForm($form) {
 // Pulled straight from http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js
 function getAjaxSubmitUrl() {
   var url = $("form#mc-embedded-subscribe-form").attr("action");
-  url = url.replace("/post?u=", "/post-json?u=");
-  url += "&c=?";
+  if(url) {
+    url = url.replace("/post?u=", "/post-json?u=");
+    url += "&c=?";
+  }
   return url;
 }
 
