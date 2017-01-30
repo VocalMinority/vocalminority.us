@@ -59,6 +59,15 @@ function validateForm($form) {
   valid = validateEmailField($email);
   valid = validateAmountField($amount) && valid;
 
+  if (!valid) {
+    ga('send', 'event', {
+      eventCategory: 'subscription',
+      eventAction: 'validationError',
+      eventLabel: 'join flow',
+      nonInteraction: true,
+    });
+  }
+
   return valid;
 }
 
@@ -83,6 +92,12 @@ function getAjaxSubmitUrl() {
 
 $("#mc-embedded-subscribe-form").ajaxForm({
   beforeSubmit: function(arr, $form, options) {
+    ga('send', 'event', {
+      eventCategory: 'subscription',
+      eventAction: 'submit',
+      eventLabel: 'join flow',
+    });
+
     return validateForm($form);
   },
   url: getAjaxSubmitUrl(),
@@ -93,6 +108,13 @@ $("#mc-embedded-subscribe-form").ajaxForm({
       var $email = $('#mc-embedded-subscribe-form input[type="email"]');
       addErrorMessage($email, resp.msg)
       window.scrollTo(0, $('#mc-embedded-subscribe-form').offset().top - 30);
+      ga('send', 'event', {
+        eventCategory: 'subscription',
+        eventAction: 'submissionError',
+        eventLabel: 'join flow',
+        nonInteraction: true,
+      });
+
       return;
     }
     var amount = $('input[name="AMOUNT"]:checked').val();
@@ -100,5 +122,12 @@ $("#mc-embedded-subscribe-form").ajaxForm({
     $('#mc-embedded-subscribe-form').addClass('hide');
     $('#confirmation').removeClass('hide').hide().fadeIn();
     window.scrollTo(0, $('#confirmation').offset().top - 30);
+
+    ga('send', 'event', {
+      eventCategory: 'subscription',
+      eventAction: 'success',
+      eventLabel: 'join flow',
+      nonInteraction: true,
+    });
   }
 });
