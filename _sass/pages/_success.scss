@@ -1,0 +1,77 @@
+.row-thank-you {
+  margin-top: rem-calc(100);
+
+  .logo {
+    margin-bottom: rem-calc(50);
+  }
+}
+
+.share-imagery {
+  border: 1px solid #d1d1d1;
+  height: 130px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.fb-group-callout {
+  margin-bottom: rem-calc(50);
+
+  .share-imagery {
+    background: transparent url('../images/flag-bg.png') 0 0 no-repeat;
+    background-size: 100%;
+    position: relative;
+  }
+
+  .fb-group-details {
+    bottom: 10px;
+    color: $gray-text;
+    font-size: rem-calc(14);
+    left: 15px;
+    margin: 0;
+    position: absolute;
+
+    p {
+      line-height: normal;
+      margin: 0;
+      padding-left: 43px;
+    }
+
+    .title {
+      color: $dark-gray;
+      font-size: rem-calc(18);
+      font-weight: $global-weight-bold;
+    }
+
+    &:before {
+      background: transparent url('../images/success/facebook.svg') 0 0 no-repeat;
+      background-size: 33px;
+      content: '';
+      display: block;
+      float: left;
+      height: 33px;
+      margin-top: 3px;
+      width: 33px;
+    }
+  }
+}
+
+.share-callout {
+
+  .share-imagery {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+
+    img {
+      width: 45px;
+    }
+  }
+}
+
+.social-share-buttons {
+  margin-bottom: 10px;
+}
+
+.twitter-share-button {
+  vertical-align: bottom;
+}

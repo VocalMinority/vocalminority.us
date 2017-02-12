@@ -12,8 +12,8 @@
     padding: 0px 12px;
     height: 50px;
     line-height: 50px;
-    margin-top: 30px;
   }
+
   input[type="radio"] {
     padding: 25px 12px;
     height: auto;
@@ -26,6 +26,7 @@
   margin-bottom: .625rem;
 
   &.mce_inline_error {
+    background: transparent;
     color: map-get($foundation-palette, secondary);
     font-size: inherit;
     font-style: normal;
@@ -33,6 +34,7 @@
 }
 
 .mc-embedded-subscribe {
+  margin-top: rem-calc(60);
 
   &:hover,
   &:focus {
@@ -43,8 +45,11 @@
 
 .mce_inline_error,
 .mce-error-response {
-  font-size: 1rem;
+  background: #ff8b8b;
+  color: #fff;
+  font-size: rem-calc(14);
   font-style: italic;
+  padding: 10px;
 }
 
 .mce-success-response {
@@ -97,9 +102,4 @@
 .already-a-member-separator {
   width: 40%;
   margin: 30px auto 20px auto;
-}
-
-a.already-a-member {
-  color: $primary-color;
-  text-decoration: underline;
 }
