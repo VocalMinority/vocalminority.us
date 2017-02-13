@@ -189,17 +189,22 @@ function getUrlParameter(sParam) {
 };
 
 $(function() {
-  var val;
-  if (val = getUrlParameter('email')){
-    $('input[name=EMAIL]').val(val);
+  var email, firstName, lastName, amount;
+  if (email = getUrlParameter('email')){
+    $('input[name=EMAIL]').val(email);
   }
-  if (val = getUrlParameter('amount')){
-    $('input[value='+val+']').selected(true);
+  if (amount = getUrlParameter('amount')){
+    $('input[value='+amount+']').selected(true);
   }
-	if (val = getUrlParameter('first_name')){ 
-    $('input[name=MERGE1]').val(val);
+	if (firstName = getUrlParameter('first_name')){
+    $('input[name=MERGE1]').val(firstName);
+    $('#greeting-first-name').html(firstName);
   }
-  if (val = getUrlParameter('last_name')){
-    $('input[name=MERGE2]').val(val);
+  if (lastName = getUrlParameter('last_name')){
+    $('input[name=MERGE2]').val(lastName);
+  }
+
+  if (email && firstName && lastName && amount) {
+    $('.alert-message').removeClass('hide');
   }
 })
