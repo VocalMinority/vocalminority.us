@@ -171,3 +171,35 @@ function onMailchimpSuccess(resp, paypalAction) {
 
   paypalAction(amount);
 }
+
+// Pre-fill form values
+function getUrlParameter(sParam) {
+  var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+    sURLVariables = sPageURL.split('&'),
+    sParameterName,
+    i;
+
+  for (i = 0; i < sURLVariables.length; i++) {
+    sParameterName = sURLVariables[i].split('=');
+
+    if (sParameterName[0] === sParam) {
+      return sParameterName[1] === undefined ? true : sParameterName[1];
+    }
+  }
+};
+
+$(function() {
+  var val;
+  if (val = getUrlParameter('email')){
+    $('input[name=EMAIL]').val(val);
+  }
+  if (val = getUrlParameter('amount')){
+    $('input[value='+val+']').selected(true);
+  }
+	if (val = getUrlParameter('first_name')){ 
+    $('input[name=MERGE1]').val(val);
+  }
+  if (val = getUrlParameter('last_name')){
+    $('input[name=MERGE2]').val(val);
+  }
+})
