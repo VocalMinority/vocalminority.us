@@ -90,24 +90,61 @@ function getAjaxSubmitUrl() {
 //   clearValidation($amount) && validateAmountField($amount);
 //});
 
-$("#mc-embedded-subscribe-form").ajaxForm({
-  beforeSubmit: function(arr, $form, options) {
-    ga('send', 'event', {
-      eventCategory: 'subscription',
-      eventAction: 'submit',
-      eventLabel: 'join flow',
-    });
+$('#mc-submit-button').click(function(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  console.log('hi!');
+  mcFormAjaxSubmit(function(resp){ onMailchimpSuccess(resp, paypalSubscription) });
+});
 
-    return validateForm($form);
-  },
-  url: getAjaxSubmitUrl(),
-  type: 'GET',
-  dataType: 'json',
-  success: function(resp) {
-    if(resp.result === 'error') {
-      var $email = $('#mc-embedded-subscribe-form input[type="email"]');
+$('#mc-one-time-submit-button').click(function(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  console.log('hi!');
+  mcFormAjaxSubmit(function(resp){ onMailchimpSuccess(resp, paypalOneTimeDonation) });
+});
+
+function mcFormAjaxSubmit(callback) {
+  $("#mc-embedded-subscribe-form").ajaxSubmit({
+    beforeSubmit: function(arr, $form, options) {
+      ga('send', 'event', {
+        eventCategory: 'subscription',
+        eventAction: 'submit',
+        eventLabel: 'join flow',
+      });
+
+      return validateForm($form);
+    },
+    url: getAjaxSubmitUrl(),
+    type: 'GET',
+    dataType: 'json',
+    success: callback
+  });
+}
+
+function paypalOneTimeDonation() {
+  window.location = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MJWWTPT76CQ5J';
+}
+
+function paypalSubscription(amount) {
+  if (amount) {
+    $('.paypal-donation-level[data-amount=' + amount + ']').selected(true)
+  }
+
+  $('#paypal-subscribe-form').submit();
+}
+
+function onMailchimpSuccess(resp, paypalAction) {
+  if(resp.result === 'error') {
+    var $email = $('#mc-embedded-subscribe-form input[type="email"]');
+    var regex = new RegExp($email.val() + ' is already subscribed');
+
+    if(resp.msg.match(regex)) {
+      // No-op for emails that are already subscribed
+    } else {
       addErrorMessage($email, resp.msg)
       window.scrollTo(0, $('#mc-embedded-subscribe-form').offset().top - 30);
+
       ga('send', 'event', {
         eventCategory: 'subscription',
         eventAction: 'submissionError',
@@ -117,17 +154,20 @@ $("#mc-embedded-subscribe-form").ajaxForm({
 
       return;
     }
-    var amount = $('input[name="AMOUNT"]:checked').val();
-    $('#amount-to-donate').text('$' + amount);
-    $('#mc-embedded-subscribe-form').addClass('hide');
-    $('#confirmation').removeClass('hide').hide().fadeIn();
-    window.scrollTo(0, $('#confirmation').offset().top - 30);
-
-    ga('send', 'event', {
-      eventCategory: 'subscription',
-      eventAction: 'success',
-      eventLabel: 'join flow',
-      nonInteraction: true,
-    });
   }
-});
+
+  var amount = $('input[name="AMOUNT"]:checked').val();
+  $('#amount-to-donate').text('$' + amount);
+  $('#mc-embedded-subscribe-form').addClass('hide');
+  $('#confirmation').removeClass('hide').hide().fadeIn();
+  window.scrollTo(0, $('#confirmation').offset().top - 30);
+
+  ga('send', 'event', {
+    eventCategory: 'subscription',
+    eventAction: 'success',
+    eventLabel: 'join flow',
+    nonInteraction: true,
+  });
+
+  paypalAction(amount);
+}

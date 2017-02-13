@@ -60,12 +60,12 @@
         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fef66ca0dae42cef5892510c9_8ef5e4c5a7" tabindex="-1" value=""></div>
           <!-- <input type="submit" value="Sign Up and Continue" name="subscribe" id="mc-embedded-subscribe" class="button expanded mc-embedded-subscribe"> -->
-          <a class="button expanded button-subscribe" href="#">
+          <a class="button expanded button-subscribe" id="mc-submit-button" href="#">
             <p>Make Your Monthly Donation</p>
             <p class="powered-by">powered by <span class="powered-by-paypal">PayPal</span></p>
           </a>
           <p class="text-center no-paypal-account">
-            Don't have a PayPal account? <a href="#">Make a One-time Donation</a>
+            Don't have a PayPal account? <a id="mc-one-time-submit-button" href="#">Make a One-time Donation</a>
           </p>
         </div>
         <div id="mce-responses" class="clear">
@@ -73,11 +73,44 @@
           <div id="mce-success-response" class="response mce-success-response" style="display:none"></div>
         </div>
     </form>
-    <div id="confirmation" class="confirmation text-center hide">
+    <div id="confirmation" class="confirmation text-center">
       <h4>Thank you!</h4>
       <p>The next step is to pay with Paypal or credit card.</p>
       <p>Your commitment amount: <strong id="amount-to-donate">$27</strong></p>
-      <a href="{{page.donate_link}}" class="button primary">Continue to Paypal</a>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id='paypal-subscribe-form'>
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="WQEAFYZ563AMJ">
+        <input type="hidden" name="on0" value="Monthly Gift Level">
+        <input type="hidden" name="currency_code" value="USD">
+        <p>
+          <input type="radio" name="os0" value="Member" id="member-radio-button" data-amount="27" class="paypal-donation-level" />
+          <label for="member-radio-button">Member : $27.00 USD - monthly</label>
+
+          <br />
+
+          <input type="radio" name="os0" value="Defender" id="defender-radio-button" data-amount="50" class="paypal-donation-level" />
+          <label for="defender-radio-button">Defender : $50.00 USD - monthly</label>
+
+          <br />
+
+          <input type="radio" name="os0" value="Advocate" id="advocate-radio-button" data-amount="99" class="paypal-donation-level" />
+          <label for="advocate-radio-button">Advocate : $99.00 USD - monthly</label>
+
+          <br />
+
+          <input type="radio" name="os0" value="Founder" id="founder-radio-button" data-amount="538" class="paypal-donation-level" />
+          <label for="founder-radio-button">Founder : $538.00 USD - monthly</form>
+
+          <br />
+        </p>
+        <button type="submit" class="button expanded button-subscribe" form="paypal-subscribe-form">
+          <p>Make Your Monthly Donation</p>
+          <p class="powered-by">powered by <span class="powered-by-paypal">PayPal</span></p>
+        </button>
+        <p class="text-center no-paypal-account">
+          Don't have a PayPal account? <a href="#">Make a One-time Donation</a>
+        </p>
+      </form>
     </div>
   </div>
   <div class="columns medium-5 medium-pull-7">
