@@ -37,19 +37,19 @@
           <div class="field-group">
             <div class="interestgroup_field radio-group" id="AMOUNT">
               <label class="radio" for="AMOUNT-0">
-                <input type="radio" name="AMOUNT" id="AMOUNT-0" value="27" class="av-radio required">
+                <input type="radio" name="AMOUNT" id="AMOUNT-0" value="27" data-paypal-level="Member" class="av-radio required">
                 <span class="donation-option"><span class="lead"><strong>Member</strong>: $27 a month</span><br/><span class="donation-description">Small enough to be accessible, big enough for impact; Vocal Minority is a campaign by the people, for the people</span></span>
               </label>
               <label class="radio" for="AMOUNT-1">
-                <input type="radio" name="AMOUNT" id="AMOUNT-1" value="50"  class="av-radio required">
+                <input type="radio" name="AMOUNT" id="AMOUNT-1" value="50" data-paypal-level="Defender" class="av-radio required">
                 <span class="donation-option"><span class="lead"><strong>Defender</strong>: $50 a month</span><br/><span class="donation-description">Impact and value that all 50 states can get behind.</span></span>
               </label>
               <label class="radio" for="AMOUNT-2">
-                <input type="radio" name="AMOUNT" id="AMOUNT-2" value="99"  class="av-radio required">
+                <input type="radio" name="AMOUNT" id="AMOUNT-2" value="99" data-paypal-level="Advocate" class="av-radio required">
                 <span class="donation-option"><span class="lead"><strong>Advocate</strong>: $99 a month</span><br/><span class="donation-description">For the 99%, and those who are able to contribute $99 in the name of equity and justice.</span></span>
               </label>
               <label class="radio" for="AMOUNT-3">
-                <input type="radio" name="AMOUNT" id="AMOUNT-3" value="538"  class="av-radio required">
+                <input type="radio" name="AMOUNT" id="AMOUNT-3" value="538" data-paypal-level="Founder" class="av-radio required">
                 <span class="donation-option"><span class="lead"><strong>Founder</strong>: $538 a month</span></br><span class="donation-description">Where the electoral college has failed to represent us, you are taking a significant stand for the underrepresented.</span></span>
               </label>
             </div>
@@ -71,45 +71,14 @@
           <div id="mce-success-response" class="response mce-success-response" style="display:none"></div>
         </div>
     </form>
-    <div id="confirmation" class="confirmation text-center">
-      <h4>Thank you!</h4>
-      <p>The next step is to pay with Paypal or credit card.</p>
-      <p>Your commitment amount: <strong id="amount-to-donate">$27</strong></p>
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id='paypal-subscribe-form'>
+
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id='paypal-subscribe-form'>
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="WQEAFYZ563AMJ">
         <input type="hidden" name="on0" value="Monthly Gift Level">
         <input type="hidden" name="currency_code" value="USD">
-        <p>
-          <input type="radio" name="os0" value="Member" id="member-radio-button" data-amount="27" class="paypal-donation-level" />
-          <label for="member-radio-button">Member : $27.00 USD - monthly</label>
-
-          <br />
-
-          <input type="radio" name="os0" value="Defender" id="defender-radio-button" data-amount="50" class="paypal-donation-level" />
-          <label for="defender-radio-button">Defender : $50.00 USD - monthly</label>
-
-          <br />
-
-          <input type="radio" name="os0" value="Advocate" id="advocate-radio-button" data-amount="99" class="paypal-donation-level" />
-          <label for="advocate-radio-button">Advocate : $99.00 USD - monthly</label>
-
-          <br />
-
-          <input type="radio" name="os0" value="Founder" id="founder-radio-button" data-amount="538" class="paypal-donation-level" />
-          <label for="founder-radio-button">Founder : $538.00 USD - monthly</form>
-
-          <br />
-        </p>
-        <button type="submit" class="button expanded button-subscribe" form="paypal-subscribe-form">
-          <p>Make Your Monthly Donation</p>
-          <p class="powered-by">powered by <span class="powered-by-paypal">PayPal</span></p>
-        </button>
-        <p class="text-center no-paypal-account">
-          Don't have a PayPal account? <a href="#">Make a One-time Donation</a>
-        </p>
-      </form>
-    </div>
+        <input type="hidden" name="os0" value="Member" />
+    </form>
   </div>
   <div class="columns medium-5 medium-pull-7">
     <h4 class="field-group-heading">This month's nonprofit:</h4>

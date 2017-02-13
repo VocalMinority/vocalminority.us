@@ -93,14 +93,12 @@ function getAjaxSubmitUrl() {
 $('#mc-submit-button').click(function(event) {
   event.preventDefault();
   event.stopPropagation();
-  console.log('hi!');
   mcFormAjaxSubmit(function(resp){ onMailchimpSuccess(resp, paypalSubscription) });
 });
 
 $('#mc-one-time-submit-button').click(function(event) {
   event.preventDefault();
   event.stopPropagation();
-  console.log('hi!');
   mcFormAjaxSubmit(function(resp){ onMailchimpSuccess(resp, paypalOneTimeDonation) });
 });
 
@@ -128,7 +126,8 @@ function paypalOneTimeDonation() {
 
 function paypalSubscription(amount) {
   if (amount) {
-    $('.paypal-donation-level[data-amount=' + amount + ']').selected(true)
+    var level = $('#mc-embedded-subscribe-form input[name="AMOUNT"]:checked').data("paypal-level");
+    $('#paypal-subscribe-form input[name="os0"]').val(level);
   }
 
   $('#paypal-subscribe-form').submit();
@@ -157,10 +156,7 @@ function onMailchimpSuccess(resp, paypalAction) {
   }
 
   var amount = $('input[name="AMOUNT"]:checked').val();
-  $('#amount-to-donate').text('$' + amount);
-  $('#mc-embedded-subscribe-form').addClass('hide');
-  $('#confirmation').removeClass('hide').hide().fadeIn();
-  window.scrollTo(0, $('#confirmation').offset().top - 30);
+  $('#mc-submit-button').text("Loading...");
 
   ga('send', 'event', {
     eventCategory: 'subscription',
