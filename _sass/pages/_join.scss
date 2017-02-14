@@ -8,6 +8,14 @@
   font-size: rem-calc(14);
 }
 
+.join-faq-answer {
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
 .join-faq-heading {
   font-weight: $global-weight-medium;
   margin-bottom: 0;

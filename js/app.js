@@ -81,33 +81,60 @@ function getAjaxSubmitUrl() {
   return url;
 }
 
-//$('#mc-embedded-subscribe-form input[type="email"]').on('change', function() {
-//  var $email = $(this);
-//  clearValidation($email) && validateEmailField($email);
-//});
-//$('#mc-embedded-subscribe-form input[name="AMOUNT"]').on('change', function() {
-//  var $amount = $('#mc-embedded-subscribe-form input[name="AMOUNT"]');
-//   clearValidation($amount) && validateAmountField($amount);
-//});
+$('#mc-submit-button').click(function(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  mcFormAjaxSubmit(function(resp){ onMailchimpSuccess(resp, paypalSubscription) });
+});
 
-$("#mc-embedded-subscribe-form").ajaxForm({
-  beforeSubmit: function(arr, $form, options) {
-    ga('send', 'event', {
-      eventCategory: 'subscription',
-      eventAction: 'submit',
-      eventLabel: 'join flow',
-    });
+$('#mc-one-time-submit-button').click(function(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  mcFormAjaxSubmit(function(resp){ onMailchimpSuccess(resp, paypalOneTimeDonation) });
+});
 
-    return validateForm($form);
-  },
-  url: getAjaxSubmitUrl(),
-  type: 'GET',
-  dataType: 'json',
-  success: function(resp) {
-    if(resp.result === 'error') {
-      var $email = $('#mc-embedded-subscribe-form input[type="email"]');
+function mcFormAjaxSubmit(callback) {
+  $("#mc-embedded-subscribe-form").ajaxSubmit({
+    beforeSubmit: function(arr, $form, options) {
+      ga('send', 'event', {
+        eventCategory: 'subscription',
+        eventAction: 'submit',
+        eventLabel: 'join flow',
+      });
+
+      return validateForm($form);
+    },
+    url: getAjaxSubmitUrl(),
+    type: 'GET',
+    dataType: 'json',
+    success: callback
+  });
+}
+
+function paypalOneTimeDonation() {
+  window.location = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MJWWTPT76CQ5J';
+}
+
+function paypalSubscription(amount) {
+  if (amount) {
+    var level = $('#mc-embedded-subscribe-form input[name="AMOUNT"]:checked').data("paypal-level");
+    $('#paypal-subscribe-form input[name="os0"]').val(level);
+  }
+
+  $('#paypal-subscribe-form').submit();
+}
+
+function onMailchimpSuccess(resp, paypalAction) {
+  if(resp.result === 'error') {
+    var $email = $('#mc-embedded-subscribe-form input[type="email"]');
+    var regex = new RegExp($email.val() + ' is already subscribed');
+
+    if(resp.msg.match(regex)) {
+      // No-op for emails that are already subscribed
+    } else {
       addErrorMessage($email, resp.msg)
       window.scrollTo(0, $('#mc-embedded-subscribe-form').offset().top - 30);
+
       ga('send', 'event', {
         eventCategory: 'subscription',
         eventAction: 'submissionError',
@@ -117,17 +144,54 @@ $("#mc-embedded-subscribe-form").ajaxForm({
 
       return;
     }
-    var amount = $('input[name="AMOUNT"]:checked').val();
-    $('#amount-to-donate').text('$' + amount);
-    $('#mc-embedded-subscribe-form').addClass('hide');
-    $('#confirmation').removeClass('hide').hide().fadeIn();
-    window.scrollTo(0, $('#confirmation').offset().top - 30);
-
-    ga('send', 'event', {
-      eventCategory: 'subscription',
-      eventAction: 'success',
-      eventLabel: 'join flow',
-      nonInteraction: true,
-    });
   }
-});
+
+  var amount = $('input[name="AMOUNT"]:checked').val();
+  $('#mc-submit-button').text("Loading...");
+
+  ga('send', 'event', {
+    eventCategory: 'subscription',
+    eventAction: 'success',
+    eventLabel: 'join flow',
+    nonInteraction: true,
+  });
+
+  paypalAction(amount);
+}
+
+// Pre-fill form values
+function getUrlParameter(sParam) {
+  var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+    sURLVariables = sPageURL.split('&'),
+    sParameterName,
+    i;
+
+  for (i = 0; i < sURLVariables.length; i++) {
+    sParameterName = sURLVariables[i].split('=');
+
+    if (sParameterName[0] === sParam) {
+      return sParameterName[1] === undefined ? true : sParameterName[1];
+    }
+  }
+};
+
+$(function() {
+  var email, firstName, lastName, amount;
+  if (email = getUrlParameter('email')){
+    $('input[name=EMAIL]').val(email).prop('readonly', true);
+  }
+  if (amount = getUrlParameter('amount')){
+    $('input[value='+amount+']').selected(true);
+  }
+	if (firstName = getUrlParameter('first_name')){
+    $('input[name=MERGE1]').val(firstName).prop('readonly', true);
+    $('#greeting-first-name').html(firstName);
+  }
+  if (lastName = getUrlParameter('last_name')){
+    $('input[name=MERGE2]').val(lastName).prop('readonly', true);
+  }
+
+  if (email && firstName && lastName && amount) {
+    $('.alert-message').removeClass('hide');
+  }
+})
