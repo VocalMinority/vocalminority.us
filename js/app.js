@@ -178,17 +178,17 @@ function getUrlParameter(sParam) {
 $(function() {
   var email, firstName, lastName, amount;
   if (email = getUrlParameter('email')){
-    $('input[name=EMAIL]').val(email);
+    $('input[name=EMAIL]').val(email).prop('readonly', true);
   }
   if (amount = getUrlParameter('amount')){
     $('input[value='+amount+']').selected(true);
   }
 	if (firstName = getUrlParameter('first_name')){
-    $('input[name=MERGE1]').val(firstName);
+    $('input[name=MERGE1]').val(firstName).prop('readonly', true);
     $('#greeting-first-name').html(firstName);
   }
   if (lastName = getUrlParameter('last_name')){
-    $('input[name=MERGE2]').val(lastName);
+    $('input[name=MERGE2]').val(lastName).prop('readonly', true);
   }
 
   if (email && firstName && lastName && amount) {
