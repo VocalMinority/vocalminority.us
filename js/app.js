@@ -81,15 +81,6 @@ function getAjaxSubmitUrl() {
   return url;
 }
 
-//$('#mc-embedded-subscribe-form input[type="email"]').on('change', function() {
-//  var $email = $(this);
-//  clearValidation($email) && validateEmailField($email);
-//});
-//$('#mc-embedded-subscribe-form input[name="AMOUNT"]').on('change', function() {
-//  var $amount = $('#mc-embedded-subscribe-form input[name="AMOUNT"]');
-//   clearValidation($amount) && validateAmountField($amount);
-//});
-
 $('#mc-submit-button').click(function(event) {
   event.preventDefault();
   event.stopPropagation();
