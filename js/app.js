@@ -196,6 +196,7 @@ $(function() {
   }
 
   if (email && firstName && lastName && amount) {
-    $('.alert-message').removeClass('hide');
+    $('.alert-message.existing-members').removeClass('hide');
+    $('.alert-message.all-members').addClass('hide');
   }
 })
