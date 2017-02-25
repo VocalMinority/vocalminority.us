@@ -31,7 +31,9 @@ title: Vocal Minority | Thank You!
   return t;
 }(document, "script", "twitter-wjs"));</script>
 
-
+  <script>
+    window.onload = function(){ mixpanel.track('donation success') };
+  </script>
 <section class="row row-thank-you text-center">
   <div class="columns medium-12">
     <a href="/"><img class="logo" src="/images/logo.svg"></a>

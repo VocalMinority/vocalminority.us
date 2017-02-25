@@ -101,6 +101,7 @@ function mcFormAjaxSubmit(callback) {
         eventAction: 'submit',
         eventLabel: 'join flow',
       });
+      mixpanel.track('submit');
 
       return validateForm($form);
     },
@@ -125,8 +126,8 @@ function paypalSubscription(amount) {
 }
 
 function onMailchimpSuccess(resp, paypalAction) {
+  var $email = $('#mc-embedded-subscribe-form input[type="email"]');
   if(resp.result === 'error') {
-    var $email = $('#mc-embedded-subscribe-form input[type="email"]');
     var regex = new RegExp($email.val() + ' is already subscribed');
 
     if(resp.msg.match(regex)) {
@@ -155,6 +156,9 @@ function onMailchimpSuccess(resp, paypalAction) {
     eventLabel: 'join flow',
     nonInteraction: true,
   });
+  mixpanel.identify($email.val());
+  mixpanel.people.set({ "$email": $email.val() });
+  mixpanel.track('mailchimp success');
 
   paypalAction(amount);
 }
@@ -183,7 +187,7 @@ $(function() {
   if (amount = getUrlParameter('amount')){
     $('input[value='+amount+']').selected(true);
   }
-	if (firstName = getUrlParameter('first_name')){
+  if (firstName = getUrlParameter('first_name')){
     $('input[name=MERGE1]').val(firstName).prop('readonly', true);
     $('#greeting-first-name').html(firstName);
   }
