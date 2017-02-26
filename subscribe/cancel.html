@@ -3,6 +3,7 @@ layout: empty
 ---
 
 <script>
-  window.onload = function(){ mixpanel.track('donation cancel') };
-  window.location.href = '/join';
+  window.onload = function(){ mixpanel.track('donation cancel', {}, function() {
+  	window.location.href = '/join';
+  }) };
 </script>
