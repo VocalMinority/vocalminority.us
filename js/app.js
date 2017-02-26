@@ -133,10 +133,7 @@ function paypalSubscription(amount) {
 function onMailchimpSuccess(resp, paypalAction) {
   var $email = $('#mc-embedded-subscribe-form input[type="email"]');
   if(resp.result === 'error') {
-    var escapedEmail = $email.val().replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
-    var regex = new RegExp(escapedEmail + ' is already subscribed');
-
-    if(resp.msg.match(regex)) {
+    if(resp.msg.match(/is already subscribed/)) {
       // No-op for emails that are already subscribed
     } else {
       addErrorMessage($email, resp.msg)
