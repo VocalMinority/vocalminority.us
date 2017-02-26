@@ -96,11 +96,16 @@ $('#mc-one-time-submit-button').click(function(event) {
 function mcFormAjaxSubmit(callback) {
   $("#mc-embedded-subscribe-form").ajaxSubmit({
     beforeSubmit: function(arr, $form, options) {
+      var $email = $form.find('input[type="email"]');
       ga('send', 'event', {
         eventCategory: 'subscription',
         eventAction: 'submit',
         eventLabel: 'join flow',
       });
+      if ($email.val()) {
+        mixpanel.identify($email.val());
+        mixpanel.people.set({ "$email": $email.val() });
+      }
       mixpanel.track('submit');
 
       return validateForm($form);
