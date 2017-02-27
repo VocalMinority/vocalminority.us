@@ -133,7 +133,10 @@ function paypalSubscription(amount) {
 function onMailchimpSuccess(resp, paypalAction) {
   var $email = $('#mc-embedded-subscribe-form input[type="email"]');
   if(resp.result === 'error') {
-    if(resp.msg.match(/is already subscribed/)) {
+    mixpanel.track('mailchimp submit error', {message: resp.msg});
+
+    if(resp.msg.match(/is already subscribed/) ||
+       resp.msg.match(/too many recent signup requests/)) {
       // No-op for emails that are already subscribed
     } else {
       addErrorMessage($email, resp.msg)
