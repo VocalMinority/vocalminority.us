@@ -23,10 +23,15 @@ section {
   }
 }
 
+.current-progress {
+  margin-bottom: rem-calc(50);
+}
+
 .current-donation {
   color: $secondary-color;
   font-size: rem-calc(120);
   font-weight: normal;
+  line-height: normal;
 }
 
 .current-total {
