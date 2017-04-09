@@ -45,7 +45,6 @@ top_nav:
 
 # Build settings
 markdown: kramdown
-theme: minima
 gems:
   - jekyll-feed
   - octopress-autoprefixer

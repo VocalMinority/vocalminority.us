@@ -142,8 +142,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.6)
-  minima (~> 2.0)
   octopress-autoprefixer
 
 BUNDLED WITH
-   1.10.6
+   1.14.6
