@@ -43,24 +43,12 @@
   }
 }
 
-.mce_inline_error,
-.mce-error-response {
+.mce_inline_error {
   background: #ff8b8b;
   color: #fff;
   font-size: rem-calc(14);
   font-style: italic;
   padding: 10px;
-}
-
-.mce-success-response {
-  border: 2px solid #2F73FB;
-  border-radius: 8px;
-  color: #2F73FB;
-  font-size: 1.125rem;
-  padding: 1rem;
-  width: 100%;
-  text-align: center;
-  font-style: italic;
 }
 
 .mc-field-group {
