@@ -46,7 +46,6 @@ top_nav:
 # Build settings
 markdown: kramdown
 gems:
-  - jekyll-feed
   - octopress-autoprefixer
 exclude:
   - Gemfile
