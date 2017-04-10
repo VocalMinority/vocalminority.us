@@ -12,6 +12,14 @@ input[readonly]:focus {
   cursor: not-allowed;
 }
 
+section {
+  margin: rem-calc(100) 0;
+
+  @include breakpoint(small only) {
+    margin: rem-calc(40) 0;
+  }
+}
+
 .vm-row-header {
   margin-bottom: 0;
   margin-top: rem-calc(40);
@@ -21,9 +29,9 @@ input[readonly]:focus {
   margin-top: rem-calc(30);
 }
 
-.vm-join__alert-message {
-  background: #f5f9ff;
-  color: #3673ca;
-  margin-bottom: rem-calc(40);
-  padding: 20px 30px;
+.vm-body__flag {
+  background-image: url('/images/flag-bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
 }

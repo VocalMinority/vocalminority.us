@@ -1,0 +1,28 @@
+.vm-nonprofit-card {
+  border: 1px solid $medium-gray;
+}
+
+.vm-nonprofit-card__header {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: $medium-gray;
+  font-size: rem-calc(30);
+}
+
+.vm-nonprofit-card__header-image {
+  max-width: 90%;
+}
+
+.vm-nonprofit-card__body {
+  background-color: $lighter-gray;
+  font-size: rem-calc(14);
+  padding: 20px;
+  min-height: 200px;
+}
+
+.vm-nonprofit-card__body-title {
+  font-size: rem-calc(16);
+  font-weight: 500;
+  margin-bottom: 0;
+}

@@ -98,21 +98,18 @@
 //@include foundation-flex-classes;
 //
 
+// Global styles:
+@import 'shared';
 
-// Global/reusable component styles
-@import 'components/shared';
-@import 'components/banner';
-@import 'components/cards';
-@import 'components/every-month';
-@import 'components/faqs';
-@import 'components/footer';
-@import 'components/header';
-@import 'components/manifesto';
-@import 'components/mailchimp';
-@import 'components/signup_form';
+// Styles for HTML in "_includes/":
+@import 'includes/banner';
+@import 'includes/cards';
+@import 'includes/footer';
+@import 'includes/header';
 
-// Page specific styles
+// Page-specific styles:
+@import 'pages/about';
+@import 'pages/faq';
 @import 'pages/index';
 @import 'pages/join';
-@import 'pages/about';
 @import 'pages/success';
