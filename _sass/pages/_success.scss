@@ -1,77 +1,73 @@
-.row-thank-you {
-  margin-top: rem-calc(100);
-
-  .logo {
-    margin-bottom: rem-calc(50);
-  }
+.vm-success__logo {
+  margin-bottom: rem-calc(50);
 }
 
-.share-imagery {
+.vm-success__group-image-container,
+.vm-success__share-image-container {
   border: 1px solid #d1d1d1;
   height: 130px;
   margin-bottom: 10px;
   width: 100%;
 }
 
-.fb-group-callout {
+.vm-success__group-image-container {
+  background: transparent url('../images/flag-bg.png') 0 0 no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+
+.vm-success__share-image-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.vm-success__share-image-item {
+  width: 45px;
+}
+
+.vm-success__group {
   margin-bottom: rem-calc(50);
+}
 
-  .share-imagery {
-    background: transparent url('../images/flag-bg.png') 0 0 no-repeat;
-    background-size: 100%;
-    position: relative;
-  }
+.vm-success__group-image-contents {
+  bottom: 10px;
+  color: $gray-text;
+  font-size: rem-calc(14);
+  left: 15px;
+  margin: 0;
+  position: absolute;
 
-  .fb-group-details {
-    bottom: 10px;
-    color: $gray-text;
-    font-size: rem-calc(14);
-    left: 15px;
-    margin: 0;
-    position: absolute;
-
-    p {
-      line-height: normal;
-      margin: 0;
-      padding-left: 43px;
-    }
-
-    .title {
-      color: $dark-gray;
-      font-size: rem-calc(18);
-      font-weight: $global-weight-bold;
-    }
-
-    &:before {
-      background: transparent url('../images/success/facebook.svg') 0 0 no-repeat;
-      background-size: 33px;
-      content: '';
-      display: block;
-      float: left;
-      height: 33px;
-      margin-top: 3px;
-      width: 33px;
-    }
+  &:before {
+    background: transparent url('../images/success/facebook.svg') 0 0 no-repeat;
+    background-size: 33px;
+    content: '';
+    display: block;
+    float: left;
+    height: 33px;
+    margin-top: 3px;
+    width: 33px;
   }
 }
 
-.share-callout {
-
-  .share-imagery {
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-
-    img {
-      width: 45px;
-    }
-  }
+.vm-success__group-image-contents-paragraph {
+  line-height: normal;
+  margin: 0;
+  padding-left: 43px;
 }
 
-.social-share-buttons {
+.vm-success__group-image-contents-title {
+  color: $dark-gray;
+  font-size: rem-calc(18);
+  font-weight: $global-weight-bold;
+}
+
+.vm-success__share-buttons {
   margin-bottom: 10px;
 }
 
-.twitter-share-button {
+.vm-success__share-buttons-twitter {
+  display: inline-block;
+  height: 28px;
   vertical-align: bottom;
 }

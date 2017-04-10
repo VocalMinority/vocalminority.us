@@ -1,26 +1,23 @@
-.fine-print {
+.vm-join__fine-print {
   font-size: rem-calc(12);
   font-style: italic;
   color: #999;
 }
 
-.join-faq {
+.vm-join__faq {
   font-size: rem-calc(14);
 }
 
-.join-faq-answer {
-
-  a {
-    color: inherit;
-    text-decoration: underline;
-  }
-}
-
-.join-faq-heading {
+.vm-join__faq-heading {
   font-weight: $global-weight-medium;
   margin-bottom: 0;
 }
 
-.join-faq-answer {
+.vm-join__faq-answer {
   color: $gray-text;
+}
+
+.vm-join__faq-answer-link {
+  color: inherit;
+  text-decoration: underline;
 }

@@ -1,4 +1,4 @@
-.cause-cards {
+.vm-index__cause-cards {
   display: flex;
   justify-content: space-around;
   align-content: space-between;
@@ -11,7 +11,7 @@
   }
 }
 
-.cause-card {
+.vm-index__cause-cards-item {
   height: 85px;
   flex: 1 1 120px;
   font-size: rem-calc(14);
@@ -20,62 +20,58 @@
   text-align: center;
   color: $white;
   background-color: $dark-gray;
-
-  .cause-card-image-wrapper {
-    display: flex;
-    height: 30px;
-    margin: 15px auto 5px;
-    width: 30px;
-  }
-
-  .cause-card-image {
-    display: block;
-    margin: auto;
-  }
 }
 
-.donation-info-card {
+.vm-index__cause-cards-item-image-wrapper {
+  display: flex;
+  height: 30px;
+  margin: 15px auto 5px;
+  width: 30px;
+}
+
+.vm-index__cause-cards-item-image {
+  display: block;
+  margin: auto;
+}
+
+.vm-join__donation-info-card {
   background-color: $lighter-gray;
   font-size: rem-calc(14);
   padding: 20px;
   margin: 0 0 rem-calc(40);
-
-  a {
-    color: $primary-color;
-    display: block;
-    text-decoration: underline;
-  }
 }
 
-.nonprofit-card {
+.vm-join__donation-info-card-link {
+  color: $primary-color;
+  display: block;
+  text-decoration: underline;
+}
+
+.vm-nonprofit-card {
   border: 1px solid $medium-gray;
 }
 
-.nonprofit-card-header {
+.vm-nonprofit-card__header {
   height: 100px;
   line-height: 100px;
   text-align: center;
   color: $medium-gray;
   font-size: rem-calc(30);
-
-  img {
-    max-width: 90%;
-  }
-
-  &.dark {
-    background-color: #000;
-  }
 }
 
-.nonprofit-card-body {
+.vm-nonprofit-card__header-image {
+  max-width: 90%;
+}
+
+.vm-nonprofit-card__body {
   background-color: $lighter-gray;
   font-size: rem-calc(14);
   padding: 20px;
   min-height: 200px;
+}
 
-  h4 {
-    font-size: rem-calc(16);
-    font-weight: 500;
-    margin-bottom: 0;
-  }
+.vm-nonprofit-card__body-title {
+  font-size: rem-calc(16);
+  font-weight: 500;
+  margin-bottom: 0;
 }

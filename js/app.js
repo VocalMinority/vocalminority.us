@@ -13,7 +13,7 @@ ga('send', 'pageview');
 $(document).foundation();
 
 // Setup FAQ item toggling
-$('.vm-js-faq-toggle').on('click', function() { $(this).toggleClass('closed'); });
+$('.vm-js-faq-toggle').on('click', function() { $(this).toggleClass('vm-faq__list-item--opened'); });
 
 function validateEmail(email) {
   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -21,8 +21,8 @@ function validateEmail(email) {
 }
 
 function addErrorMessage($elem, message) {
-  $elem.addClass('mce_inline_error').attr({'aria-invalid': true});
-  $elem.parents('.vm-js-mc-error-container').append('<div class="mce_inline_error vm-js-mc-inserted-error">' + message + '</div>');
+  $elem.addClass('vm-join__input-with-error').attr({'aria-invalid': true});
+  $elem.parents('.vm-js-mc-error-container').append('<div class="vm-join__inline-error vm-js-mc-inserted-error">' + message + '</div>');
 }
 
 function validateEmailField($email) {
@@ -49,7 +49,7 @@ function validateAmountField($amount) {
 }
 
 function clearValidation($elem) {
-  $elem.removeClass('mce_inline_error').attr({'aria-invalid': false});
+  $elem.removeClass('vm-join__input-with-error').attr({'aria-invalid': false});
   $elem.parents('.vm-js-mc-error-container').find('.vm-js-mc-inserted-error').detach();
   return true;
 }

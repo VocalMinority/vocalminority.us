@@ -6,7 +6,7 @@ section {
   }
 }
 
-.row-main-intro {
+.vm-index__row-main-intro {
   margin-top: 0;
 
   @include breakpoint(small only) {
@@ -14,49 +14,48 @@ section {
   }
 }
 
-.main-intro {
+.vm-index__main-intro {
   font-weight: normal;
-  // font-size: 3rem;
 
   @include breakpoint(small only) {
     font-size: rem-calc(34);
   }
 }
 
-.current-progress {
+.vm-index__current-progress {
   margin-bottom: rem-calc(50);
 }
 
-.current-donation {
+.vm-index__current-donation {
   color: $secondary-color;
   font-size: rem-calc(120);
   font-weight: normal;
   line-height: normal;
 }
 
-.current-total {
+.vm-index__current-total {
   font-size: rem-calc(18);
 }
 
-.light {
+.vm-index__current-total-subtext {
   font-size: rem-calc(14);
   color: $gray-text;
 }
 
-.button.button-join {
-  font-size: rem-calc(28);
+.vm-index__join-button {
+  font-size: rem-calc(28) !important;
 }
 
-.learn-more {
+.vm-index__learn-more-container {
   font-size: rem-calc(14);
-
-  a {
-    color: $dark-gray;
-    text-decoration: underline;
-  }
 }
 
-.flag {
+.vm-index__learn-more-link {
+  color: $dark-gray;
+  text-decoration: underline;
+}
+
+.vm-body__flag {
   background-image: url('/images/flag-bg.png');
   background-repeat: no-repeat;
   background-position: top center;

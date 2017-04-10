@@ -1,61 +1,59 @@
-.faq-list {
+.vm-faq__list {
   list-style-type: none;
+}
 
-  > li {
-    cursor: pointer;
-    position: relative;
-    margin: 1rem;
-    padding-left: 3rem;
-    border-bottom: 1px solid $medium-gray;
+.vm-faq__list-item {
+  cursor: pointer;
+  position: relative;
+  margin: 1rem;
+  padding-left: 3rem;
+  border-bottom: 1px solid $medium-gray;
+  padding-bottom: .5rem;
 
-    &::before {
-      background: transparent url('/images/icons/arrow.svg') 0 0 no-repeat;
-      background-size: 14px 8px;
-      content: '';
-      display: block;
-      height: 8px;
-      position: absolute;
-      left: 1rem;
-      top: .5rem;
-      transform: rotate(0deg);
-      transition: transform 0.2s;
-      width: 14px;
-    }
-
-    &.closed::before {
-      transform: rotate(-90deg);
-    }
-
-    &.closed > * {
-      display: none;
-    }
-
-    &.closed > h3 {
-      display: inherit;
-    }
-
-    &.closed .title {
-      margin-bottom: 1rem;
-    }
-  }
-
-  @include breakpoint(small) {
-    margin-left: 0;
-
-    li {
-      margin-left: 0;
-      margin-right: 0;
-    }
+  &::before {
+    background: transparent url('/images/icons/arrow.svg') 0 0 no-repeat;
+    background-size: 14px 8px;
+    content: '';
+    display: block;
+    height: 8px;
+    position: absolute;
+    left: 1rem;
+    top: .5rem;
+    transform: rotate(-90deg);
+    transition: transform 0.2s;
+    width: 14px;
   }
 }
 
-.faq-list .title {
+.vm-faq__list-content {
+  display: none;
+}
+
+.vm-faq__list-item--opened {
+  padding-bottom: 0;
+
+  &::before {
+    transform: rotate(0deg);
+  }
+
+  .vm-faq__list-content {
+    display: inherit;
+  }
+}
+
+@include breakpoint(small) {
+  .vm-faq__list {
+    margin-left: 0;
+  }
+
+  .vm-faq__list-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.vm-faq__list-title {
   font-size: rem-calc(18px);
   font-weight: $global-weight-medium;
   margin-bottom: .5rem;
-}
-
-.faq-list ol {
-  list-style-type: none;
-  margin-bottom: 1rem;
 }
