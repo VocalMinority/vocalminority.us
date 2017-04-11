@@ -1,3 +1,7 @@
+// Convention: look up DOM elements by classnames prefixed with `vm-js-`, so we
+// can easily see where and how the Javascript hooks into the HTML, as well as
+// making those classnames easily searchable (no conflicts with other names).
+
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -9,7 +13,7 @@ ga('send', 'pageview');
 $(document).foundation();
 
 // Setup FAQ item toggling
-$('.toggle').on('click', function() { $(this).toggleClass('closed'); });
+$('.vm-js-faq-toggle').on('click', function() { $(this).toggleClass('vm-faq__list-item--opened'); });
 
 function validateEmail(email) {
   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -17,8 +21,8 @@ function validateEmail(email) {
 }
 
 function addErrorMessage($elem, message) {
-  $elem.addClass('mce_inline_error').attr({'aria-invalid': true});
-  $elem.parents('.mc-field-group').append('<div class="mce_inline_error">' + message + '</div>');
+  $elem.addClass('vm-join__input-with-error').attr({'aria-invalid': true});
+  $elem.parents('.vm-js-mc-error-container').append('<div class="vm-join__inline-error vm-js-mc-inserted-error">' + message + '</div>');
 }
 
 function validateEmailField($email) {
@@ -36,7 +40,7 @@ function validateEmailField($email) {
 }
 
 function validateAmountField($amount) {
-  if(($amount).is(':checked')) {
+  if($amount.is(':checked')) {
     return true;
   } else {
     addErrorMessage($amount, "This field is required.");
@@ -45,14 +49,14 @@ function validateAmountField($amount) {
 }
 
 function clearValidation($elem) {
-  $elem.removeClass('mce_inline_error').attr({'aria-invalid': false});
-  $elem.parents('.mc-field-group').find('div.mce_inline_error').detach();
+  $elem.removeClass('vm-join__input-with-error').attr({'aria-invalid': false});
+  $elem.parents('.vm-js-mc-error-container').find('.vm-js-mc-inserted-error').detach();
   return true;
 }
 
 function validateForm($form) {
-  var $email = $form.find('[type="email"]');
-  var $amount = $form.find('input[name="AMOUNT"]');
+  var $email = $form.find('.vm-js-mc-email');
+  var $amount = $form.find('.vm-js-mc-amount');
   var valid = true;
 
   clearValidation($email) && clearValidation($amount);
@@ -73,7 +77,7 @@ function validateForm($form) {
 
 // Pulled straight from http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js
 function getAjaxSubmitUrl() {
-  var url = $("form#mc-embedded-subscribe-form").attr("action");
+  var url = $(".vm-js-mc-embedded-subscribe-form").attr("action");
   if(url) {
     url = url.replace("/post?u=", "/post-json?u=");
     url += "&c=?";
@@ -81,22 +85,22 @@ function getAjaxSubmitUrl() {
   return url;
 }
 
-$('#mc-submit-button').click(function(event) {
+$('.vm-js-mc-submit-button').click(function(event) {
   event.preventDefault();
   event.stopPropagation();
   mcFormAjaxSubmit(function(resp){ onMailchimpSuccess(resp, paypalSubscription) });
 });
 
-$('#mc-one-time-submit-button').click(function(event) {
+$('.vm-js-mc-one-time-submit-button').click(function(event) {
   event.preventDefault();
   event.stopPropagation();
   mcFormAjaxSubmit(function(resp){ onMailchimpSuccess(resp, paypalOneTimeDonation) });
 });
 
 function mcFormAjaxSubmit(callback) {
-  $("#mc-embedded-subscribe-form").ajaxSubmit({
+  $(".vm-js-mc-embedded-subscribe-form").ajaxSubmit({
     beforeSubmit: function(arr, $form, options) {
-      var $email = $form.find('input[type="email"]');
+      var $email = $form.find('.vm-js-mc-email');
       ga('send', 'event', {
         eventCategory: 'subscription',
         eventAction: 'submit',
@@ -123,15 +127,15 @@ function paypalOneTimeDonation() {
 
 function paypalSubscription(amount) {
   if (amount) {
-    var level = $('#mc-embedded-subscribe-form input[name="AMOUNT"]:checked').data("paypal-level");
-    $('#paypal-subscribe-form input[name="os0"]').val(level);
+    var level = $('.vm-js-mc-amount:checked').data('paypal-level');
+    $('.vm-js-paypal-level').val(level);
   }
 
-  $('#paypal-subscribe-form').submit();
+  $('.vm-js-paypal-subscribe-form').submit();
 }
 
 function onMailchimpSuccess(resp, paypalAction) {
-  var $email = $('#mc-embedded-subscribe-form input[type="email"]');
+  var $email = $('.vm-js-mc-email');
   if(resp.result === 'error') {
     mixpanel.track('mailchimp submit error', {message: resp.msg});
 
@@ -140,7 +144,7 @@ function onMailchimpSuccess(resp, paypalAction) {
       // No-op for emails that are already subscribed
     } else {
       addErrorMessage($email, resp.msg)
-      window.scrollTo(0, $('#mc-embedded-subscribe-form').offset().top - 30);
+      window.scrollTo(0, $('.vm-js-mc-embedded-subscribe-form').offset().top - 30);
 
       ga('send', 'event', {
         eventCategory: 'subscription',
@@ -153,8 +157,8 @@ function onMailchimpSuccess(resp, paypalAction) {
     }
   }
 
-  var amount = $('input[name="AMOUNT"]:checked').val();
-  $('#mc-submit-button').text("Loading...");
+  var amount = $('.vm-js-mc-amount:checked').val();
+  $('.vm-js-mc-submit-button').text("Loading...");
 
   ga('send', 'event', {
     eventCategory: 'subscription',
@@ -188,21 +192,21 @@ function getUrlParameter(sParam) {
 $(function() {
   var email, firstName, lastName, amount;
   if (email = getUrlParameter('email')){
-    $('input[name=EMAIL]').val(email).prop('readonly', true);
+    $('.vm-js-mc-email').val(email).prop('readonly', true);
   }
   if (amount = getUrlParameter('amount')){
-    $('input[value='+amount+']').selected(true);
+    $('.vm-js-mc-amount[value='+amount+']').selected(true);
   }
   if (firstName = getUrlParameter('first_name')){
-    $('input[name=MERGE1]').val(firstName).prop('readonly', true);
-    $('#greeting-first-name').html(firstName);
+    $('.vm-js-mc-first-name').val(firstName).prop('readonly', true);
+    $('.vm-js-mc-greeting-first-name').html(firstName);
   }
   if (lastName = getUrlParameter('last_name')){
-    $('input[name=MERGE2]').val(lastName).prop('readonly', true);
+    $('.vm-js-mc-last-name').val(lastName).prop('readonly', true);
   }
 
   if (email && firstName && lastName && amount) {
-    $('.alert-message.existing-members').removeClass('hide');
-    $('.alert-message.all-members').addClass('hide');
+    $('.vm-js-mc-existing-members').removeClass('hide');
+    $('.vm-js-mc-all-members').addClass('hide');
   }
 })

@@ -1,0 +1,14 @@
+.vm-footer {
+  color: $medium-gray;
+  font-size: rem-calc(14);
+  margin-bottom: rem-calc(30);
+}
+
+.vm-footer__menu {
+  display: inline-block;
+}
+
+.vm-footer__menu-link {
+  color: $medium-gray;
+  text-decoration: underline;
+}

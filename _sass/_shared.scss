@@ -1,0 +1,37 @@
+h2,
+h3,
+h4 {
+  font-weight: $global-weight-medium;
+}
+
+input[readonly],
+input[readonly]:focus {
+  background: #f6f6f6;
+  border-color: $medium-gray;
+  color: $gray-text;
+  cursor: not-allowed;
+}
+
+section {
+  margin: rem-calc(100) 0;
+
+  @include breakpoint(small only) {
+    margin: rem-calc(40) 0;
+  }
+}
+
+.vm-row-header {
+  margin-bottom: 0;
+  margin-top: rem-calc(40);
+}
+
+.vm-row-begin-content {
+  margin-top: rem-calc(30);
+}
+
+.vm-body__flag {
+  background-image: url('/images/flag-bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+}

@@ -1,12 +1,4 @@
-section {
-  margin: rem-calc(100) 0;
-
-  @include breakpoint(small only) {
-    margin: rem-calc(40) 0;
-  }
-}
-
-.row-main-intro {
+.vm-index__row-main-intro {
   margin-top: 0;
 
   @include breakpoint(small only) {
@@ -14,51 +6,113 @@ section {
   }
 }
 
-.main-intro {
+.vm-index__main-intro {
   font-weight: normal;
-  // font-size: 3rem;
 
   @include breakpoint(small only) {
     font-size: rem-calc(34);
   }
 }
 
-.current-progress {
+.vm-index__cause-cards {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-between;
+  flex-wrap: wrap;
+  min-height: 200px;
+  max-height: 380px;
+
+  @include breakpoint(medium) {
+    justify-content: space-between;
+  }
+}
+
+.vm-index__cause-cards-item {
+  height: 85px;
+  flex: 1 1 120px;
+  font-size: rem-calc(14);
+  max-width: 120px;
+  margin: 0 5px 10px 5px;
+  text-align: center;
+  color: $white;
+  background-color: $dark-gray;
+}
+
+.vm-index__cause-cards-item-image-wrapper {
+  display: flex;
+  height: 30px;
+  margin: 15px auto 5px;
+  width: 30px;
+}
+
+.vm-index__cause-cards-item-image {
+  display: block;
+  margin: auto;
+}
+
+.vm-index__every-month {
+  padding: 20px;
+  border: 2px solid $primary-color;
+  position: relative;
+}
+
+.vm-index__every-month-header {
+  color: $primary-color;
+  background-color: #fff;
+  display: inline-block;
+  font-size: 1.125;
+  position: absolute;
+  padding: 0 10px;
+  text-transform: uppercase;
+  top: -14px;
+  left: 10px;
+}
+
+.vm-index__every-month-list {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.vm-index__every-month-list-item {
+  font-size: 1.375rem;
+  margin: 20px 10px;
+  padding-left: 40px;
+  background-image: url('/images/icons/star.svg');
+  background-repeat: no-repeat;
+  background-position-y: 45%;
+  background-size: 20px 19px;
+}
+
+
+.vm-index__current-progress {
   margin-bottom: rem-calc(50);
 }
 
-.current-donation {
+.vm-index__current-donation {
   color: $secondary-color;
   font-size: rem-calc(120);
   font-weight: normal;
   line-height: normal;
 }
 
-.current-total {
+.vm-index__current-total {
   font-size: rem-calc(18);
 }
 
-.light {
+.vm-index__current-total-subtext {
   font-size: rem-calc(14);
   color: $gray-text;
 }
 
-.button.button-join {
-  font-size: rem-calc(28);
+.vm-index__join-button {
+  font-size: rem-calc(28) !important;
 }
 
-.learn-more {
+.vm-index__learn-more-container {
   font-size: rem-calc(14);
-
-  a {
-    color: $dark-gray;
-    text-decoration: underline;
-  }
 }
 
-.flag {
-  background-image: url('/images/flag-bg.png');
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100%;
+.vm-index__learn-more-link {
+  color: $dark-gray;
+  text-decoration: underline;
 }

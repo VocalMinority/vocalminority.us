@@ -1,14 +1,18 @@
-<div class="row global-header">
+<div class="row vm-header">
   <div class="columns medium-2">
-    <img alt="Vocal Minority" src="./images/logo.svg"/>
+    <img class="vm-header__image" alt="Vocal Minority" src="./images/logo.svg"/>
   </div>
   <div class="columns small-center medium-7">
-    <ul class="menu horizontal top-nav-menu">
+    <ul class="menu horizontal vm-header__top-nav">
       {% for node in site.top_nav %}
         {% if page.url == node.url %}
-          <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+          <li class="vm-header__top-nav-item">
+            <a href="{{node.url}}" class="vm-header__top-nav-item-link--active">{{node.title}}</a>
+          </li>
         {% else %}
-        <li><a data-url="{{page.url}}" href="{{node.url}}">{{node.title}}</a></li>
+          <li class="vm-header__top-nav-item">
+            <a data-url="{{page.url}}" href="{{node.url}}" class="vm-header__top-nav-item-link--inactive">{{node.title}}</a>
+          </li>
         {% endif %}
       {% endfor %}
     </ul>

@@ -1,19 +1,27 @@
-.about-us-team {
+.vm-about__intro-message {
+  @include breakpoint(small) {
+    font-size: 1.125rem;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.vm-about__team {
   clear: both;
   content: '';
   display: table;
   list-style-type: none;
   margin: 0 auto;
 
-  li {
-    float: left;
-    margin-bottom: 20px;
-    margin-right: 20px;
-  }
-
   @include breakpoint(small) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+
+.vm-about__team-item {
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }

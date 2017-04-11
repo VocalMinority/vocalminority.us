@@ -1,5 +1,6 @@
 ---
-layout: empty
+layout: default
+empty: true
 title: Vocal Minority | Thank You!
 ---
 
@@ -34,36 +35,38 @@ title: Vocal Minority | Thank You!
   <script>
     window.onload = function(){ mixpanel.track('donation success') };
   </script>
-<section class="row row-thank-you text-center">
+<section class="row text-center">
   <div class="columns medium-12">
-    <a href="/"><img class="logo" src="/images/logo.svg"></a>
+    <a href="/"><img class="vm-success__logo" src="/images/logo.svg"></a>
     <h2>Thank you for your monthly contribution!</h2>
     <p>Together we will fight for equity and justice in America.</p>
   </div>
 </section>
 <section class="row">
-  <div class="columns medium-5 medium-offset-1 fb-group-callout">
+  <div class="columns medium-5 medium-offset-1 vm-success__group">
     <h3>Join Our Facebook Group</h3>
-    <div class="share-imagery">
-      <div class="fb-group-details">
-        <p class="title">Vocal Minority Members</p>
-        <p>Facebook Group</p>
+    <div class="vm-success__group-image-container">
+      <div class="vm-success__group-image-contents">
+        <p class="vm-success__group-image-contents-paragraph vm-success__group-image-contents-title">Vocal Minority Members</p>
+        <p class="vm-success__group-image-contents-paragraph">Facebook Group</p>
       </div>
     </div>
     <p>Join for important announcements and more ways to get involved.</p>
     <a class="button expanded" href="https://www.facebook.com/groups/270318010049283/">Join our Facebook Group</a>
   </div>
-  <div class="columns medium-5 share-callout end">
+  <div class="columns medium-5 end">
     <h3>Share with other supporters</h3>
-    <div class="share-imagery">
-      <img src="/images/success/facebook.svg">
-      <img src="/images/success/twitter.svg">
+    <div class="vm-success__share-image-container">
+      <img class="vm-success__share-image-item" src="/images/success/facebook.svg">
+      <img class="vm-success__share-image-item" src="/images/success/twitter.svg">
     </div>
     <p>The more members we have, the greater the impact we can make with our monthly grant.</p>
-    <div class="social-share-buttons">
+    <div class="vm-success__share-buttons">
       <div class="fb-share-button" data-href="http://vocalminority.us" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fvocalminority.us%2F&amp;src=sdkpreparse">Share</a></div>
       <div class="fb-like" data-href="https://www.facebook.com/wearethevocalminority/" data-width="200" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
-      <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=I%20just%20joined%20Vocal%20Minority%2C%20a%20community%20that%20donates%20once%20a%20month%20to%20nonprofits%20fighting%20for%20equity%20and%20justice.&amp;url=http%3A%2F%2Fvocalminority.us%2F" data-size="large">Tweet</a>
+      <div class="vm-success__share-buttons-twitter">
+        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=I%20just%20joined%20Vocal%20Minority%2C%20a%20community%20that%20donates%20once%20a%20month%20to%20nonprofits%20fighting%20for%20equity%20and%20justice.&amp;url=http%3A%2F%2Fvocalminority.us%2F" data-size="large">Tweet</a>
+      </div>
     </div>
   </div>
 </section>

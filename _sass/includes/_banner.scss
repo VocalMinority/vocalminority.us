@@ -1,0 +1,62 @@
+.vm-banner {
+  width: 100%;
+  height: auto;
+  top: 0;
+  padding: 20px;
+  position: relative;
+  background-color: $dark-gray;
+  color: $light-gray;
+  font-style: italic;
+}
+
+.vm-banner__copy {
+  line-height: normal;
+  text-align: center;
+}
+
+.vm-banner__emphasis {
+  color: $white;
+  font-weight: $global-weight-bold;
+
+  @include breakpoint(small only) {
+    display: block;
+  }
+}
+
+.vm-banner__button {
+  @include button;
+  color: $white;
+  background-color: #ff3b40;
+  font-weight: $global-weight-bold;
+  font-style: normal;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+@include breakpoint(medium) {
+  .vm-banner {
+    height: rem-calc(60);
+    position: fixed;
+    z-index: 1;
+  }
+
+  .vm-banner__copy {
+    text-align: left;
+  }
+
+  .vm-banner__button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: auto;
+    margin: 0;
+  }
+}
+
+.vm-body--has-banner {
+  @include breakpoint(medium) {
+    padding-top: rem-calc(60);
+  }
+}
