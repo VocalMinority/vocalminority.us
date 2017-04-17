@@ -56,75 +56,46 @@
   font-weight: bold;
 }
 
-.vm-index__cause-cards {
-  display: flex;
-  justify-content: space-around;
-  align-content: space-between;
-  flex-wrap: wrap;
-  min-height: 200px;
-  max-height: 380px;
+.vm-index__how-it-works-row {
+  max-width: 50rem;
 
-  @include breakpoint(medium) {
-    justify-content: space-between;
+  @include breakpoint(small only) {
+    max-width: 25rem;
   }
 }
 
-.vm-index__cause-cards-item {
-  height: 85px;
-  flex: 1 1 120px;
-  font-size: rem-calc(14);
-  max-width: 120px;
-  margin: 0 5px 10px 5px;
+.vm-index__how-it-works-header {
+  font-size: rem-calc(28);
   text-align: center;
-  color: $white;
-  background-color: $darkish-gray;
+  margin-bottom: rem-calc(24);
 }
 
-.vm-index__cause-cards-item-image-wrapper {
-  display: flex;
-  height: 30px;
-  margin: 15px auto 5px;
-  width: 30px;
+.vm-index__how-it-works-item {
+  margin-top: rem-calc(16);
 }
 
-.vm-index__cause-cards-item-image {
-  display: block;
-  margin: auto;
+.vm-index__how-it-works-item-header {
+  border-bottom: 3px solid $blue;
+  text-align: center;
+  margin-bottom: rem-calc(16);
+  color: $blue;
+  padding-bottom: rem-calc(4);
 }
 
-.vm-index__every-month {
-  padding: 20px;
-  border: 2px solid $primary-color;
-  position: relative;
-}
-
-.vm-index__every-month-header {
-  color: $primary-color;
-  background-color: #fff;
+.vm-index__how-it-works-item-header-number {
   display: inline-block;
-  font-size: 1.125;
-  position: absolute;
-  padding: 0 10px;
-  text-transform: uppercase;
-  top: -14px;
-  left: 10px;
+  width: 1.5em;
+  line-height: 1.4;
+  height: 1.5em;
+  background: $blue;
+  color: white;
+  border-radius: 100%;
+  margin-bottom: 0.5rem;
 }
 
-.vm-index__every-month-list {
-  list-style-type: none;
-  margin-left: 0;
+.vm-index__how-it-works-item-header-text {
+  font-size: rem-calc(18);
 }
-
-.vm-index__every-month-list-item {
-  font-size: 1.375rem;
-  margin: 20px 10px;
-  padding-left: 40px;
-  background-image: url('/images/icons/star.svg');
-  background-repeat: no-repeat;
-  background-position-y: 45%;
-  background-size: 20px 19px;
-}
-
 
 .vm-index__current-progress {
   margin-bottom: rem-calc(50);
