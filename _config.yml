@@ -24,7 +24,6 @@
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
-current_nonprofit: NIOT
 top_nav:
   - title: 'Home'
     url: '/'

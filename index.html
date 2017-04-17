@@ -46,23 +46,53 @@ flag: true
 </section>
 
 <section class="row">
-  <div class="columns medium-6 text-center">
-    <div class="vm-index__current-progress">
-      <h3 class="vm-index__current-donation">$14,892</h3>
-      <p>
-        <span class="vm-index__current-total">Total contributions to date</span><br/>
-        <em class="vm-index__current-total-subtext">Last grant awarded: March 16, 2017</em>
-      </p>
-    </div>
-    <a href="/join.html" class="button large expanded secondary vm-index__join-button">Join us</a>
-    <p class="vm-index__learn-more-container">Learn more <a href="/about.html" class="vm-index__learn-more-link">about us</a> or read our <a href="/faq.html" class="vm-index__learn-more-link">FAQ</a></p>
-  </div>
-  <div class="columns medium-4 medium-offset-1 end">
-    <h3>This month's nonprofit:</h3>
-    {% if site.current_nonprofit %}
-      {% include current-nonprofit.html %}
-    {% else %}
-      {% include choosing-nonprofit.html %}
-    {% endif %}
-  </div>
+  <h2 class="vm-index__total-contributions-header">Total Contributions to Date</h2>
+  <h3 class="vm-index__total-contributions-number">$14,892</h3>
 </section>
+
+<div class="vm-index__this-month-join-us-container">
+  <div class="vm-index__this-month">
+    <h2 class="vm-index__this-month-header">This Month’s Focus</h2>
+    <div class="vm-index__this-month-card-container">
+      <div class="vm-index__this-month-card-top-title">our focus</div>
+      <div class="vm-index__this-month-card vm-index__this-month-card-focus">
+        <h3 class="vm-index__this-month-card-title">Environment</h3>
+        <div class="vm-index__this-month-card-bottom-aligned">
+          <p class="vm-index__this-month-card-body">
+            The stats on climate change are staggering. To name just a few: 2016 was the hottest year on record—as was 2015, and as was 2014 before that. We’ve entered a “mass extinction” period, wherein we’re losing species at record rates. An estimated 13 million Americans are at risk of being displaced by 2100 as a result of rising sea levels. And experts have deemed climate change “the biggest gl…
+          </p>
+          <div class="vm-index__this-month-card-org-container">
+            <a class="vm-index__this-month-card-focus-link" href="https://blog.vocalminority.us/announcing-our-march-focus-the-environment-59fb22a16025">Read our blog post</a> →
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vm-index__this-month-card-container">
+      <div class="vm-index__this-month-card-top-title">selected organization</div>
+      <div class="vm-index__this-month-card vm-index__this-month-card-org">
+        <div class="vm-index__this-month-card-org-image-container">
+          <img src="/images/npo-logos/crmw@2x.png" alt="Coal River Mountain Watch" width="195"/>
+        </div>
+        <div class="vm-index__this-month-card-bottom-aligned">
+          <h3 class="vm-index__this-month-card-title vm-index__this-month-card-org-title">Coal River Mountain Watch</h3>
+          <div class="vm-index__this-month-card-org-subtitle">Naoma, WV</div>
+          <p class="vm-index__this-month-card-body">
+            The mission of Coal River Mountain Watch is to stop the destruction of our communities and environment by mountaintop removal mining, to improve the quality of life i…
+          </p>
+          <div class="vm-index__this-month-card-org-container vm-index__this-month-card-org-link-container">
+            <a class="vm-index__this-month-card-org-link" href="https://blog.vocalminority.us/vocal-minority-funds-coal-river-mountain-watchs-fight-for-environmental-justice-41cdb74b5f6d">Learn more</a> →
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="vm-index__join-us">
+    <h3 class="vm-index__join-us-header">Join Us</h3>
+    <a href="/join.html" class="button large expanded secondary vm-index__join-us-button">
+      Become a Member<br>
+      <span class="vm-index__join-us-button-subtext">$27 per month</span>
+    </a>
+    <p class="vm-index__join-us-learn-more-container">Learn more <a href="/about.html" class="vm-index__join-us-learn-more-link">about us</a> or read our <a href="/faq.html" class="vm-index__join-us-learn-more-link">FAQ</a></p>
+  </div>
+</div>
