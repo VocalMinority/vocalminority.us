@@ -1,17 +1,59 @@
 .vm-index__row-main-intro {
   margin-top: 0;
+  margin-bottom: 7rem;
 
   @include breakpoint(small only) {
     margin-top: rem-calc(40);
   }
 }
 
-.vm-index__main-intro {
+.vm-index__main-intro-main {
+  font-size: rem-calc(42);
   font-weight: normal;
+  max-width: 720px;
+  margin: 0 auto;
 
   @include breakpoint(small only) {
     font-size: rem-calc(34);
   }
+}
+
+.vm-index__main-intro-sub {
+  font-weight: normal;
+  font-size: rem-calc(18);
+  max-width: 400px;
+  margin: 0 auto 30px;
+  padding: 20px;
+  color: $darkish-gray;
+}
+
+.vm-index__main-intro-pill-container {
+  border-bottom: 1px solid $darkish-gray;
+  height: 0;
+  position: relative;
+  max-width: 525px;
+  margin: 0 auto;
+
+  @include breakpoint(small only) {
+    border-bottom: none;
+  }
+}
+
+.vm-index__main-intro-pill {
+  font-size: rem-calc(18);
+  padding: 6px 25px 8px;
+  border-radius: 2em;
+  color: white;
+  background: $darkish-gray;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  top: 0;
+  white-space: nowrap;
+}
+
+.vm-index__main-intro-pill-highlight {
+  font-weight: bold;
 }
 
 .vm-index__cause-cards {
@@ -35,7 +77,7 @@
   margin: 0 5px 10px 5px;
   text-align: center;
   color: $white;
-  background-color: $dark-gray;
+  background-color: $darkish-gray;
 }
 
 .vm-index__cause-cards-item-image-wrapper {
