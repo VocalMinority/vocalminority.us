@@ -3,6 +3,14 @@
   padding-bottom: rem-calc(60);
 }
 
+.vm-header__top-nav {
+  float: right;
+
+  @include breakpoint(medium) {
+    margin-top: -5px; // To offset the size of the "Join Us" button
+  }
+}
+
 .vm-header__top-nav-item {
   padding-right: rem-calc(20);
   text-align: center;
@@ -30,6 +38,22 @@
   font-weight: 500;
 }
 
+.vm-header__top-nav-item--join-us {
+  @include breakpoint(small only) {
+    display: none !important;
+  }
+}
+
+.vm-header__join-us-button {
+  color: $white;
+  // background-color: #ff3b40;
+  font-weight: $global-weight-bold;
+  font-style: normal;
+  margin-bottom: 0;
+  padding: 0.7rem 1.6rem !important;
+  white-space: nowrap;
+}
+
 @include breakpoint(small only) {
   .vm-header {
     padding-top: rem-calc(20);
@@ -44,7 +68,8 @@
 
   .vm-header__top-nav {
     display: table;
-    width: 100%;
+    margin: 0 auto;
+    float: none;
   }
 
   .vm-header__top-nav-item {

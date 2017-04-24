@@ -3,7 +3,7 @@
   margin-bottom: 7rem;
 
   @include breakpoint(small only) {
-    margin-top: rem-calc(40);
+    margin-top: rem-calc(20);
   }
 }
 
