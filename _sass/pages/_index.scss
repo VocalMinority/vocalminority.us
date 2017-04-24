@@ -162,7 +162,7 @@
   position: absolute; // within .vm-index__this-month-card
   left: 30px;
   right: 30px;
-  bottom: 24px;
+  bottom: 24px - 2px; // Small offset at the bottom.
 }
 
 .vm-index__this-month-card-focus {
@@ -182,10 +182,22 @@
 
 .vm-index__this-month-card-body {
   line-height: 1.43;
+  margin-bottom: 0;
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+
+    &:hover, &:focus {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
 }
 
-.vm-index__this-month-card-org-container {
-  line-height: 1;
+.vm-index__this-month-card-link-container {
+  line-height: 1.43;
+  margin-top: 1rem;
 }
 
 .vm-index__this-month-card-focus-link {

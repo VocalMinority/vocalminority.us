@@ -61,7 +61,7 @@ flag: true
           <p class="vm-index__this-month-card-body">
             {{ site.current_focus.body }}
           </p>
-          <div class="vm-index__this-month-card-org-container">
+          <div class="vm-index__this-month-card-link-container">
             <a class="vm-index__this-month-card-focus-link" href="{{ site.current_focus.url }}">Read our blog post</a> →
           </div>
         </div>
@@ -79,9 +79,11 @@ flag: true
           <p class="vm-index__this-month-card-body">
             {{ site.current_org.body }}
           </p>
-          <div class="vm-index__this-month-card-org-container vm-index__this-month-card-org-link-container">
+          {% if site.current_org.url %}
+          <div class="vm-index__this-month-card-link-container vm-index__this-month-card-org-link-container">
             <a class="vm-index__this-month-card-org-link" href="{{ site.current_org.url }}">Learn more</a> →
           </div>
+          {% endif %}
         </div>
       </div>
     </div>
