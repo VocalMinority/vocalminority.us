@@ -32,12 +32,10 @@ for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElemen
 mixpanel.init("f567ef26628c8b313ce8aefc94065c70");</script><!-- end Mixpanel -->
 
     </head>
-    {% if page.banner %}
-    <body class="vm-body--has-banner">
-      {% include banner.html %}
-    {% else %}
     <body>
-    {% endif %}
+      {% if page.banner %}
+      {% include banner.html %}
+      {% endif %}
 
       {% if page.flag %}
       <div class="vm-body__flag">
