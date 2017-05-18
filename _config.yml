@@ -48,30 +48,39 @@ current_org:
   url: https://blog.vocalminority.us/vocal-minority-funds-coal-river-mountain-watchs-fight-for-environmental-justice-41cdb74b5f6d
 
 grantees:
-  - date: February 2017
+  - month: February
+    year: 2017
     name: "Thrive: A Refugee Support Program"
+    short_name: Thrive # On home page
     description: Founded in 2011, Thrive is a team of volunteers dedicated to assisting refugees post-resettlement in Grand Rapids, Michigan. They bridge the gap between the 3–6 months of assistance a government resettlement program can provide and the reality of what it takes to get settled. Thrive connects each family with volunteers who can help and mentor them as they adjust to a new place and culture, local agencies and services that will help them succeed, and a warm community to make them feel at home in their new country.
     video: https://blog.vocalminority.us/a-thank-you-message-from-thrive-f342375be95a
     website: https://refugeesupportgr.com/
     amount: $5,345
     focus: Refugee Support
     contributors: 87
-  - date: January 2017
+    slug: thrive
+  - month: January
+    year: 2017
     name: Making Contact Radio
+    short_name: Making Contact Radio # On home page
     description: Founded in 1994, Making Contact is an independent non-profit organization committed to investigative journalism, in-depth critical analysis, the promotion of civic participation and the dissemination of educational material. What began as a 13-week experiment in highlighting progressive community perspectives has become an enduring platform for underrepresented groups and community voices.
     video: '???'
     website: http://www.radioproject.org/
     amount: $4,896
     focus: Independent Media
     contributors: 93
-  - date: December 2016
+    slug: making-contact
+  - month: December
+    year: 2016
     name: Not In Our Town
+    short_name: Not In Our Town # On home page
     description: Founded in 1995, Not In Our Town (NIOT) began in Billings, Montana, when a community of working people stood up to a series of hate crimes by white supremacists. After attacks on a Native American woman’s house, an African-American church, and a Jewish family’s home, the entire town refused to be silent and fearful. They stood up to hate with petitions, marches, community outreach, but most importantly — with peace and unity. It worked.
     video: https://blog.vocalminority.us/a-thank-you-from-our-december-grantee-not-in-our-town-86d6dc0f5905
     website: http://www.radioproject.org/
     amount: $4,651
     focus: Combatting Hate
     contributors: 65
+    slug: not-in-our-town
 
 top_nav:
   - title: 'About'

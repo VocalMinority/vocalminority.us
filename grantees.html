@@ -15,7 +15,8 @@ banner: true
       <div class="vm-grantees__grantee-outer">
         <div class="vm-grantees__grantee-side">
           <div class="vm-grantees__card-container">
-            <div class="vm-grantees__card-date">{{ grantee.date }} organization</div>
+            <a name="{{ grantee.slug }}"></a>
+            <div class="vm-grantees__card-date">{{ grantee.month }} {{ grantee.year }} organization</div>
             <h2 class="vm-grantees__card-name">{{ grantee.name }}</h2>
             <div class="vm-grantees__card-description">{{ grantee.description }}</div>
             <div class="vm-grantees__card-links">

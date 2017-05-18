@@ -45,9 +45,30 @@ flag: true
   </div>
 </section>
 
-<section class="row">
+<section class="row vm-index__total-contributions-row">
   <h2 class="vm-index__total-contributions-header">Total Contributions to Date</h2>
   <h3 class="vm-index__total-contributions-number">{{ site.contributions_to_date }}</h3>
+
+  <h2 class="vm-index__grantees-header">previous grantees</h2>
+  <div class="vm-index__grantees-container">
+    {% for grantee in site.grantees limit:3 %}
+      <a class="vm-index__grantees-item" href="/grantees.html#{{ grantee.slug }}">
+        <div class="vm-index__grantees-item-header">Focus</div>
+        <div class="vm-index__grantees-item-content">{{ grantee.focus }}</div>
+        <div class="vm-index__grantees-item-header">Grantee</div>
+        <div class="vm-index__grantees-item-content">{{ grantee.short_name }}</div>
+        <div class="vm-index__grantees-item-divider"></div>
+        <div class="vm-index__grantees-item-month">{{ grantee.month }}</div>
+        <div class="vm-index__grantees-item-amount">{{ grantee.amount }}</div>
+      </a>
+    {% endfor %}
+    <a class="vm-index__grantees-item vm-index__grantees-item--last" href="/grantees.html">
+      <div>
+        <div class="vm-index__grantees-item--last__link">Full History of<br>Grantees</div>
+        →
+      </div>
+    </a>
+  </div>
 </section>
 
 <div class="vm-index__this-month-join-us-container">
