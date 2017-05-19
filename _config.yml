@@ -64,7 +64,7 @@ grantees:
     name: Making Contact Radio
     short_name: Making Contact Radio # On home page
     description: Founded in 1994, Making Contact is an independent non-profit organization committed to investigative journalism, in-depth critical analysis, the promotion of civic participation and the dissemination of educational material. What began as a 13-week experiment in highlighting progressive community perspectives has become an enduring platform for underrepresented groups and community voices.
-    video: '???'
+    video: https://www.facebook.com/wearethevocalminority/videos/692257594269694/
     website: http://www.radioproject.org/
     amount: $4,896
     focus: Independent Media
@@ -78,7 +78,7 @@ grantees:
     video: https://blog.vocalminority.us/a-thank-you-from-our-december-grantee-not-in-our-town-86d6dc0f5905
     website: http://www.radioproject.org/
     amount: $4,651
-    focus: Combatting Hate
+    focus: Combating Hate
     contributors: 65
     slug: not-in-our-town
 
