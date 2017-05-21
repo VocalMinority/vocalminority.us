@@ -1,0 +1,49 @@
+---
+layout: default
+title: Vocal Minority | Grantee History
+banner: true
+---
+
+<section class="row vm-row-header vm-grantees__container">
+  <h2 class="text-center">Grantee History</h2>
+
+  <h3 class="vm-grantees__total-contributions-number">{{ site.contributions_to_date }}</h3>
+  <h2 class="vm-grantees__total-contributions-subtext">in total contributions to date</h2>
+
+  <div class="vm-grantees__grantees-container">
+    {% for grantee in site.grantees %}
+      <div class="vm-grantees__grantee-outer">
+        <div class="vm-grantees__grantee-side">
+          <div class="vm-grantees__card-container">
+            <a name="{{ grantee.slug }}"></a>
+            <div class="vm-grantees__card-date">{{ grantee.month }} {{ grantee.year }} organization</div>
+            <h2 class="vm-grantees__card-name">{{ grantee.name }}</h2>
+            <div class="vm-grantees__card-description">{{ grantee.description }}</div>
+            <div class="vm-grantees__card-links">
+              {% if grantee.video %}
+                <a class="vm-grantees__card-video" href="{{ grantee.video }}"><span class="vm-grantees__card-video-button">▶︎</span> <span class="vm-grantees__card-video-inner">Watch Video</span></a>
+              {% endif %}
+              <a class="vm-grantees__card-website" href="{{ grantee.website }}">View Website</a>
+            </div>
+          </div>
+        </div>
+        <div class="vm-grantees__grantee-side">
+          <div class="vm-grantees__amount-container">
+            <div class="vm-grantees__amount-amount">{{ grantee.amount }}</div>
+            <div class="vm-grantees__amount-focus">for {{ grantee.focus }}</div>
+            <div class="vm-grantees__amount-contributors">{{ grantee.contributors }} members</div>
+          </div>
+        </div>
+        <div class="vm-grantees__grantee-final-dot"></div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="vm-grantees__join-us">
+    <a href="/join.html" class="button large expanded secondary vm-grantees__join-us-button">
+      Become a Member<br>
+      <span class="vm-grantees__join-us-button-subtext">$27 per month</span>
+    </a>
+    <p class="vm-grantees__join-us-learn-more-container">Learn more <a href="/about.html" class="vm-grantees__join-us-learn-more-link">about us</a> or read our <a href="/faq.html" class="vm-grantees__join-us-learn-more-link">FAQ</a></p>
+  </div>
+</section>
