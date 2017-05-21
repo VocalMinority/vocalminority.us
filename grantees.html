@@ -20,7 +20,9 @@ banner: true
             <h2 class="vm-grantees__card-name">{{ grantee.name }}</h2>
             <div class="vm-grantees__card-description">{{ grantee.description }}</div>
             <div class="vm-grantees__card-links">
-              <a class="vm-grantees__card-video" href="{{ grantee.video }}"><span class="vm-grantees__card-video-button">▶︎</span> <span class="vm-grantees__card-video-inner">Watch Video</span></a>
+              {% if grantee.video %}
+                <a class="vm-grantees__card-video" href="{{ grantee.video }}"><span class="vm-grantees__card-video-button">▶︎</span> <span class="vm-grantees__card-video-inner">Watch Video</span></a>
+              {% endif %}
               <a class="vm-grantees__card-website" href="{{ grantee.website }}">View Website</a>
             </div>
           </div>

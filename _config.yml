@@ -24,7 +24,7 @@
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
-contributions_to_date: $20,203
+contributions_to_date: $25,626
 
 current_focus:
   title: Environment
@@ -48,6 +48,28 @@ current_org:
   url: https://blog.vocalminority.us/vocal-minority-funds-coal-river-mountain-watchs-fight-for-environmental-justice-41cdb74b5f6d
 
 grantees:
+  - month: April
+    year: 2017
+    name: "VoteRunLead"
+    short_name: VoteRunLead # On home page
+    description: VoteRunLead is a national nonpartisan organization that unleashes the power of women leaders in democracy through training, technology and community.
+    video:
+    website: https://voterunlead.org/
+    amount: $5,423
+    focus: Community Service
+    contributors: 90
+    slug: vote-run-lead
+  - month: March
+    year: 2017
+    name: "Coal River Mountain Watch"
+    short_name: CRMW # On home page
+    description: The mission of Coal River Mountain Watch is to stop the destruction of our communities and environment by mountaintop removal mining, to improve the quality of life in our area and to help rebuild sustainable communities.
+    video: https://blog.vocalminority.us/a-thank-you-message-from-coal-river-mountain-watch-ed41a41bc9f7
+    website: http://crmw.net/
+    amount: $5,311
+    focus: Environmental Justice
+    contributors: 90
+    slug: coal-river
   - month: February
     year: 2017
     name: "Thrive: A Refugee Support Program"
@@ -57,7 +79,7 @@ grantees:
     website: https://refugeesupportgr.com/
     amount: $5,345
     focus: Refugee Support
-    contributors: 87
+    contributors: 87 
     slug: thrive
   - month: January
     year: 2017
