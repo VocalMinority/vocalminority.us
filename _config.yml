@@ -27,10 +27,10 @@
 contributions_to_date: $25,626
 
 current_focus:
-  title: Environment
+  title: Immigration
   # Note: have to cap off the body with "…" manually:
-  body: "The stats on climate change are staggering. To name just a few: 2016 was the hottest year on record—as was 2015, and as was 2014 before that. We’ve entered a “mass extinction” period, wherein we’re losing species at record rates. An estimated 13 million Americans are at risk of being displaced by 2100 as a result of rising sea levels. And experts have deemed climate change “the biggest gl…"
-  url: https://blog.vocalminority.us/announcing-our-march-focus-the-environment-59fb22a16025
+  body: "The results are in! With 47% of all votes, Immigration has been selected by the community as our May focus. Our advisory committee will now begin researching and vetting nonprofits that meet our criteria: Fighting for equity and justice in America: For immigration, this could mean an organization providing legal assistance, workforce training, or education programs."
+  url: https://blog.vocalminority.us/our-may-focus-immigration-5c447e14600a
 
 # Uncomment this if you want to show the "To Be Announced" placeholder:
 # current_org:
@@ -40,12 +40,12 @@ current_focus:
 
 # Uncomment this if you want to show an actual organization:
 current_org:
-  image: <img src="/images/npo-logos/crmw@2x.png" alt="Coal River Mountain Watch" width="195"/>
-  title: Coal River Mountain Watch
-  location: Naoma, WV
+  image: <img src="/images/npo-logos/las-americas.png" alt="Las Americas Immigrant Advocacy Center" width="195"/>
+  title: Las Americas Immigrant Advocacy Center
+  location: El Paso, TX
   # Note: have to cap off the body with "…" manually:
-  body: "The mission of Coal River Mountain Watch is to stop the destruction of our communities and environment by mountaintop removal mining, to improve the quality of life i…"
-  url: https://blog.vocalminority.us/vocal-minority-funds-coal-river-mountain-watchs-fight-for-environmental-justice-41cdb74b5f6d
+  body: "Las Americas is a 29 year-old, homegrown, non-profit dedicated to serving the legal needs of low income immigrants, including refugees, victims of crime, and families seeking reunification."
+  url: https://blog.vocalminority.us/vocal-minority-funds-legal-rights-for-immigrants-394929ad7ebc
 
 grantees:
   - month: April
@@ -79,7 +79,7 @@ grantees:
     website: https://refugeesupportgr.com/
     amount: $5,345
     focus: Refugee Support
-    contributors: 87 
+    contributors: 87
     slug: thrive
   - month: January
     year: 2017
