@@ -97,6 +97,10 @@
   font-size: rem-calc(18);
 }
 
+.vm-index__total-contributions-row {
+  padding: 0 15px;
+}
+
 .vm-index__total-contributions-header {
   font-size: rem-calc(28);
   text-align: center;
@@ -108,7 +112,119 @@
   font-weight: normal;
   line-height: 1;
   text-align: center;
+  margin-bottom: rem-calc(32);
+
+
+  @include breakpoint(small only) {
+    font-size: rem-calc(80);
+  }
 }
+
+.vm-index__grantees-header {
+  color: $gray-text;
+  font-size: 1.1rem;
+  font-variant: small-caps;
+  margin-bottom: rem-calc(16);
+  letter-spacing: 1px;
+
+  @media (max-width: 670px) {
+    text-align: center;
+  }
+}
+
+.vm-index__grantees-container {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 670px) {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.vm-index__grantees-item {
+  display: block;
+  background: $darkish-gray;
+  height: 265px;
+  width: 205px;
+  padding: 15px 20px;
+
+  &:hover, &:active {
+    background: $dark-gray;
+  }
+
+  @media (max-width: 860px) {
+    &:nth-child(3) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 670px) {
+    width: 100%;
+    max-width: 305px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+
+    &:nth-child(3) {
+      display: block;
+    }
+  }
+}
+
+.vm-index__grantees-item--last {
+  background: $light-gray;
+  color: $darkish-gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .vm-index__grantees-item--last__link {
+    text-decoration: underline;
+  }
+
+  &:hover, &:active {
+    color: $dark-gray;
+    background: $medium-gray;
+
+    .vm-index__grantees-item--last__link {
+      text-decoration: none;
+    }
+  }
+}
+
+.vm-index__grantees-item-header {
+  font-size: rem-calc(14);
+  font-style: italic;
+  color: $medium-gray;
+}
+
+.vm-index__grantees-item-content {
+  color: white;
+  margin-bottom: 1em;
+}
+
+.vm-index__grantees-item-divider {
+  border-bottom: 1px solid $medium-gray;
+  width: 60px;
+  margin: 30px auto 25px;
+}
+
+.vm-index__grantees-item-month {
+  color: white;
+  text-align: center;
+  font-weight: 500;
+}
+
+.vm-index__grantees-item-amount {
+  font-size: rem-calc(40);
+  color: white;
+  text-align: center;
+  line-height: 1;
+  font-weight: 500;
+}
+
 
 .vm-index__this-month-join-us-container {
   background: $lighter-gray;
