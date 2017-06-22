@@ -77,14 +77,12 @@ flag: true
     <div class="vm-index__this-month-card-container">
       <div class="vm-index__this-month-card-top-title">our focus</div>
       <div class="vm-index__this-month-card vm-index__this-month-card-focus">
-        <h3 class="vm-index__this-month-card-title">{{ site.current_focus.title }}</h3>
-        <div class="vm-index__this-month-card-bottom-aligned">
-          <p class="vm-index__this-month-card-body">
-            {{ site.current_focus.body }}
-          </p>
-          <div class="vm-index__this-month-card-link-container">
-            <a class="vm-index__this-month-card-focus-link" href="{{ site.current_focus.url }}">Read our blog post</a> →
-          </div>
+        <h3 class="vm-index__this-month-card-title vm-index__this-month-card-title-focus">{{ site.current_focus.title }}</h3>
+        <p class="vm-index__this-month-card-body">
+          {{ site.current_focus.body }}
+        </p>
+        <div class="vm-index__this-month-card-link-container">
+          <a class="vm-index__this-month-card-focus-link" href="{{ site.current_focus.url }}">Read our blog post</a> →
         </div>
       </div>
     </div>
