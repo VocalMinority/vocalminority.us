@@ -27,9 +27,9 @@
 contributions_to_date: $30,948
 
 current_focus:
-  title: Environment Justice
+  title: Environmental Justice
   # Note: have to cap off the body with "…" manually:
-  body: "Given the continued rhetoric around climate change and the recent news of the US pulling out of The Paris Agreement, our community has decided to again focus on environmental justice. Over 50% of our members voted for this focus, which is evident of the severity and importance of this issue."
+  body: "With the United States announcing its withdrawal from the Paris Climate Agreement, our community has decided to again to focus on environmental justice. Over 50% of our members voted for this focus, demonstrating how critical we feel this issue is in the fight for a more equitable and just world."
   url: https://blog.vocalminority.us/vocal-minority-funds-climate-education-and-action-41b473dc2e42
 
 # Uncomment this if you want to show the "To Be Announced" placeholder:
@@ -52,7 +52,7 @@ grantees:
     year: 2017
     name: "Las Americas Immigrant Advocacy Center"
     short_name: Las Americas # On home page
-    description: Las Americas is a 29 year-old, homegrown, non-profit dedicated to serving the legal needs of low income immigrants, including refugees, victims of crime, and families seeking reunification.
+    description: Las Americas is a 29-year-old, homegrown, non-profit dedicated to serving the legal needs of low income immigrants, including refugees, victims of crime, and families seeking reunification.
     video:
     website: http://las-americas.org/
     amount: $5,322
