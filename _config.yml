@@ -24,36 +24,47 @@
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
-contributions_to_date: $30,948
+contributions_to_date: $36,212
 
 current_focus:
-  title: Environmental Justice
+  title: Freedom to Vote
   # Note: have to cap off the body with "…" manually:
-  body: "With the United States announcing its withdrawal from the Paris Climate Agreement, our community has decided to again focus on environmental justice. Over 50% of our members voted for this focus, demonstrating how critical we feel this issue is in the fight for a more equitable and just world."
-  url: https://blog.vocalminority.us/vocal-minority-funds-climate-education-and-action-41b473dc2e42
+  body: "We're focusing this month on freedom—one of the bedrocks of our country. Specifically, our community has decided to focus on our freedom to vote. We believe that all Americans have the right to express their beliefs through the power of our voting system. Given the nationwide discussion regarding voter suppression, we've decided to fight back this month."
+  url:
 
 # Uncomment this if you want to show the "To Be Announced" placeholder:
-# current_org:
-#   image: "<div style='font-size: 7rem; color: #ccc;'>…</div>"
-#   title: To Be Announced
-#   body: "Our selection committee is currently researching a number of NPOs in this space. We look for organizations where our impact can be significant. Read more about out <a href='/about.html#criteria'>selection process</a>."
+current_org:
+  image: "<div style='font-size: 7rem; color: #ccc;'>…</div>"
+  title: To Be Announced
+  body: "Our selection committee is currently researching a number of NPOs in this space. We look for organizations where our impact can be significant. Read more about out <a href='/about.html#criteria'>selection process</a>."
 
 # Uncomment this if you want to show an actual organization:
-current_org:
-  image: <img src="/images/npo-logos/ace.png" alt="Alliance for Climate Education" width="195"/>
-  title: Alliance for Climate Education
-  location: Boulder, CO
-  # Note: have to cap off the body with "…" manually:
-  body: "Alliance for Climate Education’s mission is to educate young people on the science of climate change and empower them to take action."
-  url: https://acespace.org/
+# current_org:
+#   image: <img src="/images/npo-logos/ace.png" alt="Alliance for Climate Education" width="195"/>
+#   title: Alliance for Climate Education
+#   location: Boulder, CO
+#   # Note: have to cap off the body with "…" manually:
+#   body: "Alliance for Climate Education’s mission is to educate young people on the science of climate change and empower them to take action."
+#   url: https://acespace.org/
 
 grantees:
+  - month: June
+    year: 2017
+    name: "Alliance for Climate Education"
+    short_name: ACE # On home page
+    description: Alliance for Climate Education’s mission is to educate young people on the science of climate change and empower them to take action.
+    video:
+    website: https://acespace.org/
+    amount: $5,264
+    focus: Environment Justice
+    contributors: 87
+    slug: ace
   - month: May
     year: 2017
     name: "Las Americas Immigrant Advocacy Center"
     short_name: Las Americas # On home page
     description: Las Americas is a 29-year-old, homegrown, non-profit dedicated to serving the legal needs of low income immigrants, including refugees, victims of crime, and families seeking reunification.
-    video:
+    video: https://www.facebook.com/wearethevocalminority/videos/772909849537801/
     website: http://las-americas.org/
     amount: $5,322
     focus: Immigration
