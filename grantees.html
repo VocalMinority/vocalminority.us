@@ -21,9 +21,9 @@ banner: true
             <div class="vm-grantees__card-description">{{ grantee.description }}</div>
             <div class="vm-grantees__card-links">
               {% if grantee.video %}
-                <a class="vm-grantees__card-video" href="{{ grantee.video }}"><span class="vm-grantees__card-video-button">▶︎</span> <span class="vm-grantees__card-video-inner">Watch Video</span></a>
+                <a class="vm-grantees__card-video" href="{{ grantee.video }}" target="_blank"><span class="vm-grantees__card-video-button">▶︎</span> <span class="vm-grantees__card-video-inner">Watch Video</span></a>
               {% endif %}
-              <a class="vm-grantees__card-website" href="{{ grantee.website }}">View Website</a>
+              <a class="vm-grantees__card-website" href="{{ grantee.website }}" target="_blank">View Website</a>
             </div>
           </div>
         </div>
