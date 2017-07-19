@@ -27,10 +27,10 @@
 contributions_to_date: $36,212
 
 current_focus:
-  title: Freedom to Vote
+  title: Voting Rights
   # Note: have to cap off the body with "…" manually:
-  body: "We're focusing this month on freedom—one of the bedrocks of our country. Specifically, our community has decided to focus on our freedom to vote. We believe that all Americans have the right to express their beliefs through the power of our voting system. Given the nationwide discussion regarding voter suppression, we've decided to fight back this month."
-  url:
+  body: "The Presidential Advisory Commission on Election Integrity has requested highly-sensitive, personal information on every U.S. voter. Our government is marshaling considerable taxpayer resources to collect data it shouldn’t have to try and prove something we already know isn’t true. To do our part, we'll support an organization fighting to preserve the power of our vote."
+  url: https://blog.vocalminority.us/our-july-focus-voting-rights-6399d98c51f0
 
 # Uncomment this if you want to show the "To Be Announced" placeholder:
 current_org:
