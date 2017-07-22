@@ -53,10 +53,10 @@ grantees:
     name: "Alliance for Climate Education"
     short_name: ACE # On home page
     description: Alliance for Climate Education’s mission is to educate young people on the science of climate change and empower them to take action.
-    video:
+    video: 
     website: https://acespace.org/
     amount: $5,264
-    focus: Environment Justice
+    focus: Environmental Justice
     contributors: 87
     slug: ace
   - month: May
