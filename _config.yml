@@ -30,7 +30,7 @@ current_focus:
   title: Voting Rights
   # Note: have to cap off the body with "…" manually:
   body: "The Presidential Advisory Commission on Election Integrity has requested highly-sensitive, personal information on every U.S. voter. Our government is marshaling considerable taxpayer resources to collect data it shouldn’t have to try and prove something we already know isn’t true. To do our part, we'll support an organization fighting to preserve the power of our vote."
-  url: 
+  url:
 
 # Uncomment this if you want to show the "To Be Announced" placeholder:
 current_org:
@@ -56,7 +56,7 @@ grantees:
     video:
     website: http://cajunrelief.org/
     amount:
-    focus: Hurricane Relief
+    focus: Rebuilding Texas
     contributors:
     slug: cajun-relief
   - month: August
@@ -68,7 +68,7 @@ grantees:
     website: https://healsinc.org
     amount: $5,296
     focus: Healthcare
-    contributors:
+    contributors: 84
     slug: heals
   - month: July
     year: 2017
