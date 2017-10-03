@@ -24,30 +24,63 @@
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
-contributions_to_date: $36,212
+contributions_to_date: $46,823
 
 current_focus:
   title: Voting Rights
   # Note: have to cap off the body with "…" manually:
   body: "The Presidential Advisory Commission on Election Integrity has requested highly-sensitive, personal information on every U.S. voter. Our government is marshaling considerable taxpayer resources to collect data it shouldn’t have to try and prove something we already know isn’t true. To do our part, we'll support an organization fighting to preserve the power of our vote."
-  url: https://blog.vocalminority.us/our-july-focus-voting-rights-6399d98c51f0
+  url: 
 
 # Uncomment this if you want to show the "To Be Announced" placeholder:
-# current_org:
-#   image: "<div style='font-size: 7rem; color: #ccc;'>…</div>"
-#   title: To Be Announced
-#   body: "Our selection committee is currently researching a number of NPOs in this space. We look for organizations where our impact can be significant. Read more about out <a href='/about.html#criteria'>selection process</a>."
+current_org:
+  image: "<div style='font-size: 7rem; color: #ccc;'>…</div>"
+  title: To Be Announced
+  body: "Our selection committee is currently researching a number of NPOs in this space. We look for organizations where our impact can be significant. Read more about out <a href='/about.html#criteria'>selection process</a>."
 
 # Uncomment this if you want to show an actual organization:
-current_org:
-  image: <img src="/images/npo-logos/voteriders.png" alt="VoteRiders" width="195"/>
-  title: VoteRiders
-  location: Santa Monica, CA
-  # Note: have to cap off the body with "…" manually:
-  body: "VoteRiders' mission is to ensure that all citizens are able to exercise their right to vote. They achieve this by informing and helping citizens secure their voter ID through education and assistance."
-  url: http://www.voteriders.org/
+# current_org:
+#   image: <img src="/images/npo-logos/voteriders.png" alt="VoteRiders" width="195"/>
+#   title: VoteRiders
+#   location: Santa Monica, CA
+#   # Note: have to cap off the body with "…" manually:
+#   body: "VoteRiders' mission is to ensure that all citizens are able to exercise their right to vote. They achieve this by informing and helping citizens secure their voter ID through education and assistance."
+#   url: http://www.voteriders.org/
 
 grantees:
+  - month: September
+    year: 2017
+    name: "Cajun Relief"
+    short_name: Cajun Relief # On home page
+    description: The Cajun Relief Foundation helps citizens meet needs and connect volunteers with those impacted by hurricanes, earthquakes and disasters of all kinds.
+    video:
+    website: http://cajunrelief.org/
+    amount:
+    focus: Hurricane Relief
+    contributors:
+    slug: cajun-relief
+  - month: August
+    year: 2017
+    name: "HEALS, Inc."
+    short_name: HEALS, Inc. # On home page
+    description: It is HEALS' mission to deliver accessible, quality, school-based, primary health care for children through collaborative efforts with the school system and the medical, dental and mental communities.
+    video:
+    website: https://healsinc.org
+    amount: $5,296
+    focus: Healthcare
+    contributors:
+    slug: heals
+  - month: July
+    year: 2017
+    name: "VoteRiders"
+    short_name: VoteRiders # On home page
+    description: VoteRiders' mission is to ensure that all citizens are able to exercise their right to vote. They achieve this by informing and helping citizens secure their voter ID through education and assistance.
+    video: https://blog.vocalminority.us/a-thank-you-message-from-voteriders-a97863da202d
+    website: https://voteriders.org
+    amount: $5,315
+    focus: Voting Rights
+    contributors:
+    slug: vote-riders
   - month: June
     year: 2017
     name: "Alliance for Climate Education"
