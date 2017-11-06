@@ -81,9 +81,11 @@ flag: true
         <p class="vm-index__this-month-card-body">
           {{ site.current_focus.body }}
         </p>
+        {% if site.current_focus.url %}
         <div class="vm-index__this-month-card-link-container">
           <a class="vm-index__this-month-card-focus-link" href="{{ site.current_focus.url }}">Read our blog post</a> →
         </div>
+        {% endif %}
       </div>
     </div>
     <div class="vm-index__this-month-card-container">
