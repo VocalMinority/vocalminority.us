@@ -24,13 +24,13 @@
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
-contributions_to_date: $52,218
+contributions_to_date: $57,137
 
 current_focus:
-  title: Puerto Rico Recovery
+  title: Gun Voilence
   # Note: have to cap off the body with "…" manually:
-  body: "Two weeks after Hurricane Maria struck, recovery has been a nightmare for the island’s 3.4 million American citizens. Continuing in the vein of last month, reach out to a local organization and help with the region’s rebuilding efforts."
-  url: https://blog.vocalminority.us/vocal-minority-helps-with-puerto-ricos-recovery-effort-6ed02ae0f418
+  body: "In honor of the victims of the church shooting in Suthlerland Springs, Texas. This is the 377th mass shooting of 2017, and it’s time to take a stand. Our community will find an organization working to prevent gun violence."
+  url: https://blog.vocalminority.us/vocal-minority-takes-a-stand-against-gun-violence-b09b5519cfab
 
 # Uncomment this if you want to show the "To Be Announced" placeholder:
 # current_org:
@@ -40,14 +40,25 @@ current_focus:
 
 # Uncomment this if you want to show an actual organization:
 current_org:
-  image: <img src="/images/npo-logos/fpr.png" alt="Foundation for Puerto Rico" width="195"/>
-  title: Foundation for Puerto Rico
-  location: San Juan, PR
+  image: <img src="/images/npo-logos/efsgv.png" alt="The Educational Fund to Stop Gun Violence" width="140"/>
+  title: The Educational Fund to Stop Gun Violence
+  location: Washington, D.C.
   # Note: have to cap off the body with "…" manually:
-  body: "With an intelligent eye on the future, the foundation for Puerto Rico is forward-thinking and dedicated to driving smart infrastructure change to Puerto Rico. The future of the island…"
-  url: https://www.foundationforpuertorico.org/
+  body: "The Educational Fund to Stop Gun Violence is an organization that makes communities safer by translating research into policy."
+  url: http://efsgv.org/
 
 grantees:
+  - month: October
+    year: 2017
+    name: "Foundation for Puerto Rico"
+    short_name: FPR # On home page
+    description: With an intelligent eye on the future, the foundation for Puerto Rico is forward-thinking and dedicated to driving smart infrastructure change to Puerto Rico.
+    video:
+    website: https://www.foundationforpuertorico.org/
+    amount: $4,919
+    focus: Puerto Rico Recovery
+    contributors: 80
+    slug: puert-rico-recovery
   - month: September
     year: 2017
     name: "Cajun Relief"
