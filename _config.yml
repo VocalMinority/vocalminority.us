@@ -64,7 +64,7 @@ grantees:
     name: "The Educational Fund to Stop Gun Violence"
     short_name:  EFSGV # On home page
     description: Founded in 1978, The Educational Fund to Stop Gun Violence develops and implements evidence-based policy advocacy campaigns that reduce gun death and injury.
-    video:
+    video: https://www.youtube.com/watch?v=MI9FT5oZ5fY
     website: http://efsgv.org/
     amount: $5,069
     focus: Gun Violence
@@ -75,7 +75,7 @@ grantees:
     name: "Foundation for Puerto Rico"
     short_name: FPR # On home page
     description: With an intelligent eye on the future, the foundation for Puerto Rico is forward-thinking and dedicated to driving smart infrastructure change to Puerto Rico.
-    video: https://www.facebook.com/wearethevocalminority/videos/864289683733150/
+    video: https://www.youtube.com/watch?v=y2ajmDXQw1A
     website: https://www.foundationforpuertorico.org/
     amount: $4,919
     focus: Puerto Rico Recovery
