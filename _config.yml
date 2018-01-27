@@ -24,13 +24,13 @@
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
-contributions_to_date: $57,137
+contributions_to_date: $67,421
 
 current_focus:
-  title: Gun Violence
+  title: El Salvador
   # Note: have to cap off the body with "…" manually:
-  body: "In honor of the victims of the church shooting in Suthlerland Springs, Texas. This is the 377th mass shooting of 2017, and it’s time to take a stand. Our community will find an organization working to prevent gun violence."
-  url: https://blog.vocalminority.us/vocal-minority-takes-a-stand-against-gun-violence-b09b5519cfab
+  body: "The Trump administration revoked the temporary legal status of more than 260,000 Salvadoran immigrants, leaving the formerly protected community vulnerable to deportation. They fled an earthquake in 2001 for a better life here; many are now business owners and prominent members of their local communities, and have earned their place in America."
+  url: https://blog.vocalminority.us/vocal-minority-supports-salvadorian-immigrants-723d33013f50
 
 # Uncomment this if you want to show the "To Be Announced" placeholder:
 # current_org:
@@ -40,20 +40,42 @@ current_focus:
 
 # Uncomment this if you want to show an actual organization:
 current_org:
-  image: <img src="/images/npo-logos/efsgv.png" alt="The Educational Fund to Stop Gun Violence" width="140"/>
-  title: The Educational Fund to Stop Gun Violence
-  location: Washington, D.C.
+  image: <img src="/images/npo-logos/centro-presente.png" alt="Centro Presente" width="140"/>
+  title: Centro Presente
+  location: Boston, MA
   # Note: have to cap off the body with "…" manually:
-  body: "The Educational Fund to Stop Gun Violence is an organization that makes communities safer by translating research into policy."
-  url: http://efsgv.org/
+  body: "Centro Presente is a member-driven, state-wide Latin American immigrant organization dedicated to the self-determination and self-sufficiency of the Latin American immigrant community of Massachusetts."
+  url: http://www.cpresente.org
 
 grantees:
+  - month: December
+    year: 2017
+    name: "Mission Asset Fund"
+    short_name: MAF # On home page
+    description: Founded in 2007, Mission Asset Fund is a nonprofit organization on a mission to create a fair financial marketplace for hardworking families.
+    video:
+    website: https://missionassetfund.org/
+    amount: $5,215
+    focus: Income Inequality
+    contributors: 80
+    slug: mission-asset-fund
+  - month: November
+    year: 2017
+    name: "The Educational Fund to Stop Gun Violence"
+    short_name:  EFSGV # On home page
+    description: Founded in 1978, The Educational Fund to Stop Gun Violence develops and implements evidence-based policy advocacy campaigns that reduce gun death and injury.
+    video: https://www.youtube.com/watch?v=MI9FT5oZ5fY
+    website: http://efsgv.org/
+    amount: $5,069
+    focus: Gun Violence
+    contributors: 81
+    slug: efsgv
   - month: October
     year: 2017
     name: "Foundation for Puerto Rico"
     short_name: FPR # On home page
     description: With an intelligent eye on the future, the foundation for Puerto Rico is forward-thinking and dedicated to driving smart infrastructure change to Puerto Rico.
-    video:
+    video: https://www.youtube.com/watch?v=y2ajmDXQw1A
     website: https://www.foundationforpuertorico.org/
     amount: $4,919
     focus: Puerto Rico Recovery
