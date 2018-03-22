@@ -24,12 +24,12 @@
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
-contributions_to_date: $67,421
+contributions_to_date: $76,421
 
 current_focus:
-  title: Dreamers
+  title: Parkland, Teacher Pay, Puerto Rico
   # Note: have to cap off the body with "…" manually:
-  body: "In less than a month, roughly 700,000 DACA recipients face deportation if Congress doesn’t reach a deal to extend their protected status. We sincerely hope that Congress will reach a deal on an issue that has overwhelming bipartisan support, but we shouldn’t take any chances. Our members will fund an organization working to support DREAMers during this incredibly trying time."
+  body: "TBD"
   url:
 
 # Uncomment this if you want to show the "To Be Announced" placeholder:
@@ -48,6 +48,17 @@ current_org:
 #   url: http://www.cpresente.org
 
 grantees:
+  - month: February
+    year: 2017
+    name: "OneAmerica"
+    short_name: OneAmerica # On home page
+    description: Based in Washington state, OneAmerica formed after 9/11 in response to hate crimes and discrimination targeting Arabs, Muslims, and South Asians. OneAmerica has now grown into a leading force for immigrant, civil and human rights.
+    video:
+    website: https://www.oneamerica.com/
+    amount: $4,500
+    focus: Dreamers
+    contributors: 77
+    slug: one-america
   - month: January
     year: 2017
     name: "Centro Presente"
@@ -55,9 +66,9 @@ grantees:
     description: Centro Presente is a member-driven, state-wide Latin American immigrant organization dedicated to the self-determination and self-sufficiency of the Latin American immigrant community of Massachusetts.
     video:
     website: http://www.cpresente.org
-    amount: TBA
+    amount: $4,500
     focus: El Salvador
-    contributors: TBA
+    contributors: 78
     slug: centro-presente
   - month: December
     year: 2017
