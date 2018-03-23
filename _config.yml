@@ -27,25 +27,25 @@
 contributions_to_date: $76,421
 
 current_focus:
-  title: Parkland, Teacher Pay, Puerto Rico
+  title: Parkland
   # Note: have to cap off the body with "…" manually:
-  body: "TBD"
+  body: "As our nation endures yet another mass shooting, I was really heartened by how Parkland’s students have risen to the occasion. Within hours of the most traumatic experience of their lives, they were calling representatives, campaigning on Twitter, and not taking no for an answer. Find an organization working to support these students, and fighting for sensible gun laws."
   url:
 
 # Uncomment this if you want to show the "To Be Announced" placeholder:
-current_org:
-  image: "<div style='font-size: 7rem; color: #ccc;'>…</div>"
-  title: To Be Announced
-  body: "Our selection committee is currently researching a number of NPOs in this space. We look for organizations where our impact can be significant. Read more about out <a href='/about.html#criteria'>selection process</a>."
+# current_org:
+#   image: "<div style='font-size: 7rem; color: #ccc;'>…</div>"
+#   title: To Be Announced
+#   body: "Our selection committee is currently researching a number of NPOs in this space. We look for organizations where our impact can be significant. Read more about out <a href='/about.html#criteria'>selection process</a>."
 
 # Uncomment this if you want to show an actual organization:
-# current_org:
-#   image: <img src="/images/npo-logos/centro-presente.png" alt="Centro Presente" width="140"/>
-#   title: Centro Presente
-#   location: Boston, MA
-#   # Note: have to cap off the body with "…" manually:
-#   body: "Centro Presente is a member-driven, state-wide Latin American immigrant organization dedicated to the self-determination and self-sufficiency of the Latin American immigrant community of Massachusetts."
-#   url: http://www.cpresente.org
+current_org:
+  image: <img src="/images/npo-logos/fcyo.png" alt="Funders’ Collaborative on Youth Organizing" width="140"/>
+  title: Funders’ Collaborative on Youth Organizing
+  location: New York, NY
+  # Note: have to cap off the body with "…" manually:
+  body: "The FCYO is a dynamic collective of social justice funders and youth organizing practitioners dedicated to advancing youth organizing for development and social change."
+  url: https://fcyo.org
 
 grantees:
   - month: February
