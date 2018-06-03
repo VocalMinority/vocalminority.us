@@ -24,7 +24,7 @@
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
-contributions_to_date: $80,921
+contributions_to_date: $85,765
 
 current_focus:
   title: To Be Announced
@@ -48,6 +48,17 @@ current_org:
 #   url: https://fcyo.org
 
 grantees:
+  - month: April
+    year: 2018
+    name: "The Justice Committee"
+    short_name: Justice Committee # On home page
+    description: The Justice Committee is a grassroots organization dedicated to building a movement against police violence and systemic racism in New York City and empowering low-income Latino/as and other people of color to address these issues.
+    video:
+    website: http://www.justicecommittee.org/
+    amount: $4,844
+    focus: Police Accountability
+    contributors: 77
+    slug: justic-committee
   - month: March
     year: 2018
     name: "Funders’ Collaborative on Youth Organizing"
