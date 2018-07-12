@@ -24,7 +24,7 @@
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
-contributions_to_date: $85,765
+contributions_to_date: $89,765
 
 current_focus:
   title: To Be Announced
@@ -48,6 +48,28 @@ current_org:
 #   url: https://fcyo.org
 
 grantees:
+  # - month: June
+  #   year: 2018
+  #   name: "Center for Youth Wellness"
+  #   short_name: CYW # On home page
+  #   description: The Center for Youth Wellness' mission is to improve the health of children and adolescents exposed to Adverse Childhood Experiences (ACEs).
+  #   video:
+  #   website: https://centerforyouthwellness.org/
+  #   amount:
+  #   focus: Suicide Prevention
+  #   contributors:
+  #   slug: center-for-youth-wellness
+  - month: May
+    year: 2018
+    name: "Central American Refugee Center"
+    short_name: CARECEN # On home page
+    description: CARECEN has provided high quality legal assistance to immigrant communities in Nassau and Suffolk counties for over thirty years, including initial and renewal requests for temporary protected status (TPS) and Deferred Action for Childhood Arrivals (DACA), green card renewals, naturalization, etc.
+    video:
+    website: http://www.carecenny.org/
+    amount: $4,000
+    focus: Immigration
+    contributors: 75
+    slug: carecen
   - month: April
     year: 2018
     name: "The Justice Committee"
