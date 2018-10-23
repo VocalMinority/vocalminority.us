@@ -24,13 +24,13 @@
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
-contributions_to_date: $100,265
+contributions_to_date: $104,265
 
 current_focus:
   title: TBD
   # Note: have to cap off the body with "…" manually:
   body: "Our members are currently considering this month's topic. Check back soon!"
-  url: 
+  url:
 
 # Uncomment this if you want to show the "To Be Announced" placeholder:
 current_org:
@@ -48,6 +48,17 @@ current_org:
 #   url: https://centerforyouthwellness.org
 
 grantees:
+  - month: September
+    year: 2018
+    name: "Mi Familia Vota"
+    short_name: Mi Familia Vota # On home page
+    description: Mi Familia Vota is a national civic engagement organization that unites Latino, immigrant, and allied communities to promote social and economic justice through citizenship workshops, voter registration, and voter participation. Mi Familia Vota has operations in Arizona, California, Colorado, Florida, Nevada, and Texas.
+    video:
+    website: https://www.mifamiliavota.org/
+    amount: $4,000
+    focus: Flint
+    contributors:
+    slug: mi-familia-vota
   - month: August
     year: 2018
     name: "Flint Rising"
@@ -57,7 +68,7 @@ grantees:
     website: http://flintrising.com
     amount: $3,500
     focus: Flint
-    contributors: 75
+    contributors:
     slug: flint-rising
   - month: July
     year: 2018
@@ -68,7 +79,7 @@ grantees:
     website: https://www.theyoungcenter.org
     amount: $3,500
     focus: Family Detention
-    contributors: 75
+    contributors:
     slug: the-young-center
   - month: June
     year: 2018
@@ -79,7 +90,7 @@ grantees:
     website: https://centerforyouthwellness.org
     amount: $3,500
     focus: Suicide Prevention
-    contributors: 75
+    contributors:
     slug: center-for-youth-wellness
   - month: May
     year: 2018
