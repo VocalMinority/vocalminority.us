@@ -24,41 +24,74 @@
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
-contributions_to_date: $89,765
+contributions_to_date: $104,265
 
 current_focus:
-  title: Suicide Prevention
+  title: TBD
   # Note: have to cap off the body with "…" manually:
-  body: "The tragic losses of Kate Spade and Anthony Bourdain remind us that suicide is a major public health issue, accounting for nearly 45,000 deaths in 2016 alone. We're searching for an organization looking to prevent suicide, and to remind us that more must be done to tackle this growing problem."
-  url: https://blog.vocalminority.us/vocal-minority-supports-youth-wellness-ceb317420034
+  body: "Our members are currently considering this month's topic. Check back soon!"
+  url:
 
 # Uncomment this if you want to show the "To Be Announced" placeholder:
-# current_org:
-#   image: "<div style='font-size: 7rem; color: #ccc;'>…</div>"
-#   title: To Be Announced
-#   body: "Our selection committee is currently researching a number of NPOs in this space. We look for organizations where our impact can be significant. Read more about out <a href='/about.html#criteria'>selection process</a>."
-
-Uncomment this if you want to show an actual organization:
 current_org:
-  image: <img src="/images/npo-logos/center-for-youth-wellness.png" alt="Center for Youth Wellness" width="140"/>
-  title: Center for Youth Wellness
-  location: San Francisco, CA
-  # Note: have to cap off the body with "…" manually:
-  body: "The Center for Youth Wellness aims to revolutionize pediatric medicine and transform the way society responds to kids exposed to significant adverse experiences and toxic stress."
-  url: https://centerforyouthwellness.org
+  image: "<div style='font-size: 7rem; color: #ccc;'>…</div>"
+  title: To Be Announced
+  body: "Our selection committee is currently researching a number of NPOs in this space. We look for organizations where our impact can be significant. Read more about out <a href='/about.html#criteria'>selection process</a>."
+
+# Uncomment this if you want to show an actual organization:
+# current_org:
+#   image: <img src="/images/npo-logos/center-for-youth-wellness.png" alt="Center for Youth Wellness" width="140"/>
+#   title: Center for Youth Wellness
+#   location: San Francisco, CA
+#   # Note: have to cap off the body with "…" manually:
+#   body: "The Center for Youth Wellness aims to revolutionize pediatric medicine and transform the way society responds to kids exposed to significant adverse experiences and toxic stress."
+#   url: https://centerforyouthwellness.org
 
 grantees:
-  # - month: June
-  #   year: 2018
-  #   name: "Center for Youth Wellness"
-  #   short_name: CYW # On home page
-  #   description: The Center for Youth Wellness' mission is to improve the health of children and adolescents exposed to Adverse Childhood Experiences (ACEs).
-  #   video:
-  #   website: https://centerforyouthwellness.org/
-  #   amount:
-  #   focus: Suicide Prevention
-  #   contributors:
-  #   slug: center-for-youth-wellness
+  - month: September
+    year: 2018
+    name: "Mi Familia Vota"
+    short_name: Mi Familia Vota # On home page
+    description: Mi Familia Vota is a national civic engagement organization that unites Latino, immigrant, and allied communities to promote social and economic justice through citizenship workshops, voter registration, and voter participation. Mi Familia Vota has operations in Arizona, California, Colorado, Florida, Nevada, and Texas.
+    video:
+    website: https://www.mifamiliavota.org/
+    amount: $4,000
+    focus: Flint
+    contributors:
+    slug: mi-familia-vota
+  - month: August
+    year: 2018
+    name: "Flint Rising"
+    short_name: Flint Rising # On home page
+    description: Flint Rising, a project of The Advocacy Fund, is a coalition of community organizations and allies working to ensure that directly impacted people are building the organizing infrastructure and leadership necessary for this long-haul fight for justice and creating the future that Flint families need and deserve.
+    video:
+    website: http://flintrising.com
+    amount: $3,500
+    focus: Flint
+    contributors:
+    slug: flint-rising
+  - month: July
+    year: 2018
+    name: "The Young Center for Immigrant Children's Rights"
+    short_name: The Young Center # On home page
+    description: The mission of the Young Center for Immigrant Children’s Rights is to promote the best interests of immigrant children with due regard to the child’s expressed wishes, according to the Convention on the Rights of the Child and state and federal law.
+    video:
+    website: https://www.theyoungcenter.org
+    amount: $3,500
+    focus: Family Detention
+    contributors:
+    slug: the-young-center
+  - month: June
+    year: 2018
+    name: "Center for Youth Wellness"
+    short_name: CYW # On home page
+    description: "The Center for Youth Wellness is part of a national effort to revolutionize pediatric medicine and transform the way society responds to kids exposed to significant adverse childhood experiences and toxic stress. We were created to respond to an urgent public health issue: early adversity harms the developing brains and bodies of children."
+    video:
+    website: https://centerforyouthwellness.org
+    amount: $3,500
+    focus: Suicide Prevention
+    contributors:
+    slug: center-for-youth-wellness
   - month: May
     year: 2018
     name: "Central American Refugee Center"
