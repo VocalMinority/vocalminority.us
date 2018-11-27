@@ -27,9 +27,9 @@
 contributions_to_date: $104,265
 
 current_focus:
-  title: TBD
+  title: Gun Violence
   # Note: have to cap off the body with "…" manually:
-  body: "Our members are currently considering this month's topic. Check back soon!"
+  body: "From a Pittsburgh synagogue to a Florida yoga studio, it’s another disturbing year for gun violence. And yet, there is only one state (Washington) voting on legislation today to determine whether to strengthen gun laws. Find an organization working to fight gun violence."
   url:
 
 # Uncomment this if you want to show the "To Be Announced" placeholder:
@@ -48,6 +48,17 @@ current_org:
 #   url: https://centerforyouthwellness.org
 
 grantees:
+  - month: October
+    year: 2018
+    name: ""
+    short_name:  # On home page
+    description:
+    video:
+    website:
+    amount:
+    focus: Transgender Rights
+    contributors:
+    slug: 
   - month: September
     year: 2018
     name: "Mi Familia Vota"
