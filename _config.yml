@@ -29,7 +29,7 @@ contributions_to_date: $115,955
 current_focus:
   title: Currently voting!
   # Note: have to cap off the body with "…" manually:
-  body: "Our community is currently decideding our focus for this month. Become a member and vote for our next focus area."
+  body: "Our community is currently deciding our focus for this month. Become a member and vote for our next focus area."
   url:
 
 # current_focus:
@@ -58,7 +58,7 @@ grantees:
     year: 2018
     name: "Justice In Motion"
     short_name: Justice In Motion # On home page
-    description: Justice in Motion was founded by Cathleen Caron in 2005 to challenge a developing and under-addressed crisis in the globalizing economy: abused migrant workers being shut out of the justice system because they returned home to their families.
+    description: "Justice in Motion was founded by Cathleen Caron in 2005 to challenge a developing and under-addressed crisis in the globalizing economy: abused migrant workers being shut out of the justice system because they returned home to their families."
     video:
     website: http://justiceinmotion.org/
     amount: $3,940
@@ -68,7 +68,7 @@ grantees:
   - month: November
     year: 2018
     name: "The Newtown Foundation"
-    short_name: The Newtown Foundation # On home page
+    short_name: Newtown Foundation # On home page
     description: The Newtown Foundation supports families and survivors directly impacted by gun violence and works with allies in the gun violence prevention movement from urban, suburban, and rural communities.
     video:
     website: https://www.newtownfoundation.org/
