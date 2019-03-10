@@ -88,7 +88,9 @@ function getAjaxSubmitUrl() {
 $('.vm-js-mc-submit-button').click(function(event) {
   event.preventDefault();
   event.stopPropagation();
-  mcFormAjaxSubmit(function(resp){ onMailchimpSuccess(resp, paypalSubscription) });
+  // Forward to one time donation flow for now, as the recurring donation flow
+  // is currently broken.
+  mcFormAjaxSubmit(function(resp){ onMailchimpSuccess(resp, paypalOneTimeDonation) });
 });
 
 $('.vm-js-mc-one-time-submit-button').click(function(event) {
