@@ -24,7 +24,7 @@
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
-contributions_to_date: $115,955
+contributions_to_date: $127,055
 
 current_focus:
   title: Currently voting!
@@ -54,6 +54,39 @@ current_org:
 #   url: https://centerforyouthwellness.org
 
 grantees:
+  - month: March
+    year: 2019
+    name: "Whistleblower Aid"
+    short_name: Whistleblower Aid # On home page
+    description: "Whistleblower Aid is a pioneering, nonprofit law firm that helps federal employees expose wrongdoing, without unlawfully releasing classified information. They believe that no one should have to risk their career or freedom to follow their conscience."
+    video:
+    website: https://whistlebloweraid.org/
+    amount: $3,700
+    focus: Whistleblowing
+    contributors:
+    slug: whistleblower-aid
+  - month: February
+    year: 2019
+    name: "Fair Count"
+    short_name: Fair Count # On home page
+    description: "Launched by Stacey Abrams in March of this year, Fair Count seeks to facilitate and ensure a fair and accurate count of Georgia citizens during the 2020 census."
+    video:
+    website: https://www.faircount.org/
+    amount: $3,700
+    focus: Electoral Monitoring
+    contributors:
+    slug: fair-count
+  - month: January
+    year: 2019
+    name: "Teachers Unite"
+    short_name: Teachers Unite # On home page
+    description: "Based in New York, Teachers Unite organizes educators to stand against racism and oppression. They work to ensure that all teachers and students have democratic and political representation."
+    video:
+    website: https://teachersunite.org/
+    amount: $3,700
+    focus: Education
+    contributors:
+    slug: teachers-unite
   - month: December
     year: 2018
     name: "Justice In Motion"
