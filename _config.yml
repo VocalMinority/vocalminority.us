@@ -24,7 +24,7 @@
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
-contributions_to_date: $127,055
+contributions_to_date: $136,655
 
 current_focus:
   title: Currently voting!
@@ -54,6 +54,39 @@ current_org:
 #   url: https://centerforyouthwellness.org
 
 grantees:
+  - month: June
+    year: 2019
+    name: "Downtown Streets Team"
+    short_name: Downtown Streets # On home page
+    description: "Downtown Streets Team is ending homelessness by restoring the dignity and rebuilding the lives of unhoused men and women. Our goal is to end homelessness in our lifetime: one community at a time."
+    video:
+    website: https://streetsteam.org
+    amount: $3,200
+    focus: Homelessness
+    contributors:
+    slug: downtown-streets-team
+  - month: May
+    year: 2019
+    name: "Freedom of the Press Foundation"
+    short_name: Freedom of the Press # On home page
+    description: "The organization works to preserve and strengthen First and Fourth Amendment rights guaranteed to the press through a variety of avenues, including the development of encryption tools, documentation of attacks on the press, training newsrooms on digital security practices, and advocating for the public’s right to know."
+    video:
+    website: https://freedom.press
+    amount: $3,200
+    focus: Journalist Protections
+    contributors:
+    slug: freedom-of-the-press
+  - month: April
+    year: 2019
+    name: "National Center for Youth Law"
+    short_name: Youth Law # On home page
+    description: "The National Center for Youth Law is a non-profit law firm that helps low-income children achieve their potential by transforming the public agencies that serve them."
+    video:
+    website: https://youthlaw.org
+    amount: $3,200
+    focus: Immigration Rights
+    contributors:
+    slug: youth-law
   - month: March
     year: 2019
     name: "Whistleblower Aid"
