@@ -203,6 +203,9 @@
 .vm-index__grantees-item-content {
   color: white;
   margin-bottom: 1em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .vm-index__grantees-item-divider {

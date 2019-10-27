@@ -24,7 +24,7 @@
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
-contributions_to_date: $136,655
+contributions_to_date: $146,255
 
 current_focus:
   title: Currently voting!
@@ -54,21 +54,49 @@ current_org:
 #   url: https://centerforyouthwellness.org
 
 grantees:
+  - month: September
+    year: 2019
+    name: "ExposeFacts"
+    description: "Launched by the Institute for Public Accuracy in June 2014, ExposeFacts represents a new approach for encouraging whistleblowers to disclose information that citizens need to make truly informed decisions in a democracy."
+    video:
+    website: https://exposefacts.org/
+    amount: $3,200
+    focus: Whistleblower Protection
+    contributors:
+    slug: ecoamerica
+  - month: August
+    year: 2019
+    name: "ecoAmerica"
+    description: "ecoAmerica builds institutional leadership, public support, and political will for climate solutions in the United States. They help national mainstream organizations elevate their climate leadership, providing them strategy, and tools and resources."
+    video:
+    website: https://ecoamerica.org/
+    amount: $3,200
+    focus: Climate Change
+    contributors:
+    slug: ecoamerica
+  - month: July
+    year: 2019
+    name: "Newtown Action Alliance"
+    description: "Newtown Action Alliance is a national all-volunteer grassroots organization founded by Newtown residents after the tragic December 14, 2012 Sandy Hook Elementary School shooting where 20 children and six educators were senselessly gunned down."
+    video:
+    website: https://www.newtownactionalliance.org/
+    amount: $3,200
+    focus: Gun Violence
+    contributors:
+    slug: newtown-action-alliance
   - month: June
     year: 2019
-    name: "Downtown Streets Team"
-    short_name: Downtown Streets # On home page
-    description: "Downtown Streets Team is ending homelessness by restoring the dignity and rebuilding the lives of unhoused men and women. Our goal is to end homelessness in our lifetime: one community at a time."
+    name: "National Center for Youth Law"
+    description: "The National Center for Youth Law is a non-profit law firm that helps low-income children achieve their potential by transforming the public agencies that serve them."
     video:
-    website: https://streetsteam.org
+    website: https://youthlaw.org
     amount: $3,200
-    focus: Homelessness
+    focus: Immigration Rights
     contributors:
-    slug: downtown-streets-team
+    slug: youth-law
   - month: May
     year: 2019
     name: "Freedom of the Press Foundation"
-    short_name: Freedom of the Press # On home page
     description: "The organization works to preserve and strengthen First and Fourth Amendment rights guaranteed to the press through a variety of avenues, including the development of encryption tools, documentation of attacks on the press, training newsrooms on digital security practices, and advocating for the public’s right to know."
     video:
     website: https://freedom.press
@@ -78,8 +106,17 @@ grantees:
     slug: freedom-of-the-press
   - month: April
     year: 2019
+    name: "Downtown Streets Team"
+    description: "Downtown Streets Team is ending homelessness by restoring the dignity and rebuilding the lives of unhoused men and women. Their goal is to end homelessness in our lifetime: one community at a time."
+    video:
+    website: https://streetsteam.org
+    amount: $3,200
+    focus: Homelessness
+    contributors:
+    slug: downtown-streets-team
+  - month: April
+    year: 2019
     name: "National Center for Youth Law"
-    short_name: Youth Law # On home page
     description: "The National Center for Youth Law is a non-profit law firm that helps low-income children achieve their potential by transforming the public agencies that serve them."
     video:
     website: https://youthlaw.org
@@ -90,7 +127,6 @@ grantees:
   - month: March
     year: 2019
     name: "Whistleblower Aid"
-    short_name: Whistleblower Aid # On home page
     description: "Whistleblower Aid is a pioneering, nonprofit law firm that helps federal employees expose wrongdoing, without unlawfully releasing classified information. They believe that no one should have to risk their career or freedom to follow their conscience."
     video:
     website: https://whistlebloweraid.org/
@@ -101,7 +137,6 @@ grantees:
   - month: February
     year: 2019
     name: "Fair Count"
-    short_name: Fair Count # On home page
     description: "Launched by Stacey Abrams in March of this year, Fair Count seeks to facilitate and ensure a fair and accurate count of Georgia citizens during the 2020 census."
     video:
     website: https://www.faircount.org/
@@ -112,7 +147,6 @@ grantees:
   - month: January
     year: 2019
     name: "Teachers Unite"
-    short_name: Teachers Unite # On home page
     description: "Based in New York, Teachers Unite organizes educators to stand against racism and oppression. They work to ensure that all teachers and students have democratic and political representation."
     video:
     website: https://teachersunite.org/
@@ -123,7 +157,6 @@ grantees:
   - month: December
     year: 2018
     name: "Justice In Motion"
-    short_name: Justice In Motion # On home page
     description: "Justice in Motion was founded by Cathleen Caron in 2005 to challenge a developing and under-addressed crisis in the globalizing economy: abused migrant workers being shut out of the justice system because they returned home to their families."
     video:
     website: http://justiceinmotion.org/
@@ -134,7 +167,6 @@ grantees:
   - month: November
     year: 2018
     name: "The Newtown Foundation"
-    short_name: Newtown Foundation # On home page
     description: The Newtown Foundation supports families and survivors directly impacted by gun violence and works with allies in the gun violence prevention movement from urban, suburban, and rural communities.
     video:
     website: https://www.newtownfoundation.org/
@@ -145,7 +177,6 @@ grantees:
   - month: October
     year: 2018
     name: "Sylvia Rivera Law Project"
-    short_name: SRLP # On home page
     description: The Sylvia Rivera Law Project works to guarantee that all people are free to self-determine gender identity and expression, regardless of income or race, and without facing harassment, discrimination or violence.
     video:
     website: https://srlp.org/
@@ -156,7 +187,6 @@ grantees:
   - month: September
     year: 2018
     name: "Mi Familia Vota"
-    short_name: Mi Familia Vota # On home page
     description: Mi Familia Vota is a national civic engagement organization that unites Latino, immigrant, and allied communities to promote social and economic justice through citizenship workshops, voter registration, and voter participation. Mi Familia Vota has operations in Arizona, California, Colorado, Florida, Nevada, and Texas.
     video:
     website: https://www.mifamiliavota.org/
@@ -167,7 +197,6 @@ grantees:
   - month: August
     year: 2018
     name: "Flint Rising"
-    short_name: Flint Rising # On home page
     description: Flint Rising, a project of The Advocacy Fund, is a coalition of community organizations and allies working to ensure that directly impacted people are building the organizing infrastructure and leadership necessary for this long-haul fight for justice and creating the future that Flint families need and deserve.
     video:
     website: http://flintrising.com
@@ -178,7 +207,6 @@ grantees:
   - month: July
     year: 2018
     name: "The Young Center for Immigrant Children's Rights"
-    short_name: The Young Center # On home page
     description: The mission of the Young Center for Immigrant Children’s Rights is to promote the best interests of immigrant children with due regard to the child’s expressed wishes, according to the Convention on the Rights of the Child and state and federal law.
     video:
     website: https://www.theyoungcenter.org
@@ -189,7 +217,6 @@ grantees:
   - month: June
     year: 2018
     name: "Center for Youth Wellness"
-    short_name: CYW # On home page
     description: "The Center for Youth Wellness is part of a national effort to revolutionize pediatric medicine and transform the way society responds to kids exposed to significant adverse childhood experiences and toxic stress. We were created to respond to an urgent public health issue: early adversity harms the developing brains and bodies of children."
     video:
     website: https://centerforyouthwellness.org
@@ -200,7 +227,6 @@ grantees:
   - month: May
     year: 2018
     name: "Central American Refugee Center"
-    short_name: CARECEN # On home page
     description: CARECEN has provided high quality legal assistance to immigrant communities in Nassau and Suffolk counties for over thirty years, including initial and renewal requests for temporary protected status (TPS) and Deferred Action for Childhood Arrivals (DACA), green card renewals, naturalization, etc.
     video:
     website: http://www.carecenny.org/
@@ -211,7 +237,6 @@ grantees:
   - month: April
     year: 2018
     name: "The Justice Committee"
-    short_name: Justice Committee # On home page
     description: The Justice Committee is a grassroots organization dedicated to building a movement against police violence and systemic racism in New York City and empowering low-income Latino/as and other people of color to address these issues.
     video:
     website: http://www.justicecommittee.org/
@@ -222,7 +247,6 @@ grantees:
   - month: March
     year: 2018
     name: "Funders’ Collaborative on Youth Organizing"
-    short_name: FCYO # On home page
     description: The FCYO is a dynamic collective of social justice funders and youth organizing practitioners dedicated to advancing youth organizing for development and social change.
     video:
     website: https://fcyo.org
@@ -233,7 +257,6 @@ grantees:
   - month: February
     year: 2018
     name: "OneAmerica"
-    short_name: OneAmerica # On home page
     description: Based in Washington state, OneAmerica formed after 9/11 in response to hate crimes and discrimination targeting Arabs, Muslims, and South Asians. OneAmerica has now grown into a leading force for immigrant, civil and human rights.
     video: https://www.facebook.com/wearethevocalminority/videos/938826906279427/
     website: https://weareoneamerica.org/
@@ -244,7 +267,6 @@ grantees:
   - month: January
     year: 2018
     name: "Centro Presente"
-    short_name: Centro Presente # On home page
     description: Centro Presente is a member-driven, state-wide Latin American immigrant organization dedicated to the self-determination and self-sufficiency of the Latin American immigrant community of Massachusetts.
     video:
     website: http://www.cpresente.org
@@ -255,7 +277,6 @@ grantees:
   - month: December
     year: 2017
     name: "Mission Asset Fund"
-    short_name: MAF # On home page
     description: Founded in 2007, Mission Asset Fund is a nonprofit organization on a mission to create a fair financial marketplace for hardworking families.
     video: https://vimeo.com/250689570
     website: https://missionassetfund.org/
@@ -266,7 +287,6 @@ grantees:
   - month: November
     year: 2017
     name: "The Educational Fund to Stop Gun Violence"
-    short_name:  EFSGV # On home page
     description: Founded in 1978, The Educational Fund to Stop Gun Violence develops and implements evidence-based policy advocacy campaigns that reduce gun death and injury.
     video: https://www.youtube.com/watch?v=MI9FT5oZ5fY
     website: http://efsgv.org/
@@ -277,7 +297,6 @@ grantees:
   - month: October
     year: 2017
     name: "Foundation for Puerto Rico"
-    short_name: FPR # On home page
     description: With an intelligent eye on the future, the foundation for Puerto Rico is forward-thinking and dedicated to driving smart infrastructure change to Puerto Rico.
     video: https://www.youtube.com/watch?v=y2ajmDXQw1A
     website: https://www.foundationforpuertorico.org/
@@ -288,7 +307,6 @@ grantees:
   - month: September
     year: 2017
     name: "Cajun Relief"
-    short_name: Cajun Relief # On home page
     description: The Cajun Relief Foundation helps citizens meet needs and connect volunteers with those impacted by hurricanes, earthquakes and disasters of all kinds.
     video: https://www.youtube.com/watch?v=wdaclBG2P2I
     website: http://cajunrelief.org/
@@ -299,7 +317,6 @@ grantees:
   - month: August
     year: 2017
     name: "HEALS, Inc."
-    short_name: HEALS, Inc. # On home page
     description: It is HEALS' mission to deliver accessible, quality, school-based, primary health care for children through collaborative efforts with the school system and the medical, dental and mental communities.
     video: https://www.facebook.com/wearethevocalminority/videos/808244922670960
     website: https://healsinc.org
@@ -310,7 +327,6 @@ grantees:
   - month: July
     year: 2017
     name: "VoteRiders"
-    short_name: VoteRiders # On home page
     description: VoteRiders' mission is to ensure that all citizens are able to exercise their right to vote. They achieve this by informing and helping citizens secure their voter ID through education and assistance.
     video: https://blog.vocalminority.us/a-thank-you-message-from-voteriders-a97863da202d
     website: https://voteriders.org
@@ -321,7 +337,6 @@ grantees:
   - month: June
     year: 2017
     name: "Alliance for Climate Education"
-    short_name: ACE # On home page
     description: Alliance for Climate Education’s mission is to educate young people on the science of climate change and empower them to take action.
     video:
     website: https://acespace.org/
@@ -332,7 +347,6 @@ grantees:
   - month: May
     year: 2017
     name: "Las Americas Immigrant Advocacy Center"
-    short_name: Las Americas # On home page
     description: Las Americas is a 29-year-old, homegrown, non-profit dedicated to serving the legal needs of low income immigrants, including refugees, victims of crime, and families seeking reunification.
     video: https://www.facebook.com/wearethevocalminority/videos/772909849537801/
     website: http://las-americas.org/
@@ -343,7 +357,6 @@ grantees:
   - month: April
     year: 2017
     name: "VoteRunLead"
-    short_name: VoteRunLead # On home page
     description: VoteRunLead is a national nonpartisan organization that unleashes the power of women leaders in democracy through training, technology and community.
     video: https://www.facebook.com/wearethevocalminority/videos/759338874228232/
     website: https://voterunlead.org/
@@ -354,7 +367,6 @@ grantees:
   - month: March
     year: 2017
     name: "Coal River Mountain Watch"
-    short_name: CRMW # On home page
     description: The mission of Coal River Mountain Watch is to stop the destruction of our communities and environment by mountaintop removal mining, to improve the quality of life in our area and to help rebuild sustainable communities.
     video: https://blog.vocalminority.us/a-thank-you-message-from-coal-river-mountain-watch-ed41a41bc9f7
     website: http://crmw.net/
@@ -365,7 +377,6 @@ grantees:
   - month: February
     year: 2017
     name: "Thrive: A Refugee Support Program"
-    short_name: Thrive # On home page
     description: Founded in 2011, Thrive is a team of volunteers dedicated to assisting refugees post-resettlement in Grand Rapids, Michigan. They bridge the gap between the 3–6 months of assistance a government resettlement program can provide and the reality of what it takes to get settled. Thrive connects each family with volunteers who can help and mentor them as they adjust to a new place and culture, local agencies and services that will help them succeed, and a warm community to make them feel at home in their new country.
     video: https://blog.vocalminority.us/a-thank-you-message-from-thrive-f342375be95a
     website: https://refugeesupportgr.com/
@@ -376,7 +387,6 @@ grantees:
   - month: January
     year: 2017
     name: Making Contact Radio
-    short_name: Making Contact Radio # On home page
     description: Founded in 1994, Making Contact is an independent non-profit organization committed to investigative journalism, in-depth critical analysis, the promotion of civic participation and the dissemination of educational material. What began as a 13-week experiment in highlighting progressive community perspectives has become an enduring platform for underrepresented groups and community voices.
     video: https://www.facebook.com/wearethevocalminority/videos/692257594269694/
     website: http://www.radioproject.org/
@@ -387,7 +397,6 @@ grantees:
   - month: December
     year: 2016
     name: Not In Our Town
-    short_name: Not In Our Town # On home page
     description: Founded in 1995, Not In Our Town (NIOT) began in Billings, Montana, when a community of working people stood up to a series of hate crimes by white supremacists. After attacks on a Native American woman’s house, an African-American church, and a Jewish family’s home, the entire town refused to be silent and fearful. They stood up to hate with petitions, marches, community outreach, but most importantly — with peace and unity. It worked.
     video: https://blog.vocalminority.us/a-thank-you-from-our-december-grantee-not-in-our-town-86d6dc0f5905
     website: http://www.radioproject.org/
