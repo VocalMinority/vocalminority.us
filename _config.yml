@@ -24,12 +24,12 @@
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
-contributions_to_date: $146,255
+contributions_to_date: $183,655
 
 current_focus:
   title: Currently voting!
   # Note: have to cap off the body with "…" manually:
-  body: "Our community is currently deciding our focus for this month. Become a member and vote for our next focus area."
+  body: "Our community is currently deciding our focus for this quarter. Become a member and vote for our next focus area."
   url:
 
 # current_focus:
@@ -54,6 +54,86 @@ current_org:
 #   url: https://centerforyouthwellness.org
 
 grantees:
+  - month: Summer
+    year: 2020
+    name: "Oklahoma Native Assets Coalition"
+    description: "Assisting American Indian and Alaska Native families who are experiencing financial distress during the COVID-19 pandemic."
+    video:
+    website: http://www.oknativeassets.org/
+    amount: $8,000
+    focus: Emergency COVID Relief
+    contributors:
+    slug: oklahoma-native-assets
+  - month: Spring
+    year: 2020
+    name: "Community Food Advocates"
+    description: "Community Food Advocates has helped New York City pivot to finding new ways to ensure that food can get to those in need: distributing meals at “grab and go” sites, connecting families to financial assistance, and optimizing logistics so that volunteers and kids are minimizing their exposure while under shelter in place."
+    video:
+    website: https://www.communityfoodadvocatesnyc.org/
+    amount: $8,200
+    focus: Child Hunger During COVID
+    contributors:
+    slug: community-food-advocates
+  - month: March
+    year: 2020
+    name: "Brooklyn Community Foundation"
+    description: "Brooklyn is one of the hardest hit communities in the country. BCF is doing incredible work in providing immediate and longer-term resources to vulnerable residents across the borough, distributing grants to local nonprofits that can help."
+    video:
+    website: https://www.brooklyncommunityfoundation.org/
+    amount: $3,000
+    focus: Temp Workers and Contractors During COVID
+    contributors:
+    slug: brooklyn-community
+  - month: February
+    year: 2020
+    name: "#GetMePPE"
+    description: "The #GetMePPE movement is connecting healthcare workers who desperately need PPE with suppliers who can donate PPE or volunteers who can rapidly produce PPE."
+    video:
+    website: https://getusppe.org/
+    amount: $3,000
+    focus: Supporting Medical Workers During COVID
+    contributors:
+    slug: get-me-ppe
+  - month: January
+    year: 2020
+    name: "Fund for Constitutional Government"
+    description: "FCG creates the public scrutiny necessary to prevent government abuses of power. FCG chooses its activities and projects for their ability to provide oversight, protect whistleblowers and publicize constitutional violations."
+    video:
+    website: https://www.fcgonline.org/
+    amount: $3,000
+    focus: Government Transparency
+    contributors:
+    slug: constitutional-government
+  - month: December
+    year: 2019
+    name: "Heart Women and Girls"
+    description: "HEART ensures that all Muslims have the resources, language, and choice to nurture sexual health and confront sexual violence."
+    video:
+    website: https://hearttogrow.org/
+    amount: $3,000
+    focus: Sexual Assault
+    contributors:
+    slug: heart-women-and-girls
+  - month: November
+    year: 2019
+    name: "Child Guidance Center"
+    description: "Serving 1,700 individuals a year, CGC makes mental healthcare accessible to children of all ages and their parents."
+    video:
+    website: https://childguidancect.org/
+    amount: $3,000
+    focus: Mental Health
+    contributors:
+    slug: child-guidance-center
+  - month: October
+    year: 2019
+    name: "New Florida Majority"
+    description: "A well-established, data-driven organization, New Florida Majority works to increase the voting power and influence of Florida’s low-income black and Latino communities."
+    video:
+    website: https://newfloridamajority.org/
+    amount: $3,000
+    focus: Democratic Norms
+    contributors:
+    slug: new-florida-majority
   - month: September
     year: 2019
     name: "ExposeFacts"
@@ -63,7 +143,7 @@ grantees:
     amount: $3,200
     focus: Whistleblower Protection
     contributors:
-    slug: ecoamerica
+    slug: exposefacts
   - month: August
     year: 2019
     name: "ecoAmerica"
@@ -422,5 +502,6 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - vendor
 
 # Sass settings
