@@ -24,34 +24,9 @@
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
+join_url: https://www.grapevine.org/c/5wmh9/Vocal-Minority/home
+
 contributions_to_date: $183,655
-
-current_focus:
-  title: Currently voting!
-  # Note: have to cap off the body with "…" manually:
-  body: "Our community is currently deciding our focus for this quarter. Become a member and vote for our next focus area."
-  url:
-
-# current_focus:
-#   title: Gun Violence
-#   # Note: have to cap off the body with "…" manually:
-#   body: "From a Pittsburgh synagogue to a Florida yoga studio, it’s another disturbing year for gun violence. And yet, there is only one state (Washington) voting on legislation today to determine whether to strengthen gun laws. Find an organization working to fight gun violence."
-#   url:
-
-# Uncomment this if you want to show the "To Be Announced" placeholder:
-current_org:
-  image: "<div style='font-size: 7rem; color: #ccc;'>…</div>"
-  title: To Be Announced
-  body: "Our selection committee is currently researching a number of NPOs in this space. We look for organizations where our impact can be significant. Read more about out <a href='/about.html#criteria'>selection process</a>."
-
-# Uncomment this if you want to show an actual organization:
-# current_org:
-#   image: <img src="/images/npo-logos/center-for-youth-wellness.png" alt="Center for Youth Wellness" width="140"/>
-#   title: Center for Youth Wellness
-#   location: San Francisco, CA
-#   # Note: have to cap off the body with "…" manually:
-#   body: "The Center for Youth Wellness aims to revolutionize pediatric medicine and transform the way society responds to kids exposed to significant adverse experiences and toxic stress."
-#   url: https://centerforyouthwellness.org
 
 grantees:
   - month: Summer
@@ -488,8 +463,6 @@ grantees:
 top_nav:
   - title: 'About'
     url: '/about.html'
-  - title: 'Blog'
-    url: 'https://blog.vocalminority.us'
   - title: 'Grantees'
     url: '/grantees.html'
   - title: 'FAQ'
