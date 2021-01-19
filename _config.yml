@@ -26,9 +26,19 @@
 
 join_url: https://www.grapevine.org/c/5wmh9/Vocal-Minority/home
 
-contributions_to_date: $183,655
+contributions_to_date: $195,871
 
 grantees:
+  - month: Fall
+    year: 2020
+    name: "New Georgia Project"
+    description: "New Georgia Project is building critical infrastructure to ensure that Georgians can vote, for both the upcoming runoffs and beyond."
+    video:
+    website: https://newgeorgiaproject.org/
+    amount: $12,216
+    focus: Voting Rights
+    contributors:
+    slug: new-georgia-project
   - month: Summer
     year: 2020
     name: "Oklahoma Native Assets Coalition"
